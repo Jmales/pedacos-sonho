@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preços e Reservas | Quinta para Eventos em Lisboa e Azambuja</title>
-    <meta name="description" content="Simulador de orçamento e pedidos de reserva na Quinta o Refúgio (Sereno Gatherings). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.">
+    <meta name="description" content="Simulador de orçamento e pedidos de reserva na Sereno Gatherings (Pedaços de Sonho). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍃</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
       "@type": "EventVenue",
       "name": "Pedaços de Sonho - Sereno Gatherings",
       "url": "https://serenolisbon.com/reservas.html",
-      "description": "Preços e pacotes de aluguer de quinta para casamentos, festas infantis e eventos corporativos na região de Lisboa e Azambuja.",
+      "description": "Preços e pacotes de aluguer de espaço para casamentos, festas infantis e eventos corporativos na região de Lisboa e Azambuja.",
       "telephone": "+351910086330",
       "email": "sereno.azambuja@gmail.com",
       "priceRange": "120€ - Sob Consulta"
@@ -102,7 +103,7 @@
     <div class="header-bg py-14 text-center text-white relative overflow-hidden">
         <div class="relative z-10 max-w-3xl mx-auto px-4">
             <h2 class="font-serif text-3xl md:text-5xl font-bold mb-3 drop-shadow-md">Simule e Reserve o seu Evento</h2>
-            <p class="text-sm md:text-base text-gray-100 font-light">Tabela de Lançamento 2026 • Quinta o Refúgio (Lisboa / Azambuja)</p>
+            <p class="text-sm md:text-base text-gray-100 font-light">Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa / Azambuja)</p>
         </div>
     </div>
 
@@ -160,7 +161,7 @@
                         <h4 class="font-serif text-lg font-bold text-gray-800">Casamentos & Batizados</h4>
                         <span class="inline-block bg-secondary/20 text-secondary text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-2">Sob Consulta</span>
                         <p class="text-xs text-gray-600 leading-relaxed">
-                            Pela natureza personalizada destas datas (duração alargada, cerimónia no jardim e apoio à montagem), os orçamentos são preparados caso a caso com exclusividade total da quinta.
+                            Pela natureza personalizada destas datas (duração alargada, cerimónia no jardim e apoio à montagem), os orçamentos são preparados caso a caso com exclusividade total do espaço.
                         </p>
                     </div>
                 </div>
@@ -191,9 +192,10 @@
                 <h3 class="font-serif text-2xl font-bold text-primary mb-1">Configure o seu Pedido</h3>
                 <p class="text-gray-500 text-xs md:text-sm mb-6">Selecione o tipo de evento e os detalhes. Não requer pagamento imediato.</p>
 
-                <!-- Web3Forms Integration -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <!-- Web3Forms Integration com submissão em segundo plano -->
+                <form id="form_reservas" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <!-- Cole aqui a chave que receber em web3forms.com -->
+                    <input type="hidden" name="access_key" value="76e2b40f-7388-4c41-a206-9c2e0f1a0ea9">
                     <input type="hidden" name="subject" value="Novo Pedido de Reserva - Sereno Gatherings">
                     
                     <!-- 1. Dados Pessoais -->
@@ -252,7 +254,7 @@
                         </div>
                     </div>
 
-                    <!-- Mensagem Dinâmica para Casamentos e Batizados (Inicialmente Oculta) -->
+                    <!-- Mensagem Dinâmica para Casamentos e Batizados -->
                     <div id="bloco_casamento" class="hidden bg-primary/5 border border-primary/20 rounded-2xl p-5 text-sm">
                         <div class="flex items-center gap-3 mb-2">
                             <i class="fa-solid fa-champagne-glasses text-secondary text-xl"></i>
@@ -263,7 +265,7 @@
                         </p>
                     </div>
 
-                    <!-- 3. Extras Opcionais (Ocultado quando é Casamento/Batizado; Limpeza Reforçada Removida) -->
+                    <!-- 3. Extras Opcionais -->
                     <div id="seccao_extras">
                         <h4 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3 border-b border-gray-100 pb-1.5">3. Extras Disponíveis (Opcional)</h4>
                         
@@ -329,7 +331,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-gray-400 py-6 text-center text-xs mt-auto">
         <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-            <a href="https://maps.app.goo.gl/BB5jesSkrgJQd1Gu9" target="_blank" class="hover:text-secondary transition"><i class="fa-solid fa-location-dot mr-1"></i> Quinta o Refúgio, Azambuja</a>
+            <a href="https://maps.app.goo.gl/BB5jesSkrgJQd1Gu9" target="_blank" class="hover:text-secondary transition"><i class="fa-solid fa-location-dot mr-1"></i> Sereno Gatherings, Casais de Baixo, Azambuja</a>
             <span class="hidden md:inline">•</span>
             <a href="tel:+351910086330" class="hover:text-secondary transition"><i class="fa-solid fa-phone mr-1"></i> 910 086 330</a>
             <span class="hidden md:inline">•</span>
@@ -340,6 +342,7 @@
     <!-- Scripts de Interatividade -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // 1. Bloqueio de datas anteriores no calendário
             const dataInput = document.getElementById('data_evento');
             if (dataInput) {
                 const hoje = new Date().toISOString().split('T')[0];
@@ -373,7 +376,55 @@
             }
 
             tipoEventoSelect.addEventListener('change', atualizarFormulario);
-            atualizarFormulario(); // Executa ao carregar para garantir consistência
+            atualizarFormulario();
+
+            // 3. Submissão assíncrona (Opção 1) sem sair da página
+            const form = document.getElementById('form_reservas');
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'A enviar pedido... <i class="fa-solid fa-spinner fa-spin ml-2"></i>';
+
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const result = await response.json();
+
+                    if (result.success) {
+                        form.innerHTML = `
+                            <div class="text-center py-12 px-4 space-y-4">
+                                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl shadow-sm">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <h3 class="font-serif text-3xl font-bold text-primary">Pedido Enviado com Sucesso!</h3>
+                                <p class="text-gray-600 max-w-md mx-auto text-sm leading-relaxed">
+                                    Obrigado pelo seu contacto. Recebemos o seu pedido de disponibilidade e entraremos em contacto muito brevemente.
+                                </p>
+                                <div class="pt-4">
+                                    <a href="index.html" class="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-opacity-90 transition shadow">
+                                        Voltar à Página Inicial
+                                    </a>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        alert('Ocorreu um erro ao enviar. Por favor, confirme se inseriu a sua chave de acesso ou tente novamente.');
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                    }
+                } catch (error) {
+                    alert('Ocorreu um erro de ligação. Por favor, tente novamente ou contacte-nos por telefone.');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+            });
         });
     </script>
 

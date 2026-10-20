@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta para Eventos e Casamentos em Lisboa e Azambuja | Pedaços de Sonho</title>
+    <meta name="description" content="Quinta o Refúgio (Sereno Gatherings), a 40 minutos de Lisboa. O espaço no campo perfeito para casamentos exclusivos, festas infantis, convívios e eventos de empresa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data for SEO / AEO (Lisboa + Azambuja) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Pedaços de Sonho - Sereno Gatherings",
+      "url": "https://serenolisbon.com",
+      "description": "Quinta para casamentos, festas infantis, convívios familiares e eventos corporate na região de Lisboa e Azambuja.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Quinta o Refúgio, Casais de Baixo",
+        "addressLocality": "Azambuja",
+        "addressRegion": "Distrito de Lisboa / Ribatejo",
+        "addressCountry": "PT"
+      },
+      "telephone": "+351910086330",
+      "email": "sereno.azambuja@gmail.com",
+      "priceRange": "120€ - Sob Consulta",
+      "areaServed": ["Lisboa", "Azambuja", "Vila Franca de Xira", "Santarém", "Ribatejo"],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Jardim e Espaço Exterior com Piscina",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Salão Envidraçado e Espaço Rústico Coberto",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pinhal e Quinta Pedagógica com Animais",
+          "value": true
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B6F55', 
+                        secondary: '#DDA75F', 
+                        dark: '#3A3A3A',
+                        light: '#FAF7F2', 
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('cover.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-bg {
+            background-color: #5B6F55;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-light/95 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <i class="fa-solid fa-leaf text-primary text-2xl"></i>
+                    <div>
+                        <h1 class="font-serif font-bold text-2xl text-primary leading-none">Pedaços de Sonho</h1>
+                        <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#espaco" class="text-gray-700 hover:text-primary transition font-medium">O Espaço</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary transition font-medium">Eventos</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition font-medium">Perguntas Frequentes</a>
+                    <a href="#contactos" class="text-gray-700 hover:text-primary transition font-medium">Contactos</a>
+                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full font-medium transition shadow-md">Reservas & Orçamentos</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <a href="reservas.html" class="bg-primary text-white text-xs px-4 py-2 rounded-full font-medium">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-4 max-w-4xl mx-auto">
+            <span class="text-secondary font-semibold tracking-wider uppercase mb-3 block">Quinta o Refúgio • Grande Lisboa & Ribatejo</span>
+            <h2 class="font-serif text-5xl md:text-7xl text-white font-bold mb-6 drop-shadow-lg">Natureza, espaço e <br/>muita imaginação</h2>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">Apenas a 40 minutos de Lisboa, descubra o refúgio perfeito para celebrar casamentos com alma, aniversários infantis e encontros corporativos memoráveis.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#servicos" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg text-base">Explorar Eventos</a>
+                <a href="reservas.html" class="bg-primary border-2 border-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-white transition shadow-lg text-base">Consultar Valores e Reservar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Icons -->
+    <section class="py-14 bg-white shadow-sm relative -mt-10 mx-4 md:mx-12 rounded-2xl z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-light flex items-center justify-center text-secondary text-2xl mb-3 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3 class="font-medium text-sm uppercase tracking-wider text-gray-700">Festas Infantis</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-light flex items-center justify-center text-secondary text-2xl mb-3 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <h3 class="font-medium text-sm uppercase tracking-wider text-gray-700">Casamentos & Batizados</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-light flex items-center justify-center text-secondary text-2xl mb-3 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-medium text-sm uppercase tracking-wider text-gray-700">Empresas & Corporate</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-light flex items-center justify-center text-secondary text-2xl mb-3 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="font-medium text-sm uppercase tracking-wider text-gray-700">Outros Encontros</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Space -->
+    <section id="espaco" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-secondary/20 rounded-3xl transform -rotate-2"></div>
+                    <img src="01_jardim_piscina.jpg" alt="Quinta o Refúgio Jardim e Piscina" class="relative rounded-3xl shadow-xl w-full h-[480px] object-cover">
+                </div>
+                <div>
+                    <span class="text-secondary font-bold uppercase tracking-widest text-xs mb-2 block">Sereno Gatherings</span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-primary mb-6">Um refúgio rústico às portas de Lisboa</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Situada na Azambuja e com rápido acesso à autoestrada a partir de Lisboa, a Quinta o Refúgio junta a tranquilidade do campo à autenticidade da arquitetura tradicional portuguesa.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Contamos com extensos jardins, área de piscina, pinhal privativo, zona de animais da quinta e um amplo salão envidraçado com luz natural, garantindo conforto em qualquer estação do ano.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700"><i class="fa-solid fa-check text-secondary"></i> Salão envidraçado climatizado com vista para o jardim</li>
+                        <li class="flex items-center gap-3 text-gray-700"><i class="fa-solid fa-check text-secondary"></i> Zona exterior ampla com piscina, pinhal e relvado</li>
+                        <li class="flex items-center gap-3 text-gray-700"><i class="fa-solid fa-check text-secondary"></i> Experiências pedagógicas e passeios de pónei para os mais novos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid (Os 4 Tipos de Eventos) -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-xs mb-2 block">Modalidades</span>
+                <h2 class="font-serif text-4xl font-bold text-primary mb-4">Espaços e Experiências à Sua Medida</h2>
+                <p class="text-gray-600">Desde festas intimistas em família até celebrações de grande escala.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 1. Festas Infantis -->
+                <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="03_pinhal.jpg" alt="Festas Infantis e Quinta Pedagógica" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-primary mb-2">Festas Infantis</h3>
+                            <p class="text-gray-600 text-sm mb-4">Aniversários ao ar livre com insufláveis, póneis e contacto direto com a natureza. Packs a partir de 120 €.</p>
+                        </div>
+                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition">Ver Packs <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. Casamentos & Batizados (Sob Consulta) -->
+                <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border-2 border-secondary/30 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="A_2bJ_eunicelopesphotography0588.jpg" alt="Casamentos e Batizados na Quinta" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-secondary text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Sob Consulta</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-primary mb-2">Casamentos & Batizados</h3>
+                            <p class="text-gray-600 text-sm mb-4">Cerimónias e celebrações campestres intimistas com exclusividade do espaço e liberdade de catering.</p>
+                        </div>
+                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition">Pedir Proposta <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3. Empresas & Corporate -->
+                <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="06_sala_envidracada.jpg" alt="Eventos Corporativos e Teambuilding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-primary mb-2">Empresas & Corporate</h3>
+                            <p class="text-gray-600 text-sm mb-4">Teambuilding, reuniões com luz natural e almoços de empresa fora da rotina do escritório.</p>
+                        </div>
+                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition">Simular Aluguer <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- 4. Outros Eventos -->
+                <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="08_fachada_saloes.jpg" alt="Almoços e Encontros Familiares" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-primary mb-2">Outros Encontros</h3>
+                            <p class="text-gray-600 text-sm mb-4">Bodas de prata, piqueniques familiares, gravações, workshops ou convívios privados ao ar livre.</p>
+                        </div>
+                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition">Consultar Opções <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (AEO / SEO) -->
+    <section id="faq" class="py-20 bg-light border-y border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-secondary font-bold uppercase tracking-widest text-xs mb-2 block">Esclarecimentos</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">Perguntas Frequentes</h2>
+            </div>
+            <div class="space-y-5">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-base font-bold text-gray-800 mb-2">A quinta fica próxima de Lisboa?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sim. A Quinta o Refúgio (Sereno Gatherings) situa-se em Casais de Baixo, concelho de Azambuja, a cerca de 40 minutos do centro e do aeroporto de Lisboa, com acesso rápido pelas principais vias rápidas e autoestradas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Como funcionam os orçamentos para Casamentos e Batizados?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Para casamentos e batizados, o valor é <strong>sob consulta</strong>. Ajustamos a duração, o número de convidados, a exclusividade do espaço e eventuais serviços adicionais para garantir que a celebração decorre exatamente ao vosso ritmo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Podemos levar o nosso próprio catering e decoração?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sim. Dispomos de packs próprios, mas damos total flexibilidade para trazerem o vosso catering de eleição, bolo, animação ou decoração exterior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-bg py-20 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="font-serif text-4xl font-bold mb-4">Pronto para planear a sua celebração?</h2>
+            <p class="text-base md:text-lg text-gray-200 mb-8 max-w-2xl mx-auto">Consulte os turnos de aluguer, selecione os extras pretendidos e receba uma confirmação de disponibilidade rápida.</p>
+            <a href="reservas.html" class="inline-block bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-secondary hover:text-white transition duration-300 shadow-xl text-base">
+                Ver Tabela e Fazer Pedido
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contactos" class="bg-dark text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-700 pb-8 mb-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-leaf text-secondary text-2xl"></i>
+                        <div>
+                            <h2 class="font-serif font-bold text-xl text-white leading-none">Pedaços de Sonho</h2>
+                            <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">Celebrações campestres com simplicidade, ar puro e elegância rústica.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navegação</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-secondary transition">Início</a></li>
+                        <li><a href="#espaco" class="hover:text-secondary transition">O Espaço</a></li>
+                        <li><a href="#servicos" class="hover:text-secondary transition">Eventos</a></li>
+                        <li><a href="reservas.html" class="hover:text-secondary transition text-secondary font-medium">Reservas & Preços</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contactos Diretos</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+351910086330" class="hover:text-secondary transition flex items-center gap-2"><i class="fa-solid fa-phone w-5 text-secondary"></i> 910 086 330</a></li>
+                        <li><a href="mailto:sereno.azambuja@gmail.com" class="hover:text-secondary transition flex items-center gap-2"><i class="fa-regular fa-envelope w-5 text-secondary"></i> sereno.azambuja@gmail.com</a></li>
+                        <li><a href="https://maps.app.goo.gl/BB5jesSkrgJQd1Gu9" target="_blank" class="hover:text-secondary transition flex items-start gap-2"><i class="fa-solid fa-location-dot w-5 text-secondary mt-1"></i> <span>Quinta o Refúgio, Casais de Baixo, Azambuja</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 Pedaços de Sonho - Sereno Gatherings (serenolisbon.com). Todos os direitos reservados.</p>
+            <div class="mt-3 md:mt-0 flex gap-4">
+                <a href="https://instagram.com/pedacosdesonho.azambuja" target="_blank" class="hover:text-secondary transition text-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

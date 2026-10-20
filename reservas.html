@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preços e Reservas | Quinta para Eventos em Lisboa e Azambuja</title>
+    <meta name="description" content="Simulador de orçamento e pedidos de reserva na Quinta o Refúgio (Sereno Gatherings). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Pedaços de Sonho - Sereno Gatherings",
+      "url": "https://serenolisbon.com/reservas.html",
+      "description": "Preços e pacotes de aluguer de quinta para casamentos, festas infantis e eventos corporativos na região de Lisboa e Azambuja.",
+      "telephone": "+351910086330",
+      "email": "sereno.azambuja@gmail.com",
+      "priceRange": "120€ - Sob Consulta"
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B6F55', 
+                        secondary: '#DDA75F', 
+                        dark: '#3A3A3A',
+                        light: '#FAF7F2', 
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .header-bg {
+            background-color: #5B6F55;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+        
+        input[type="checkbox"] {
+            appearance: none;
+            background-color: #fff;
+            margin: 0;
+            width: 1.25em;
+            height: 1.25em;
+            border: 2px solid #cbd5e1;
+            border-radius: 0.25em;
+            display: grid;
+            place-content: center;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            background-color: white;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #DDA75F;
+            border-color: #DDA75F;
+        }
+
+        input[type="checkbox"]:checked::before {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="w-full z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
+                    <i class="fa-solid fa-arrow-left text-primary text-xl"></i>
+                    <div>
+                        <h1 class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</h1>
+                        <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings • Voltar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="header-bg py-14 text-center text-white relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-3 drop-shadow-md">Simule e Reserve o seu Evento</h2>
+            <p class="text-sm md:text-base text-gray-100 font-light">Tabela de Lançamento 2026 • Quinta o Refúgio (Lisboa / Azambuja)</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full grid lg:grid-cols-12 gap-8">
+        
+        <!-- Left Column: Pricing Guide -->
+        <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Standard Rental Pricing -->
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-primary/5 px-6 py-5 border-b border-gray-100">
+                    <h3 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-clock text-secondary mr-2"></i> Aluguer por Turnos (3 Horas)</h3>
+                    <p class="text-xs text-gray-500 mt-1">Festas Infantis, Encontros e Eventos Corporate.</p>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center pb-3 border-b border-gray-50 text-sm">
+                        <div>
+                            <span class="block font-medium text-gray-800">Manhã (09:30 - 12:30)</span>
+                            <span class="text-[11px] text-gray-400">Hora extra: 35€ (Semana) / 45€ (Fim-de-semana)</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="block text-primary font-bold">120 € <span class="text-[11px] font-normal text-gray-400">2ª a 6ª</span></span>
+                            <span class="block text-secondary font-bold">180 € <span class="text-[11px] font-normal text-gray-400">Fim-de-semana</span></span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center pb-3 border-b border-gray-50 text-sm">
+                        <span class="block font-medium text-gray-800">Tarde (14:30 - 17:30)</span>
+                        <div class="text-right">
+                            <span class="block text-primary font-bold">130 € <span class="text-[11px] font-normal text-gray-400">2ª a 6ª</span></span>
+                            <span class="block text-secondary font-bold">195 € <span class="text-[11px] font-normal text-gray-400">Fim-de-semana</span></span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center pb-3 border-b border-gray-50 text-sm">
+                        <span class="block font-medium text-gray-800">Fim de Tarde (18:30 - 21:30)</span>
+                        <div class="text-right">
+                            <span class="block text-primary font-bold">145 € <span class="text-[11px] font-normal text-gray-400">2ª a 6ª</span></span>
+                            <span class="block text-secondary font-bold">215 € <span class="text-[11px] font-normal text-gray-400">Fim-de-semana</span></span>
+                        </div>
+                    </div>
+                    <div class="pt-2 text-xs text-gray-500 flex items-start gap-2">
+                        <i class="fa-solid fa-shield-halved mt-0.5 text-secondary"></i>
+                        <p>Caução reembolsável: 150 €. Confirmação de data mediante sinal de 50%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Box: Casamentos & Batizados (Sob Consulta) -->
+            <div class="bg-amber-50/70 border border-secondary/40 rounded-3xl p-6 relative overflow-hidden">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-2xl bg-secondary text-white flex items-center justify-center shrink-0 text-lg shadow-sm">
+                        <i class="fa-solid fa-rings-wedding"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-gray-800">Casamentos & Batizados</h4>
+                        <span class="inline-block bg-secondary/20 text-secondary text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-2">Sob Consulta</span>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Pela natureza personalizada destas datas (duração alargada, cerimónia no jardim e apoio à montagem), os orçamentos são preparados caso a caso com exclusividade total da quinta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packs Sugeridos -->
+            <div class="bg-primary rounded-3xl shadow-sm text-white p-6 relative overflow-hidden">
+                <h3 class="font-serif text-xl font-bold mb-4">Packs Sugeridos</h3>
+                <div class="space-y-4">
+                    <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
+                        <h4 class="font-bold text-secondary text-sm mb-1">Pack Quinta</h4>
+                        <p class="text-xs text-gray-200 mb-2">Espaço 3h + Experiência com Animais (até 10 crianças)</p>
+                        <p class="font-semibold text-sm">Desde 155 € <span class="text-xs font-normal opacity-70">(Semana)</span> / 215 € <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span></p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
+                        <h4 class="font-bold text-secondary text-sm mb-1">Pack Celebração</h4>
+                        <p class="text-xs text-gray-200 mb-2">Espaço 3h + Animais + 1 Animação à escolha</p>
+                        <p class="font-semibold text-sm">Desde 195 € <span class="text-xs font-normal opacity-70">(Semana)</span> / 255 € <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Booking Form -->
+        <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 md:p-8">
+                <h3 class="font-serif text-2xl font-bold text-primary mb-1">Configure o seu Pedido</h3>
+                <p class="text-gray-500 text-xs md:text-sm mb-6">Selecione o tipo de evento e os detalhes. Não requer pagamento imediato.</p>
+
+                <!-- Web3Forms Integration -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="Novo Pedido de Reserva - Sereno Gatherings">
+                    
+                    <!-- 1. Dados Pessoais -->
+                    <div>
+                        <h4 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3 border-b border-gray-100 pb-1.5">1. Os Seus Contactos</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" name="Nome_Completo" placeholder="Nome Completo *" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm">
+                            </div>
+                            <div>
+                                <input type="email" name="Email" placeholder="Email *" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm">
+                            </div>
+                            <div class="md:col-span-2">
+                                <input type="tel" name="Telefone" placeholder="Contacto Telefónico *" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. O Evento -->
+                    <div>
+                        <h4 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3 border-b border-gray-100 pb-1.5">2. Detalhes do Evento</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-500 mb-1 ml-1">Data Pretendida *</label>
+                                <input type="date" id="data_evento" name="Data_Pretendida" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm text-gray-700">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-500 mb-1 ml-1">Tipo de Evento *</label>
+                                <select id="tipo_evento" name="Tipo_de_Evento" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm text-gray-700 font-medium">
+                                    <option value="" disabled selected>Selecione uma opção...</option>
+                                    <option value="Festas Infantis">Festas Infantis</option>
+                                    <option value="Empresas & Corporate">Empresas & Corporate</option>
+                                    <option value="Casamentos e Batizados (Sob Consulta)">Casamentos e Batizados (Sob Consulta)</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-500 mb-1 ml-1">Turno Pretendido</label>
+                                <select id="select_turno" name="Turno" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm text-gray-700">
+                                    <option value="Manhã (09:30 - 12:30)">Manhã (09:30 - 12:30)</option>
+                                    <option value="Tarde (14:30 - 17:30)">Tarde (14:30 - 17:30)</option>
+                                    <option value="Fim de Tarde/Noite (18:30 - 21:30)">Fim de Tarde/Noite (18:30 - 21:30)</option>
+                                    <option value="Dia Inteiro / Horário Personalizado (Sob Consulta)">Dia Inteiro / Horário Personalizado (Sob Consulta)</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-500 mb-1 ml-1">Nº Adultos</label>
+                                    <input type="number" name="Numero_de_Adultos" min="1" placeholder="Ex: 25" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-500 mb-1 ml-1">Nº Crianças</label>
+                                    <input type="number" name="Numero_de_Criancas" min="0" placeholder="Ex: 12" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mensagem Dinâmica para Casamentos e Batizados (Inicialmente Oculta) -->
+                    <div id="bloco_casamento" class="hidden bg-primary/5 border border-primary/20 rounded-2xl p-5 text-sm">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fa-solid fa-champagne-glasses text-secondary text-xl"></i>
+                            <h4 class="font-serif font-bold text-primary text-base">Celebração Exclusiva & Personalizada</h4>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                            Para casamentos e batizados não aplicamos extras pré-definidos[cite: 21]. Criamos uma proposta exclusiva e adaptada à dimensão do vosso evento. Por favor, partilhe no campo de <strong>Observações</strong> o que tem em mente (número estimado de convidados, se prevê cerimónia no jardim, catering pretendido ou necessidades especiais).
+                        </p>
+                    </div>
+
+                    <!-- 3. Extras Opcionais (Ocultado quando é Casamento/Batizado; Limpeza Reforçada Removida) -->
+                    <div id="seccao_extras">
+                        <h4 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3 border-b border-gray-100 pb-1.5">3. Extras Disponíveis (Opcional)</h4>
+                        
+                        <div class="space-y-2.5">
+                            <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox" name="Extra_Quinta_Pedagogica" value="Sim" class="shrink-0">
+                                <div class="ml-3 flex-grow text-xs md:text-sm">
+                                    <span class="block font-medium text-gray-800">Experiência Quinta Pedagógica</span>
+                                    <span class="text-gray-400 text-xs">+45 € (até 10 crianças)</span>
+                                </div>
+                                <i class="fa-solid fa-paw text-gray-300 text-lg"></i>
+                            </label>
+
+                            <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox" name="Extra_Insuflavel" value="Sim" class="shrink-0">
+                                <div class="ml-3 flex-grow text-xs md:text-sm">
+                                    <span class="block font-medium text-gray-800">Insuflável</span>
+                                    <span class="text-gray-400 text-xs">Desde 65 € por evento</span>
+                                </div>
+                                <i class="fa-solid fa-house-chimney text-gray-300 text-lg"></i>
+                            </label>
+
+                            <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox" name="Extra_Animador_Pinturas" value="Sim" class="shrink-0">
+                                <div class="ml-3 flex-grow text-xs md:text-sm">
+                                    <span class="block font-medium text-gray-800">Pinturas Faciais / Animador / Caça ao Tesouro</span>
+                                    <span class="text-gray-400 text-xs">Desde 40 € / 45 € por hora ou sessão</span>
+                                </div>
+                                <i class="fa-solid fa-masks-theater text-gray-300 text-lg"></i>
+                            </label>
+
+                            <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox" name="Extra_Decoracao" value="Sim" class="shrink-0">
+                                <div class="ml-3 flex-grow text-xs md:text-sm">
+                                    <span class="block font-medium text-gray-800">Decoração / Mesa Temática</span>
+                                    <span class="text-gray-400 text-xs">Desde 40 € por evento</span>
+                                </div>
+                                <i class="fa-solid fa-cake-candles text-gray-300 text-lg"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 4. Observações -->
+                    <div>
+                        <h4 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3 border-b border-gray-100 pb-1.5">4. Observações & Pedidos Especiais</h4>
+                        <textarea id="campo_observacoes" name="Observacoes" rows="3" placeholder="Passeio de pónei, detalhes sobre cerimónia ou catering..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm resize-none"></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl transition duration-300 shadow-xl flex items-center justify-center gap-2 text-base">
+                        Enviar Pedido de Disponibilidade <i class="fa-solid fa-paper-plane text-sm"></i>
+                    </button>
+                    <p class="text-center text-[11px] text-gray-400">Pode trazer a sua própria comida e bolo. Entraremos em contacto para validação final da data.</p>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-6 text-center text-xs mt-auto">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+            <a href="https://maps.app.goo.gl/BB5jesSkrgJQd1Gu9" target="_blank" class="hover:text-secondary transition"><i class="fa-solid fa-location-dot mr-1"></i> Quinta o Refúgio, Azambuja</a>
+            <span class="hidden md:inline">•</span>
+            <a href="tel:+351910086330" class="hover:text-secondary transition"><i class="fa-solid fa-phone mr-1"></i> 910 086 330</a>
+            <span class="hidden md:inline">•</span>
+            <a href="mailto:sereno.azambuja@gmail.com" class="hover:text-secondary transition"><i class="fa-regular fa-envelope mr-1"></i> sereno.azambuja@gmail.com</a>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dataInput = document.getElementById('data_evento');
+            if (dataInput) {
+                const hoje = new Date().toISOString().split('T')[0];
+                dataInput.min = hoje;
+            }
+
+            // 2. Adaptação dinâmica para Casamentos e Batizados
+            const tipoEventoSelect = document.getElementById('tipo_evento');
+            const seccaoExtras = document.getElementById('seccao_extras');
+            const blocoCasamento = document.getElementById('bloco_casamento');
+            const selectTurno = document.getElementById('select_turno');
+            const campoObservacoes = document.getElementById('campo_observacoes');
+
+            function atualizarFormulario() {
+                if (tipoEventoSelect.value === 'Casamentos e Batizados (Sob Consulta)') {
+                    seccaoExtras.classList.add('hidden');
+                    blocoCasamento.classList.remove('hidden');
+                    if (selectTurno) {
+                        selectTurno.value = 'Dia Inteiro / Horário Personalizado (Sob Consulta)';
+                    }
+                    if (campoObservacoes) {
+                        campoObservacoes.placeholder = 'Conte-nos sobre a vossa visão: número previsto de convidados, intenção de realizar cerimónia no jardim, preferências de horário ou catering...';
+                    }
+                } else {
+                    seccaoExtras.classList.remove('hidden');
+                    blocoCasamento.classList.add('hidden');
+                    if (campoObservacoes) {
+                        campoObservacoes.placeholder = 'Passeio de pónei, detalhes adicionais ou pedidos especiais...';
+                    }
+                }
+            }
+
+            tipoEventoSelect.addEventListener('change', atualizarFormulario);
+            atualizarFormulario(); // Executa ao carregar para garantir consistência
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Eventos Anteriores • Pedaços de Sonho</title>
+    <meta name="description" content="Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍃</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B6F55',
+                        secondary: '#DDA75F',
+                        dark: '#3A3A3A',
+                        light: '#FAF7F2',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .header-bg {
+            background-color: #5B6F55;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        #lightbox {
+            display: none;
+        }
+        #lightbox.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark min-h-screen flex flex-col">
+
+    <nav class="w-full z-50 bg-white shadow-sm sticky top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
+                    <i class="fa-solid fa-leaf text-primary text-2xl"></i>
+                    <div>
+                        <h1 class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</h1>
+                        <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html#espaco" class="text-gray-700 hover:text-primary transition font-medium text-sm">O Espaço</a>
+                    <a href="index.html#servicos" class="text-gray-700 hover:text-primary transition font-medium text-sm">Eventos</a>
+                    <a href="galeria.html" class="text-primary font-semibold text-sm">Galeria</a>
+                    <a href="index.html#contactos" class="text-gray-700 hover:text-primary transition font-medium text-sm">Contactos</a>
+                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm">Reservas</a>
+                </div>
+                <a href="index.html" class="md:hidden text-primary text-sm font-medium"><i class="fa-solid fa-arrow-left mr-1"></i> Início</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header-bg py-16 text-center text-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <span class="text-secondary font-semibold tracking-wider uppercase text-xs mb-3 block">Portfólio</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-4">Eventos Anteriores</h2>
+            <p class="text-sm md:text-base text-gray-100 font-light max-w-xl mx-auto">Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.</p>
+        </div>
+    </div>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full">
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+            <button type="button" data-filter="all" class="filter-btn active bg-primary text-white px-5 py-2 rounded-full text-sm font-medium transition">Todos</button>
+            <button type="button" data-filter="casamentos" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200">Casamentos</button>
+            <button type="button" data-filter="espaco" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200">O Espaço</button>
+        </div>
+
+        <div id="gallery-grid" class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-aliancas-tronco.webp" data-alt="Alianças de casamento sobre tronco">
+                <img src="images/thumbs/galeria/casamento-aliancas-tronco.webp" alt="Alianças de casamento sobre tronco" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-altar-tripe.webp" data-alt="Altar exterior com tripé e flores">
+                <img src="images/thumbs/galeria/casamento-altar-tripe.webp" alt="Altar exterior com tripé e flores" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-ambiente-dia.webp" data-alt="Ambiente de dia no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-ambiente-dia.webp" alt="Ambiente de dia no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-ambiente-noite.webp" data-alt="Ambiente noturno no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-ambiente-noite.webp" alt="Ambiente noturno no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-baloicos-decorados.webp" data-alt="Baloiços decorados no exterior">
+                <img src="images/thumbs/galeria/casamento-baloicos-decorados.webp" alt="Baloiços decorados no exterior" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-bolo-flores.webp" data-alt="Bolo de casamento com flores">
+                <img src="images/thumbs/galeria/casamento-bolo-flores.webp" alt="Bolo de casamento com flores" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-cadeiras.webp" data-alt="Cadeiras e mesa no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-cadeiras.webp" alt="Cadeiras e mesa no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-centro-lavanda.webp" data-alt="Centro de mesa com lavanda no salão">
+                <img src="images/thumbs/galeria/evento-salao-centro-lavanda.webp" alt="Centro de mesa com lavanda no salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-cerimonia-fardos.webp" data-alt="Cerimónia exterior com fardos de palha">
+                <img src="images/thumbs/galeria/casamento-cerimonia-fardos.webp" alt="Cerimónia exterior com fardos de palha" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-cerimonia-corredor.webp" data-alt="Corredor da cerimónia com fardos">
+                <img src="images/thumbs/galeria/casamento-cerimonia-corredor.webp" alt="Corredor da cerimónia com fardos" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesa-detalhe.webp" data-alt="Detalhe da mesa no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesa-detalhe.webp" alt="Detalhe da mesa no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-detalhe-mesa.webp" data-alt="Detalhe da mesa no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-detalhe-mesa.webp" alt="Detalhe da mesa no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-mesa-detalhe.webp" data-alt="Detalhe de mesa no salão com lavanda">
+                <img src="images/thumbs/galeria/evento-salao-mesa-detalhe.webp" alt="Detalhe de mesa no salão com lavanda" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-entrada-bicicleta.webp" data-alt="Entrada do casamento com bicicleta decorada">
+                <img src="images/thumbs/galeria/casamento-entrada-bicicleta.webp" alt="Entrada do casamento com bicicleta decorada" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-lounge-jardim.webp" data-alt="Lounge exterior no jardim">
+                <img src="images/thumbs/galeria/evento-lounge-jardim.webp" alt="Lounge exterior no jardim" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesa-noite.webp" data-alt="Mesa de casamento no pinhal ao entardecer">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesa-noite.webp" alt="Mesa de casamento no pinhal ao entardecer" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-mesa-numero-4.webp" data-alt="Mesa número 4 com lavanda">
+                <img src="images/thumbs/galeria/evento-salao-mesa-numero-4.webp" alt="Mesa número 4 com lavanda" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesa-servida.webp" data-alt="Mesa servida no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesa-servida.webp" alt="Mesa servida no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesas-brancas.webp" data-alt="Mesas brancas no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesas-brancas.webp" alt="Mesas brancas no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesas-verticais.webp" data-alt="Mesas no pinhal com luzes">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesas-verticais.webp" alt="Mesas no pinhal com luzes" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesas-luzes.webp" data-alt="Mesas no pinhal com luzes">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesas-luzes.webp" alt="Mesas no pinhal com luzes" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-mesas-pb.webp" data-alt="Mesas no pinhal em preto e branco">
+                <img src="images/thumbs/galeria/casamento-pinhal-mesas-pb.webp" alt="Mesas no pinhal em preto e branco" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-terraco-buffet.webp" data-alt="Preparação do buffet no terraço">
+                <img src="images/thumbs/galeria/evento-terraco-buffet.webp" alt="Preparação do buffet no terraço" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-preparacao-01.webp" data-alt="Preparação do salão">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-01.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-preparacao-02.webp" data-alt="Preparação do salão">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-02.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-preparacao-03.webp" data-alt="Preparação do salão">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-03.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-preparacao-04.webp" data-alt="Preparação do salão">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-04.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-preparacao-05.webp" data-alt="Preparação do salão">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-05.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-mesas-portas.webp" data-alt="Salão aberto para o terraço">
+                <img src="images/thumbs/galeria/evento-salao-mesas-portas.webp" alt="Salão aberto para o terraço" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-mesas-luz.webp" data-alt="Salão com mesas e luz natural">
+                <img src="images/thumbs/galeria/evento-salao-mesas-luz.webp" alt="Salão com mesas e luz natural" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/evento-salao-mesas.webp" data-alt="Salão com mesas preparadas">
+                <img src="images/thumbs/galeria/evento-salao-mesas.webp" alt="Salão com mesas preparadas" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-pinhal-vista-mesas.webp" data-alt="Vista das mesas no pinhal">
+                <img src="images/thumbs/galeria/casamento-pinhal-vista-mesas.webp" alt="Vista das mesas no pinhal" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="casamentos" data-src="images/galeria/casamento-cerimonia-vista.webp" data-alt="Vista geral da cerimónia no jardim">
+                <img src="images/thumbs/galeria/casamento-cerimonia-vista.webp" alt="Vista geral da cerimónia no jardim" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-campo-futebol.webp" data-alt="Campo de jogos e atividades">
+                <img src="images/thumbs/galeria/espaco-campo-futebol.webp" alt="Campo de jogos e atividades" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-entrada-terraco.webp" data-alt="Entrada e terraço">
+                <img src="images/thumbs/galeria/espaco-entrada-terraco.webp" alt="Entrada e terraço" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-exterior-edificio.webp" data-alt="Exterior do edifício">
+                <img src="images/thumbs/galeria/espaco-exterior-edificio.webp" alt="Exterior do edifício" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-fachada-saloes.webp" data-alt="Fachada dos salões">
+                <img src="images/thumbs/galeria/espaco-fachada-saloes.webp" alt="Fachada dos salões" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-jardim-piscina.webp" data-alt="Jardim e piscina">
+                <img src="images/thumbs/galeria/espaco-jardim-piscina.webp" alt="Jardim e piscina" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-pinhal.webp" data-alt="Pinhal privativo">
+                <img src="images/thumbs/galeria/espaco-pinhal.webp" alt="Pinhal privativo" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-sala-refeicoes.webp" data-alt="Sala de refeições">
+                <img src="images/thumbs/galeria/espaco-sala-refeicoes.webp" alt="Sala de refeições" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-sala-envidracada.webp" data-alt="Salão com luz natural">
+                <img src="images/thumbs/galeria/espaco-sala-envidracada.webp" alt="Salão com luz natural" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-terraco-guarda-sol.webp" data-alt="Terraço com guarda-sol e bancos">
+                <img src="images/thumbs/galeria/espaco-terraco-guarda-sol.webp" alt="Terraço com guarda-sol e bancos" class="w-full object-cover" loading="lazy">
+            </figure>
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/espaco-piscina.webp" data-alt="Área da piscina">
+                <img src="images/thumbs/galeria/espaco-piscina.webp" alt="Área da piscina" class="w-full object-cover" loading="lazy">
+            </figure>
+        </div>
+
+        <div class="mt-16 text-center bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3">Quer ver mais momentos?</h3>
+            <p class="text-gray-600 text-sm mb-6 max-w-md mx-auto">Siga-nos no Instagram para novidades, bastidores e inspirações de eventos.</p>
+            <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition shadow-md">
+                <i class="fa-brands fa-instagram text-lg"></i> @pedacosdesonho.azambuja
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-gray-400 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            <p>&copy; 2026 Pedaços de Sonho - Sereno Gatherings.</p>
+            <div class="flex gap-4 items-center">
+                <a href="index.html" class="hover:text-secondary transition">Início</a>
+                <a href="index.html#contactos" class="hover:text-secondary transition">Contactos</a>
+                <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="hover:text-secondary transition text-lg" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="reservas.html" class="hover:text-secondary transition">Reservas</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 items-center justify-center p-4" role="dialog" aria-modal="true">
+        <button type="button" id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl hover:text-secondary transition" aria-label="Fechar">&times;</button>
+        <button type="button" id="lightbox-prev" class="absolute left-2 md:left-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="lightbox-img" src="" alt="" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
+        <button type="button" id="lightbox-next" class="absolute right-2 md:right-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = [...document.querySelectorAll('.gallery-item')];
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            let currentIndex = 0;
+            let visibleItems = items;
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.dataset.filter;
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-primary', 'text-white');
+                        b.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+                    });
+                    btn.classList.add('active', 'bg-primary', 'text-white');
+                    btn.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+
+                    visibleItems = [];
+                    items.forEach(item => {
+                        const show = filter === 'all' || item.dataset.category === filter;
+                        item.style.display = show ? '' : 'none';
+                        if (show) visibleItems.push(item);
+                    });
+                });
+            });
+
+            function openLightbox(index) {
+                currentIndex = index;
+                const item = visibleItems[currentIndex];
+                lightboxImg.src = item.dataset.src;
+                lightboxImg.alt = item.dataset.alt || '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function navLightbox(dir) {
+                currentIndex = (currentIndex + dir + visibleItems.length) % visibleItems.length;
+                const item = visibleItems[currentIndex];
+                lightboxImg.src = item.dataset.src;
+                lightboxImg.alt = item.dataset.alt || '';
+            }
+
+            items.forEach((item) => {
+                item.addEventListener('click', () => {
+                    const idx = visibleItems.indexOf(item);
+                    if (idx >= 0) openLightbox(idx);
+                });
+            });
+
+            document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+            document.getElementById('lightbox-prev').addEventListener('click', () => navLightbox(-1));
+            document.getElementById('lightbox-next').addEventListener('click', () => navLightbox(1));
+            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navLightbox(-1);
+                if (e.key === 'ArrowRight') navLightbox(1);
+            });
+        });
+    </script>
+</body>
+</html>

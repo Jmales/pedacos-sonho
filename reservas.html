@@ -95,6 +95,10 @@
                         <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings • Voltar</p>
                     </div>
                 </a>
+                <div class="flex items-center gap-4">
+                    <a href="galeria.html" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium">Galeria</a>
+                    <a href="index.html#contactos" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium">Contactos</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -147,6 +151,28 @@
                     <div class="pt-2 text-xs text-gray-500 flex items-start gap-2">
                         <i class="fa-solid fa-shield-halved mt-0.5 text-secondary"></i>
                         <p>Caução reembolsável: 150 €. Confirmação de data mediante sinal de 50%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full day 6h rental -->
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-secondary/10 px-6 py-5 border-b border-gray-100">
+                    <h3 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-sun text-secondary mr-2"></i> Aluguer 6h (Dia Completo)</h3>
+                    <p class="text-xs text-gray-500 mt-1">Exclusividade do espaço para o dia.</p>
+                </div>
+                <div class="p-6 space-y-3">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="font-medium text-gray-800">Época baixa</span>
+                        <span class="text-primary font-bold text-lg">350 €</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm pb-3 border-b border-gray-50">
+                        <span class="font-medium text-gray-800">Época alta</span>
+                        <span class="text-secondary font-bold text-lg">425 €</span>
+                    </div>
+                    <div class="pt-1 text-xs text-gray-500 flex items-start gap-2">
+                        <i class="fa-solid fa-moon mt-0.5 text-secondary"></i>
+                        <p><strong>Valor noturno:</strong> sob consulta e disponibilidade, consoante o tipo de evento.</p>
                     </div>
                 </div>
             </div>
@@ -236,8 +262,9 @@
                                 <select id="select_turno" name="Turno" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-gray-50 text-sm text-gray-700">
                                     <option value="Manhã (09:30 - 12:30)">Manhã (09:30 - 12:30)</option>
                                     <option value="Tarde (14:30 - 17:30)">Tarde (14:30 - 17:30)</option>
-                                    <option value="Fim de Tarde/Noite (18:30 - 21:30)">Fim de Tarde/Noite (18:30 - 21:30)</option>
-                                    <option value="Dia Inteiro / Horário Personalizado (Sob Consulta)">Dia Inteiro / Horário Personalizado (Sob Consulta)</option>
+                                    <option value="Fim de Tarde/Noite (18:30 - 21:30)">Fim de Tarde/Noite (18:30 - 21:30) — sob consulta</option>
+                                    <option id="opt_dia_completo" value="Dia Completo 6h (350€ época baixa / 425€ época alta)">Dia Completo 6h (350€ baixa / 425€ alta)</option>
+                                    <option value="Horário Personalizado (Sob Consulta)">Horário Personalizado (Sob Consulta)</option>
                                 </select>
                             </div>
                             <div class="grid grid-cols-2 gap-2">
@@ -273,7 +300,7 @@
                                 <input type="checkbox" name="Extra_Quinta_Pedagogica" value="Sim" class="shrink-0">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800">Experiência Quinta Pedagógica</span>
-                                    <span class="text-gray-400 text-xs">+45 € (até 10 crianças)</span>
+                                    <span class="text-gray-400 text-xs">+45 € (até 10 crianças) · +20 € a cada criança adicional</span>
                                 </div>
                                 <i class="fa-solid fa-paw text-gray-300 text-lg"></i>
                             </label>
@@ -282,7 +309,7 @@
                                 <input type="checkbox" name="Extra_Insuflavel" value="Sim" class="shrink-0">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800">Insuflável</span>
-                                    <span class="text-gray-400 text-xs">Desde 65 € por evento</span>
+                                    <span class="text-gray-400 text-xs">Desde 75 € por evento</span>
                                 </div>
                                 <i class="fa-solid fa-house-chimney text-gray-300 text-lg"></i>
                             </label>
@@ -291,7 +318,7 @@
                                 <input type="checkbox" name="Extra_Animador_Pinturas" value="Sim" class="shrink-0">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800">Pinturas Faciais / Animador / Caça ao Tesouro</span>
-                                    <span class="text-gray-400 text-xs">Desde 40 € / 45 € por hora ou sessão</span>
+                                    <span class="text-gray-400 text-xs">Desde 60 € por hora ou sessão</span>
                                 </div>
                                 <i class="fa-solid fa-masks-theater text-gray-300 text-lg"></i>
                             </label>
@@ -300,7 +327,7 @@
                                 <input type="checkbox" name="Extra_Decoracao" value="Sim" class="shrink-0">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800">Decoração / Mesa Temática</span>
-                                    <span class="text-gray-400 text-xs">Desde 40 € por evento</span>
+                                    <span class="text-gray-400 text-xs">Desde 60 € por evento</span>
                                 </div>
                                 <i class="fa-solid fa-cake-candles text-gray-300 text-lg"></i>
                             </label>
@@ -335,6 +362,8 @@
             <a href="tel:+351910086330" class="hover:text-secondary transition"><i class="fa-solid fa-phone mr-1"></i> 910 086 330</a>
             <span class="hidden md:inline">•</span>
             <a href="mailto:geral@serenolisbon.com" class="hover:text-secondary transition"><i class="fa-regular fa-envelope mr-1"></i> geral@serenolisbon.com</a>
+            <span class="hidden md:inline">•</span>
+            <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="hover:text-secondary transition" aria-label="Instagram"><i class="fa-brands fa-instagram mr-1"></i> Instagram</a>
         </div>
     </footer>
 
@@ -355,12 +384,17 @@
             const selectTurno = document.getElementById('select_turno');
             const campoObservacoes = document.getElementById('campo_observacoes');
 
+            const optDiaCompleto = document.getElementById('opt_dia_completo');
+
             function atualizarFormulario() {
-                if (tipoEventoSelect.value === 'Casamentos e Batizados (Sob Consulta)') {
+                const isCasamento = tipoEventoSelect.value === 'Casamentos e Batizados (Sob Consulta)';
+
+                if (isCasamento) {
                     seccaoExtras.classList.add('hidden');
                     blocoCasamento.classList.remove('hidden');
+                    if (optDiaCompleto) optDiaCompleto.hidden = true;
                     if (selectTurno) {
-                        selectTurno.value = 'Dia Inteiro / Horário Personalizado (Sob Consulta)';
+                        selectTurno.value = 'Horário Personalizado (Sob Consulta)';
                     }
                     if (campoObservacoes) {
                         campoObservacoes.placeholder = 'Conte-nos sobre a vossa visão: número previsto de convidados, intenção de realizar cerimónia no jardim, preferências de horário ou catering...';
@@ -368,6 +402,7 @@
                 } else {
                     seccaoExtras.classList.remove('hidden');
                     blocoCasamento.classList.add('hidden');
+                    if (optDiaCompleto) optDiaCompleto.hidden = false;
                     if (campoObservacoes) {
                         campoObservacoes.placeholder = 'Passeio de pónei, detalhes adicionais ou pedidos especiais...';
                     }

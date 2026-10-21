@@ -98,6 +98,7 @@ export const pt = {
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. Todos os direitos reservados.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
   footer_address: 'Sereno Gatherings, Casais de Baixo, Azambuja',
+  footer_privacy: 'Política de Privacidade',
   nav_back: 'Voltar',
   nav_brand_back: 'Sereno Gatherings • Voltar',
 
@@ -204,6 +205,44 @@ export const pt = {
     'Ocorreu um erro ao enviar. Por favor, confirme se inseriu a sua chave de acesso ou tente novamente.',
   res_err_network:
     'Ocorreu um erro de ligação. Por favor, tente novamente ou contacte-nos por telefone.',
+  res_privacy_note:
+    'Ao enviar este formulário, os seus dados serão tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="privacidade.html" class="underline hover:text-secondary transition">Política de Privacidade</a>.',
+
+  // Privacy policy
+  priv_doc_title: 'Política de Privacidade | Pedaços de Sonho',
+  priv_meta_description:
+    'Política de privacidade e informação sobre o tratamento de dados pessoais no site Sereno Gatherings (Pedaços de Sonho), em conformidade com o RGPD.',
+  priv_title: 'Política de Privacidade',
+  priv_updated: 'Última atualização: outubro de 2026',
+  priv_intro:
+    'A presente Política de Privacidade descreve como a Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda («nós»), que opera o espaço Sereno Gatherings, trata os dados pessoais dos visitantes e clientes do nosso website, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e a Lei n.º 58/2019.',
+  priv_h1: '1. Responsável pelo tratamento',
+  priv_p1:
+    'O responsável pelo tratamento dos dados é a <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, NIF <strong>514259000</strong>, com sede na Rua Várzea da Cabeleira, Casais de Baixo, Quinta «O Refúgio», 2050-360 Azambuja. Marca comercial / espaço: Sereno Gatherings. Para questões relacionadas com privacidade: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+  priv_h2: '2. Dados que recolhemos',
+  priv_p2:
+    'Através do formulário de reservas/contacto podemos recolher: nome, endereço de email, número de telefone, data pretendida do evento, tipo de evento, turno, número estimado de adultos e crianças, extras selecionados e observações que voluntariamente nos envie.',
+  priv_h3: '3. Finalidades e bases legais',
+  priv_p3:
+    'Tratamos estes dados para: (a) responder a pedidos de disponibilidade e orçamento e preparar propostas de reserva (base: diligências pré-contratuais / execução de contrato, art. 6.º, n.º 1, alínea b) do RGPD); (b) contactá-lo sobre o pedido e esclarecimentos relacionados (mesmo fundamento); (c) cumprir obrigações legais, quando aplicável (art. 6.º, n.º 1, alínea c)). Não utilizamos os dados do formulário para marketing sem o seu consentimento prévio.',
+  priv_h4: '4. Destinatários e subcontratantes',
+  priv_p4:
+    'Os pedidos do formulário são enviados através do serviço Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). Podem ainda carregar recursos de terceiros necessários ao funcionamento do site (fontes, ícones, CDN). O selo Zaask, quando apresentado, carrega conteúdos do domínio zaask.pt. Estes prestadores atuam como subcontratantes ou destinatários na medida do necessário à prestação do serviço.',
+  priv_h5: '5. Conservação',
+  priv_p5:
+    'Conservamos os dados dos pedidos de contacto/reserva pelo tempo necessário para gerir o pedido e a eventual relação contratual, e pelo prazo adicional exigido por obrigações legais ou para defesa de direitos. Pedidos sem seguimento são normalmente eliminados ou anonimizados num prazo razoável (indicativamente até 24 meses), salvo necessidade legítima de conservação mais longa.',
+  priv_h6: '6. Cookies e armazenamento local',
+  priv_p6:
+    'Não utilizamos cookies de publicidade ou de análise estatística de terceiros. Guardamos apenas no armazenamento local do browser (localStorage) a preferência de idioma (PT/EN), para lembrar a sua escolha. Pode apagar este dado nas definições do browser.',
+  priv_h7: '7. Os seus direitos',
+  priv_p7:
+    'Nos termos do RGPD, pode solicitar: acesso aos dados, retificação, apagamento, limitação do tratamento, oposição e portabilidade, quando aplicável. Para exercer estes direitos, contacte-nos através de <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a>. Tem ainda o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD) — <a href="https://www.cnpd.pt" target="_blank" rel="noopener" class="text-primary underline">www.cnpd.pt</a>.',
+  priv_h8: '8. Segurança e menores',
+  priv_p8:
+    'Adotamos medidas técnicas e organizativas adequadas para proteger os dados. O formulário destina-se a adultos ou representantes legais que contactam em nome de um evento; não solicitamos intencionalmente dados de menores para criar perfis.',
+  priv_h9: '9. Alterações',
+  priv_p9:
+    'Podemos atualizar esta Política de Privacidade. A versão em vigor será sempre a publicada nesta página, com indicação da data de atualização.',
 } as const;
 
 export type MessageKey = keyof typeof pt;

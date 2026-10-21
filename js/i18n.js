@@ -78,6 +78,7 @@
     footer_copy: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings. Todos os direitos reservados.",
     footer_copy_short: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings.",
     footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja",
+    footer_privacy: "Pol\xEDtica de Privacidade",
     nav_back: "Voltar",
     nav_brand_back: "Sereno Gatherings \u2022 Voltar",
     // Gallery
@@ -168,7 +169,32 @@
     res_success_body: "Obrigado pelo seu contacto. Recebemos o seu pedido de disponibilidade e entraremos em contacto muito brevemente.",
     res_success_home: "Voltar \xE0 P\xE1gina Inicial",
     res_err_send: "Ocorreu um erro ao enviar. Por favor, confirme se inseriu a sua chave de acesso ou tente novamente.",
-    res_err_network: "Ocorreu um erro de liga\xE7\xE3o. Por favor, tente novamente ou contacte-nos por telefone."
+    res_err_network: "Ocorreu um erro de liga\xE7\xE3o. Por favor, tente novamente ou contacte-nos por telefone.",
+    res_privacy_note: 'Ao enviar este formul\xE1rio, os seus dados ser\xE3o tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="privacidade.html" class="underline hover:text-secondary transition">Pol\xEDtica de Privacidade</a>.',
+    // Privacy policy
+    priv_doc_title: "Pol\xEDtica de Privacidade | Peda\xE7os de Sonho",
+    priv_meta_description: "Pol\xEDtica de privacidade e informa\xE7\xE3o sobre o tratamento de dados pessoais no site Sereno Gatherings (Peda\xE7os de Sonho), em conformidade com o RGPD.",
+    priv_title: "Pol\xEDtica de Privacidade",
+    priv_updated: "\xDAltima atualiza\xE7\xE3o: outubro de 2026",
+    priv_intro: "A presente Pol\xEDtica de Privacidade descreve como a Peda\xE7os de Sonho \u2013 Actividades de Hotelaria e Turismo, Unipessoal Lda (\xABn\xF3s\xBB), que opera o espa\xE7o Sereno Gatherings, trata os dados pessoais dos visitantes e clientes do nosso website, em conformidade com o Regulamento Geral sobre a Prote\xE7\xE3o de Dados (RGPD) e a Lei n.\xBA 58/2019.",
+    priv_h1: "1. Respons\xE1vel pelo tratamento",
+    priv_p1: 'O respons\xE1vel pelo tratamento dos dados \xE9 a <strong>Peda\xE7os de Sonho \u2013 Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, NIF <strong>514259000</strong>, com sede na Rua V\xE1rzea da Cabeleira, Casais de Baixo, Quinta \xABO Ref\xFAgio\xBB, 2050-360 Azambuja. Marca comercial / espa\xE7o: Sereno Gatherings. Para quest\xF5es relacionadas com privacidade: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> \xB7 <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+    priv_h2: "2. Dados que recolhemos",
+    priv_p2: "Atrav\xE9s do formul\xE1rio de reservas/contacto podemos recolher: nome, endere\xE7o de email, n\xFAmero de telefone, data pretendida do evento, tipo de evento, turno, n\xFAmero estimado de adultos e crian\xE7as, extras selecionados e observa\xE7\xF5es que voluntariamente nos envie.",
+    priv_h3: "3. Finalidades e bases legais",
+    priv_p3: "Tratamos estes dados para: (a) responder a pedidos de disponibilidade e or\xE7amento e preparar propostas de reserva (base: dilig\xEAncias pr\xE9-contratuais / execu\xE7\xE3o de contrato, art. 6.\xBA, n.\xBA 1, al\xEDnea b) do RGPD); (b) contact\xE1-lo sobre o pedido e esclarecimentos relacionados (mesmo fundamento); (c) cumprir obriga\xE7\xF5es legais, quando aplic\xE1vel (art. 6.\xBA, n.\xBA 1, al\xEDnea c)). N\xE3o utilizamos os dados do formul\xE1rio para marketing sem o seu consentimento pr\xE9vio.",
+    priv_h4: "4. Destinat\xE1rios e subcontratantes",
+    priv_p4: "Os pedidos do formul\xE1rio s\xE3o enviados atrav\xE9s do servi\xE7o Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). Podem ainda carregar recursos de terceiros necess\xE1rios ao funcionamento do site (fontes, \xEDcones, CDN). O selo Zaask, quando apresentado, carrega conte\xFAdos do dom\xEDnio zaask.pt. Estes prestadores atuam como subcontratantes ou destinat\xE1rios na medida do necess\xE1rio \xE0 presta\xE7\xE3o do servi\xE7o.",
+    priv_h5: "5. Conserva\xE7\xE3o",
+    priv_p5: "Conservamos os dados dos pedidos de contacto/reserva pelo tempo necess\xE1rio para gerir o pedido e a eventual rela\xE7\xE3o contratual, e pelo prazo adicional exigido por obriga\xE7\xF5es legais ou para defesa de direitos. Pedidos sem seguimento s\xE3o normalmente eliminados ou anonimizados num prazo razo\xE1vel (indicativamente at\xE9 24 meses), salvo necessidade leg\xEDtima de conserva\xE7\xE3o mais longa.",
+    priv_h6: "6. Cookies e armazenamento local",
+    priv_p6: "N\xE3o utilizamos cookies de publicidade ou de an\xE1lise estat\xEDstica de terceiros. Guardamos apenas no armazenamento local do browser (localStorage) a prefer\xEAncia de idioma (PT/EN), para lembrar a sua escolha. Pode apagar este dado nas defini\xE7\xF5es do browser.",
+    priv_h7: "7. Os seus direitos",
+    priv_p7: 'Nos termos do RGPD, pode solicitar: acesso aos dados, retifica\xE7\xE3o, apagamento, limita\xE7\xE3o do tratamento, oposi\xE7\xE3o e portabilidade, quando aplic\xE1vel. Para exercer estes direitos, contacte-nos atrav\xE9s de <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a>. Tem ainda o direito de apresentar reclama\xE7\xE3o \xE0 Comiss\xE3o Nacional de Prote\xE7\xE3o de Dados (CNPD) \u2014 <a href="https://www.cnpd.pt" target="_blank" rel="noopener" class="text-primary underline">www.cnpd.pt</a>.',
+    priv_h8: "8. Seguran\xE7a e menores",
+    priv_p8: "Adotamos medidas t\xE9cnicas e organizativas adequadas para proteger os dados. O formul\xE1rio destina-se a adultos ou representantes legais que contactam em nome de um evento; n\xE3o solicitamos intencionalmente dados de menores para criar perfis.",
+    priv_h9: "9. Altera\xE7\xF5es",
+    priv_p9: "Podemos atualizar esta Pol\xEDtica de Privacidade. A vers\xE3o em vigor ser\xE1 sempre a publicada nesta p\xE1gina, com indica\xE7\xE3o da data de atualiza\xE7\xE3o."
   };
 
   // i18n/en.ts
@@ -240,6 +266,7 @@
     footer_copy: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings. All rights reserved.",
     footer_copy_short: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings.",
     footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja",
+    footer_privacy: "Privacy Policy",
     nav_back: "Back",
     nav_brand_back: "Sereno Gatherings \u2022 Back",
     gal_doc_title: "Gallery | Past Events \u2022 Peda\xE7os de Sonho",
@@ -328,7 +355,31 @@
     res_success_body: "Thank you for getting in touch. We received your availability request and will reply shortly.",
     res_success_home: "Back to Home",
     res_err_send: "Something went wrong. Please check your access key or try again.",
-    res_err_network: "A connection error occurred. Please try again or call us."
+    res_err_network: "A connection error occurred. Please try again or call us.",
+    res_privacy_note: 'By submitting this form, your data will be processed to respond to your availability request. See our <a href="privacidade.html" class="underline hover:text-secondary transition">Privacy Policy</a>.',
+    priv_doc_title: "Privacy Policy | Peda\xE7os de Sonho",
+    priv_meta_description: "Privacy policy and information on personal data processing on the Sereno Gatherings (Peda\xE7os de Sonho) website, in line with the GDPR.",
+    priv_title: "Privacy Policy",
+    priv_updated: "Last updated: October 2026",
+    priv_intro: "This Privacy Policy explains how Peda\xE7os de Sonho \u2013 Actividades de Hotelaria e Turismo, Unipessoal Lda (\u201Cwe\u201D), operating the Sereno Gatherings venue, process personal data of visitors and customers of our website, in accordance with the General Data Protection Regulation (GDPR) and Portuguese Law No. 58/2019.",
+    priv_h1: "1. Data controller",
+    priv_p1: 'The data controller is <strong>Peda\xE7os de Sonho \u2013 Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, tax ID (NIF) <strong>514259000</strong>, with registered office at Rua V\xE1rzea da Cabeleira, Casais de Baixo, Quinta \u201CO Ref\xFAgio\u201D, 2050-360 Azambuja. Trade name / venue: Sereno Gatherings. For privacy matters: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> \xB7 <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+    priv_h2: "2. Data we collect",
+    priv_p2: "Through the booking/contact form we may collect: name, email address, phone number, preferred event date, event type, time slot, estimated number of adults and children, selected extras, and any notes you choose to send.",
+    priv_h3: "3. Purposes and legal bases",
+    priv_p3: "We process this data to: (a) respond to availability and quote requests and prepare booking proposals (legal basis: steps prior to a contract / performance of a contract, GDPR Art. 6(1)(b)); (b) contact you about the request and related clarifications (same basis); (c) comply with legal obligations where applicable (Art. 6(1)(c)). We do not use form data for marketing without your prior consent.",
+    priv_h4: "4. Recipients and processors",
+    priv_p4: "Form submissions are sent via Web3Forms (https://web3forms.com), which processes the message and delivers it to our email. The website may be hosted on third-party infrastructure (e.g. Cloudflare). Third-party resources needed for the site to work (fonts, icons, CDN) may also load. The Zaask badge, when shown, loads content from zaask.pt. These providers act as processors or recipients only as needed to provide the service.",
+    priv_h5: "5. Retention",
+    priv_p5: "We keep contact/booking request data for as long as needed to handle the request and any contractual relationship, plus any longer period required by law or to defend legal claims. Requests with no follow-up are normally deleted or anonymised within a reasonable time (indicatively up to 24 months), unless a longer retention is legitimately required.",
+    priv_h6: "6. Cookies and local storage",
+    priv_p6: "We do not use advertising or third-party analytics cookies. We only store your language preference (PT/EN) in the browser\u2019s localStorage so we can remember your choice. You can delete this in your browser settings.",
+    priv_h7: "7. Your rights",
+    priv_p7: 'Under the GDPR you may request: access, rectification, erasure, restriction of processing, objection, and data portability where applicable. To exercise these rights, contact <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a>. You may also lodge a complaint with the Portuguese Data Protection Authority (CNPD) \u2014 <a href="https://www.cnpd.pt" target="_blank" rel="noopener" class="text-primary underline">www.cnpd.pt</a>.',
+    priv_h8: "8. Security and minors",
+    priv_p8: "We apply appropriate technical and organisational measures to protect data. The form is intended for adults or legal representatives contacting us about an event; we do not knowingly collect children\u2019s data to build profiles.",
+    priv_h9: "9. Changes",
+    priv_p9: "We may update this Privacy Policy. The version in force is always the one published on this page, with the update date indicated."
   };
 
   // i18n/runtime.ts

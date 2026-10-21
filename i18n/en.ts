@@ -93,6 +93,7 @@ export const en = {
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. All rights reserved.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
   footer_address: 'Sereno Gatherings, Casais de Baixo, Azambuja',
+  footer_privacy: 'Privacy Policy',
   nav_back: 'Back',
   nav_brand_back: 'Sereno Gatherings • Back',
 
@@ -197,4 +198,41 @@ export const en = {
     'Something went wrong. Please check your access key or try again.',
   res_err_network:
     'A connection error occurred. Please try again or call us.',
+  res_privacy_note:
+    'By submitting this form, your data will be processed to respond to your availability request. See our <a href="privacidade.html" class="underline hover:text-secondary transition">Privacy Policy</a>.',
+
+  priv_doc_title: 'Privacy Policy | Pedaços de Sonho',
+  priv_meta_description:
+    'Privacy policy and information on personal data processing on the Sereno Gatherings (Pedaços de Sonho) website, in line with the GDPR.',
+  priv_title: 'Privacy Policy',
+  priv_updated: 'Last updated: October 2026',
+  priv_intro:
+    'This Privacy Policy explains how Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda (“we”), operating the Sereno Gatherings venue, process personal data of visitors and customers of our website, in accordance with the General Data Protection Regulation (GDPR) and Portuguese Law No. 58/2019.',
+  priv_h1: '1. Data controller',
+  priv_p1:
+    'The data controller is <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, tax ID (NIF) <strong>514259000</strong>, with registered office at Rua Várzea da Cabeleira, Casais de Baixo, Quinta “O Refúgio”, 2050-360 Azambuja. Trade name / venue: Sereno Gatherings. For privacy matters: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+  priv_h2: '2. Data we collect',
+  priv_p2:
+    'Through the booking/contact form we may collect: name, email address, phone number, preferred event date, event type, time slot, estimated number of adults and children, selected extras, and any notes you choose to send.',
+  priv_h3: '3. Purposes and legal bases',
+  priv_p3:
+    'We process this data to: (a) respond to availability and quote requests and prepare booking proposals (legal basis: steps prior to a contract / performance of a contract, GDPR Art. 6(1)(b)); (b) contact you about the request and related clarifications (same basis); (c) comply with legal obligations where applicable (Art. 6(1)(c)). We do not use form data for marketing without your prior consent.',
+  priv_h4: '4. Recipients and processors',
+  priv_p4:
+    'Form submissions are sent via Web3Forms (https://web3forms.com), which processes the message and delivers it to our email. The website may be hosted on third-party infrastructure (e.g. Cloudflare). Third-party resources needed for the site to work (fonts, icons, CDN) may also load. The Zaask badge, when shown, loads content from zaask.pt. These providers act as processors or recipients only as needed to provide the service.',
+  priv_h5: '5. Retention',
+  priv_p5:
+    'We keep contact/booking request data for as long as needed to handle the request and any contractual relationship, plus any longer period required by law or to defend legal claims. Requests with no follow-up are normally deleted or anonymised within a reasonable time (indicatively up to 24 months), unless a longer retention is legitimately required.',
+  priv_h6: '6. Cookies and local storage',
+  priv_p6:
+    'We do not use advertising or third-party analytics cookies. We only store your language preference (PT/EN) in the browser’s localStorage so we can remember your choice. You can delete this in your browser settings.',
+  priv_h7: '7. Your rights',
+  priv_p7:
+    'Under the GDPR you may request: access, rectification, erasure, restriction of processing, objection, and data portability where applicable. To exercise these rights, contact <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a>. You may also lodge a complaint with the Portuguese Data Protection Authority (CNPD) — <a href="https://www.cnpd.pt" target="_blank" rel="noopener" class="text-primary underline">www.cnpd.pt</a>.',
+  priv_h8: '8. Security and minors',
+  priv_p8:
+    'We apply appropriate technical and organisational measures to protect data. The form is intended for adults or legal representatives contacting us about an event; we do not knowingly collect children’s data to build profiles.',
+  priv_h9: '9. Changes',
+  priv_p9:
+    'We may update this Privacy Policy. The version in force is always the one published on this page, with the update date indicated.',
 } satisfies Messages;

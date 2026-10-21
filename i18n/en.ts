@@ -225,7 +225,7 @@ export const en = {
     'We keep contact/booking request data for as long as needed to handle the request and any contractual relationship, plus any longer period required by law or to defend legal claims. Requests with no follow-up are normally deleted or anonymised within a reasonable time (indicatively up to 24 months), unless a longer retention is legitimately required.',
   priv_h6: '6. Cookies and local storage',
   priv_p6:
-    'We do not use advertising or third-party analytics cookies. We only store your language preference (PT/EN) in the browser’s localStorage so we can remember your choice. You can delete this in your browser settings.',
+    'We use Google Analytics 4 (Google Ireland / Google LLC) only if you accept analytics cookies in the site banner. This helps us understand page visits and aggregate site usage (measurement ID G-MXRFSDQ2DP). You can decline without affecting use of the site. We store in the browser’s localStorage your language preference (PT/EN) and your analytics consent choice. You can delete these in your browser settings or by clearing site storage.',
   priv_h7: '7. Your rights',
   priv_p7:
     'Under the GDPR you may request: access, rectification, erasure, restriction of processing, objection, and data portability where applicable. To exercise these rights, contact <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a>. You may also lodge a complaint with the Portuguese Data Protection Authority (CNPD) — <a href="https://www.cnpd.pt" target="_blank" rel="noopener" class="text-primary underline">www.cnpd.pt</a>.',

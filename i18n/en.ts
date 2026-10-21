@@ -103,8 +103,7 @@ export const en = {
   footer_contactos: 'Contact',
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. All rights reserved.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
-  footer_address:
-    'Rua Várzea da Cabeleira, Casais de Baixo, Quinta “O Refúgio”, 2050-360 Azambuja',
+  footer_address: 'Pedaços de Sonho, R. Várzea da Cabeleira, 2050-360, Azambuja',
   footer_privacy: 'Privacy Policy',
   nav_back: 'Back',
   nav_brand_back: 'Sereno Gatherings • Back',
@@ -223,7 +222,7 @@ export const en = {
     'This Privacy Policy explains how Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda (“we”), operating the Sereno Gatherings venue, process personal data of visitors and customers of our website, in accordance with the General Data Protection Regulation (GDPR) and Portuguese Law No. 58/2019.',
   priv_h1: '1. Data controller',
   priv_p1:
-    'The data controller is <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, tax ID (NIF) <strong>514259000</strong>, with registered office at Rua Várzea da Cabeleira, Casais de Baixo, Quinta “O Refúgio”, 2050-360 Azambuja. Trade name / venue: Sereno Gatherings. For privacy matters: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+    'The data controller is <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, tax ID (NIF) <strong>514259000</strong>, with registered office at Pedaços de Sonho, R. Várzea da Cabeleira, 2050-360, Azambuja. Trade name / venue: Sereno Gatherings. For privacy matters: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
   priv_h2: '2. Data we collect',
   priv_p2:
     'Through the booking/contact form we may collect: name, email address, phone number, preferred event date, event type, time slot, estimated number of adults and children, selected extras, and any notes you choose to send.',

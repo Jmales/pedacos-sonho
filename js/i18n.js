@@ -54,7 +54,7 @@
     card_other_title: "Outros Encontros",
     card_other_desc: "Bodas de prata, piqueniques familiares, noites de fados, grava\xE7\xF5es, workshops ou conv\xEDvios privados ao ar livre.",
     card_other_cta: 'Consultar Op\xE7\xF5es <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>',
-    card_other_alt: "Almo\xE7os e encontros familiares",
+    card_other_alt: "Lounge exterior e coffee bar no jardim",
     sob_consulta: "Sob Consulta",
     portfolio_cta: "Ver portf\xF3lio de eventos anteriores",
     // FAQ
@@ -126,7 +126,7 @@
     card_other_title: "Other Gatherings",
     card_other_desc: "Anniversaries, family picnics, fado evenings, shoots, workshops or private outdoor gatherings.",
     card_other_cta: 'See Options <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>',
-    card_other_alt: "Lunches and family gatherings",
+    card_other_alt: "Outdoor lounge and coffee bar in the garden",
     sob_consulta: "On Request",
     portfolio_cta: "Browse past events portfolio",
     faq_eyebrow: "Good to know",

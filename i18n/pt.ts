@@ -67,7 +67,7 @@ export const pt = {
   card_other_desc:
     'Bodas de prata, piqueniques familiares, noites de fados, gravações, workshops ou convívios privados ao ar livre.',
   card_other_cta: 'Consultar Opções <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>',
-  card_other_alt: 'Almoços e encontros familiares',
+  card_other_alt: 'Lounge exterior e coffee bar no jardim',
   sob_consulta: 'Sob Consulta',
   portfolio_cta: 'Ver portfólio de eventos anteriores',
 

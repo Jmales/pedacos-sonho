@@ -65,7 +65,7 @@ export const en = {
   card_other_desc:
     'Anniversaries, family picnics, fado evenings, shoots, workshops or private outdoor gatherings.',
   card_other_cta: 'See Options <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>',
-  card_other_alt: 'Lunches and family gatherings',
+  card_other_alt: 'Outdoor lounge and coffee bar in the garden',
   sob_consulta: 'On Request',
   portfolio_cta: 'Browse past events portfolio',
 

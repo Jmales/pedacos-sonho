@@ -2,6 +2,7 @@
   "name": "pedacos-de-sonho",
   "private": true,
   "scripts": {
+    "build": "npm run build:i18n",
     "build:i18n": "esbuild i18n/main.ts --bundle --format=iife --outfile=js/i18n.js --target=es2020",
     "check:i18n": "tsc --noEmit && node scripts/check-i18n.mjs",
     "i18n": "npm run build:i18n && npm run check:i18n"

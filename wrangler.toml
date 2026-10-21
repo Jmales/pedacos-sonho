@@ -1,0 +1,6 @@
+# Cloudflare Workers Static Assets — no interactive prompts
+name = "pedacos-sonho"
+compatibility_date = "2025-10-01"
+
+[assets]
+directory = "."

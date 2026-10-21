@@ -1,0 +1,13 @@
+{
+  "name": "pedacos-de-sonho",
+  "private": true,
+  "scripts": {
+    "build:i18n": "esbuild i18n/main.ts --bundle --format=iife --outfile=js/i18n.js --target=es2020",
+    "check:i18n": "tsc --noEmit && node scripts/check-i18n.mjs",
+    "i18n": "npm run build:i18n && npm run check:i18n"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}

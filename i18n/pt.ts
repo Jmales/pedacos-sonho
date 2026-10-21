@@ -109,7 +109,7 @@ export const pt = {
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. Todos os direitos reservados.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
   footer_address:
-    'Rua Várzea da Cabeleira, Casais de Baixo, Quinta «O Refúgio», 2050-360 Azambuja',
+    'Pedaços de Sonho, R. Várzea da Cabeleira, 2050-360, Azambuja',
   footer_privacy: 'Política de Privacidade',
   nav_back: 'Voltar',
   nav_brand_back: 'Sereno Gatherings • Voltar',
@@ -231,7 +231,7 @@ export const pt = {
     'A presente Política de Privacidade descreve como a Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda («nós»), que opera o espaço Sereno Gatherings, trata os dados pessoais dos visitantes e clientes do nosso website, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e a Lei n.º 58/2019.',
   priv_h1: '1. Responsável pelo tratamento',
   priv_p1:
-    'O responsável pelo tratamento dos dados é a <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, NIF <strong>514259000</strong>, com sede na Rua Várzea da Cabeleira, Casais de Baixo, Quinta «O Refúgio», 2050-360 Azambuja. Marca comercial / espaço: Sereno Gatherings. Para questões relacionadas com privacidade: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
+    'O responsável pelo tratamento dos dados é a <strong>Pedaços de Sonho – Actividades de Hotelaria e Turismo, Unipessoal Lda</strong>, NIF <strong>514259000</strong>, com sede na Pedaços de Sonho, R. Várzea da Cabeleira, 2050-360, Azambuja. Marca comercial / espaço: Sereno Gatherings. Para questões relacionadas com privacidade: <a href="mailto:geral@serenolisbon.com" class="text-primary underline">geral@serenolisbon.com</a> · <a href="tel:+351910086330" class="text-primary underline">910 086 330</a>.',
   priv_h2: '2. Dados que recolhemos',
   priv_p2:
     'Através do formulário de reservas/contacto podemos recolher: nome, endereço de email, número de telefone, data pretendida do evento, tipo de evento, turno, número estimado de adultos e crianças, extras selecionados e observações que voluntariamente nos envie.',

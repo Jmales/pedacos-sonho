@@ -16,6 +16,7 @@
     nav_reservar: "Reservar",
     nav_inicio: "In\xEDcio",
     nav_reservas_short: "Reservas & Pre\xE7os",
+    nav_reservas_btn: "Reservas",
     // Hero
     hero_eyebrow: "Sereno Gatherings \u2022 Grande Lisboa & Ribatejo",
     hero_title: "Natureza, espa\xE7o e <br/>muita imagina\xE7\xE3o",
@@ -75,7 +76,99 @@
     footer_nav: "Navega\xE7\xE3o",
     footer_contactos: "Contactos",
     footer_copy: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings. Todos os direitos reservados.",
-    footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja"
+    footer_copy_short: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings.",
+    footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja",
+    nav_back: "Voltar",
+    nav_brand_back: "Sereno Gatherings \u2022 Voltar",
+    // Gallery
+    gal_doc_title: "Galeria | Eventos Anteriores \u2022 Peda\xE7os de Sonho",
+    gal_meta_description: "Portf\xF3lio de eventos anteriores na Sereno Gatherings (Peda\xE7os de Sonho): casamentos no pinhal, celebra\xE7\xF5es, team buildings e noites especiais em Azambuja.",
+    gal_eyebrow: "Portf\xF3lio",
+    gal_title: "Eventos Anteriores",
+    gal_sub: "Casamentos, celebra\xE7\xF5es, team buildings e momentos especiais vividos na Sereno Gatherings.",
+    gal_filter_all: "Todos",
+    gal_filter_weddings: "Casamentos",
+    gal_filter_space: "O Espa\xE7o",
+    gal_more_title: "Quer ver mais momentos?",
+    gal_more_sub: "Siga-nos no Instagram para novidades, bastidores e inspira\xE7\xF5es de eventos.",
+    gal_aria_close: "Fechar",
+    gal_aria_prev: "Anterior",
+    gal_aria_next: "Seguinte",
+    // Reservas
+    res_doc_title: "Pre\xE7os e Reservas | Quinta para Eventos em Lisboa e Azambuja",
+    res_meta_description: "Simulador de or\xE7amento e pedidos de reserva na Sereno Gatherings (Peda\xE7os de Sonho). Valores de lan\xE7amento 2026 para festas infantis, conv\xEDvios, casamentos e empresas.",
+    res_header_title: "Simule e Reserve o seu Evento",
+    res_header_sub: "Tabela de Lan\xE7amento 2026 \u2022 Sereno Gatherings (Lisboa / Azambuja)",
+    res_turnos_title: "Aluguer por Turnos (3 Horas)",
+    res_turnos_sub: "Festas Infantis, Encontros e Eventos Corporate.",
+    res_morning: "Manh\xE3 (09:30 - 12:30)",
+    res_extra_hour: "Hora extra: 35\u20AC (Semana) / 45\u20AC (Fim-de-semana)",
+    res_weekday: "2\xAA a 6\xAA",
+    res_weekend: "Fim-de-semana",
+    res_afternoon: "Tarde (14:30 - 17:30)",
+    res_evening: "Fim de Tarde (18:30 - 21:30)",
+    res_deposit: "Cau\xE7\xE3o reembols\xE1vel: 150 \u20AC. Confirma\xE7\xE3o de data mediante sinal de 50%.",
+    res_fullday_title: "Aluguer 6h (Dia Completo)",
+    res_fullday_sub: "Exclusividade do espa\xE7o para o dia.",
+    res_low_season: "\xC9poca baixa",
+    res_high_season: "\xC9poca alta",
+    res_night_note: "<strong>Valor noturno:</strong> sob consulta e disponibilidade, consoante o tipo de evento.",
+    res_wed_box_title: "Casamentos & Batizados",
+    res_wed_box_body: "Pela natureza personalizada destas datas (dura\xE7\xE3o alargada, cerim\xF3nia no jardim e apoio \xE0 montagem), os or\xE7amentos s\xE3o preparados caso a caso com exclusividade total do espa\xE7o.",
+    res_packs_title: "Packs Sugeridos",
+    res_pack_quinta_title: "Pack Quinta",
+    res_pack_quinta_desc: "Espa\xE7o 3h + Experi\xEAncia com Animais (at\xE9 10 crian\xE7as)",
+    res_pack_quinta_price: 'Desde 155 \u20AC <span class="text-xs font-normal opacity-70">(Semana)</span> / 215 \u20AC <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span>',
+    res_pack_celeb_title: "Pack Celebra\xE7\xE3o",
+    res_pack_celeb_desc: "Espa\xE7o 3h + Animais + 1 Anima\xE7\xE3o \xE0 escolha",
+    res_pack_celeb_price: 'Desde 195 \u20AC <span class="text-xs font-normal opacity-70">(Semana)</span> / 255 \u20AC <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span>',
+    res_form_title: "Configure o seu Pedido",
+    res_form_sub: "Selecione o tipo de evento e os detalhes. N\xE3o requer pagamento imediato.",
+    res_section_contacts: "1. Os Seus Contactos",
+    res_ph_name: "Nome Completo *",
+    res_ph_email: "Email *",
+    res_ph_phone: "Contacto Telef\xF3nico *",
+    res_section_event: "2. Detalhes do Evento",
+    res_label_date: "Data Pretendida *",
+    res_label_type: "Tipo de Evento *",
+    res_opt_select: "Selecione uma op\xE7\xE3o...",
+    res_opt_kids: "Festas Infantis",
+    res_opt_corp: "Empresas & Corporate",
+    res_opt_wed: "Casamentos e Batizados (Sob Consulta)",
+    res_opt_other: "Outros",
+    res_label_slot: "Turno Pretendido",
+    res_opt_morning: "Manh\xE3 (09:30 - 12:30)",
+    res_opt_afternoon: "Tarde (14:30 - 17:30)",
+    res_opt_evening: "Fim de Tarde/Noite (18:30 - 21:30) \u2014 sob consulta",
+    res_opt_fullday: "Dia Completo 6h (350\u20AC baixa / 425\u20AC alta)",
+    res_opt_custom: "Hor\xE1rio Personalizado (Sob Consulta)",
+    res_label_adults: "N\xBA Adultos",
+    res_label_kids: "N\xBA Crian\xE7as",
+    res_ph_adults: "Ex: 25",
+    res_ph_kids: "Ex: 12",
+    res_wed_msg_title: "Celebra\xE7\xE3o Exclusiva & Personalizada",
+    res_wed_msg_body: "Para casamentos e batizados n\xE3o aplicamos extras pr\xE9-definidos. Criamos uma proposta exclusiva e adaptada \xE0 dimens\xE3o do vosso evento. Por favor, partilhe no campo de <strong>Observa\xE7\xF5es</strong> o que tem em mente (n\xFAmero estimado de convidados, se prev\xEA cerim\xF3nia no jardim, catering pretendido ou necessidades especiais).",
+    res_section_extras: "3. Extras Dispon\xEDveis (Opcional)",
+    res_extra_farm: "Experi\xEAncia Quinta Pedag\xF3gica",
+    res_extra_farm_price: "+45 \u20AC (at\xE9 10 crian\xE7as) \xB7 +20 \u20AC a cada crian\xE7a adicional",
+    res_extra_inflatable: "Insufl\xE1vel",
+    res_extra_inflatable_price: "Desde 75 \u20AC por evento",
+    res_extra_anim: "Pinturas Faciais / Animador / Ca\xE7a ao Tesouro",
+    res_extra_anim_price: "Desde 60 \u20AC por hora ou sess\xE3o",
+    res_extra_decor: "Decora\xE7\xE3o / Mesa Tem\xE1tica",
+    res_extra_decor_price: "Desde 60 \u20AC por evento",
+    res_section_notes: "4. Observa\xE7\xF5es & Pedidos Especiais",
+    res_ph_obs: "Passeio de p\xF3nei, detalhes sobre cerim\xF3nia ou catering...",
+    res_ph_obs_wed: "Conte-nos sobre a vossa vis\xE3o: n\xFAmero previsto de convidados, inten\xE7\xE3o de realizar cerim\xF3nia no jardim, prefer\xEAncias de hor\xE1rio ou catering...",
+    res_ph_obs_default: "Passeio de p\xF3nei, detalhes adicionais ou pedidos especiais...",
+    res_submit: 'Enviar Pedido de Disponibilidade <i class="fa-solid fa-paper-plane text-sm"></i>',
+    res_submit_note: "Pode trazer a sua pr\xF3pria comida e bolo. Entraremos em contacto para valida\xE7\xE3o final da data.",
+    res_sending: 'A enviar pedido... <i class="fa-solid fa-spinner fa-spin ml-2"></i>',
+    res_success_title: "Pedido Enviado com Sucesso!",
+    res_success_body: "Obrigado pelo seu contacto. Recebemos o seu pedido de disponibilidade e entraremos em contacto muito brevemente.",
+    res_success_home: "Voltar \xE0 P\xE1gina Inicial",
+    res_err_send: "Ocorreu um erro ao enviar. Por favor, confirme se inseriu a sua chave de acesso ou tente novamente.",
+    res_err_network: "Ocorreu um erro de liga\xE7\xE3o. Por favor, tente novamente ou contacte-nos por telefone."
   };
 
   // i18n/en.ts
@@ -92,6 +185,7 @@
     nav_reservar: "Book",
     nav_inicio: "Home",
     nav_reservas_short: "Bookings & Prices",
+    nav_reservas_btn: "Bookings",
     hero_eyebrow: "Sereno Gatherings \u2022 Greater Lisbon & Ribatejo",
     hero_title: "Nature, space and <br/>plenty of imagination",
     hero_sub: "Just 40 minutes from Lisbon, discover the perfect setting for soulful weddings, kids\u2019 birthdays and memorable corporate gatherings.",
@@ -144,7 +238,97 @@
     footer_nav: "Navigation",
     footer_contactos: "Contact",
     footer_copy: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings. All rights reserved.",
-    footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja"
+    footer_copy_short: "\xA9 2026 Peda\xE7os de Sonho - Sereno Gatherings.",
+    footer_address: "Sereno Gatherings, Casais de Baixo, Azambuja",
+    nav_back: "Back",
+    nav_brand_back: "Sereno Gatherings \u2022 Back",
+    gal_doc_title: "Gallery | Past Events \u2022 Peda\xE7os de Sonho",
+    gal_meta_description: "Portfolio of past events at Sereno Gatherings (Peda\xE7os de Sonho): pine grove weddings, celebrations, team buildings and special evenings in Azambuja.",
+    gal_eyebrow: "Portfolio",
+    gal_title: "Past Events",
+    gal_sub: "Weddings, celebrations, team buildings and special moments at Sereno Gatherings.",
+    gal_filter_all: "All",
+    gal_filter_weddings: "Weddings",
+    gal_filter_space: "The Venue",
+    gal_more_title: "Want to see more moments?",
+    gal_more_sub: "Follow us on Instagram for updates, behind-the-scenes and event inspiration.",
+    gal_aria_close: "Close",
+    gal_aria_prev: "Previous",
+    gal_aria_next: "Next",
+    res_doc_title: "Prices & Bookings | Event Venue in Lisbon and Azambuja",
+    res_meta_description: "Quote simulator and booking requests at Sereno Gatherings (Peda\xE7os de Sonho). 2026 launch rates for kids\u2019 parties, gatherings, weddings and corporate events.",
+    res_header_title: "Simulate and Book Your Event",
+    res_header_sub: "2026 Launch Rates \u2022 Sereno Gatherings (Lisbon / Azambuja)",
+    res_turnos_title: "Slot Rental (3 Hours)",
+    res_turnos_sub: "Kids\u2019 parties, gatherings and corporate events.",
+    res_morning: "Morning (09:30 - 12:30)",
+    res_extra_hour: "Extra hour: \u20AC35 (weekday) / \u20AC45 (weekend)",
+    res_weekday: "Mon\u2013Fri",
+    res_weekend: "Weekend",
+    res_afternoon: "Afternoon (14:30 - 17:30)",
+    res_evening: "Late afternoon (18:30 - 21:30)",
+    res_deposit: "Refundable deposit: \u20AC150. Date confirmed with a 50% deposit.",
+    res_fullday_title: "6h Rental (Full Day)",
+    res_fullday_sub: "Exclusive use of the venue for the day.",
+    res_low_season: "Low season",
+    res_high_season: "High season",
+    res_night_note: "<strong>Evening rate:</strong> on request and subject to availability, depending on the event type.",
+    res_wed_box_title: "Weddings & Christenings",
+    res_wed_box_body: "Because these dates are highly personalised (longer duration, garden ceremony and setup support), quotes are prepared case by case with full exclusive use of the venue.",
+    res_packs_title: "Suggested Packs",
+    res_pack_quinta_title: "Farm Pack",
+    res_pack_quinta_desc: "3h venue + animal experience (up to 10 children)",
+    res_pack_quinta_price: 'From \u20AC155 <span class="text-xs font-normal opacity-70">(weekday)</span> / \u20AC215 <span class="text-xs font-normal opacity-70">(weekend)</span>',
+    res_pack_celeb_title: "Celebration Pack",
+    res_pack_celeb_desc: "3h venue + animals + 1 activity of your choice",
+    res_pack_celeb_price: 'From \u20AC195 <span class="text-xs font-normal opacity-70">(weekday)</span> / \u20AC255 <span class="text-xs font-normal opacity-70">(weekend)</span>',
+    res_form_title: "Configure Your Request",
+    res_form_sub: "Select the event type and details. No payment required now.",
+    res_section_contacts: "1. Your Contacts",
+    res_ph_name: "Full name *",
+    res_ph_email: "Email *",
+    res_ph_phone: "Phone number *",
+    res_section_event: "2. Event Details",
+    res_label_date: "Preferred date *",
+    res_label_type: "Event type *",
+    res_opt_select: "Select an option...",
+    res_opt_kids: "Kids\u2019 parties",
+    res_opt_corp: "Corporate events",
+    res_opt_wed: "Weddings & christenings (on request)",
+    res_opt_other: "Other",
+    res_label_slot: "Preferred slot",
+    res_opt_morning: "Morning (09:30 - 12:30)",
+    res_opt_afternoon: "Afternoon (14:30 - 17:30)",
+    res_opt_evening: "Late afternoon / evening (18:30 - 21:30) \u2014 on request",
+    res_opt_fullday: "Full day 6h (\u20AC350 low / \u20AC425 high)",
+    res_opt_custom: "Custom schedule (on request)",
+    res_label_adults: "No. of adults",
+    res_label_kids: "No. of children",
+    res_ph_adults: "e.g. 25",
+    res_ph_kids: "e.g. 12",
+    res_wed_msg_title: "Exclusive & Personalised Celebration",
+    res_wed_msg_body: "For weddings and christenings we do not apply preset extras. We create an exclusive proposal tailored to your event. Please share in <strong>Notes</strong> what you have in mind (estimated guests, garden ceremony, catering or special needs).",
+    res_section_extras: "3. Optional Extras",
+    res_extra_farm: "Farm experience",
+    res_extra_farm_price: "+\u20AC45 (up to 10 children) \xB7 +\u20AC20 per extra child",
+    res_extra_inflatable: "Inflatable",
+    res_extra_inflatable_price: "From \u20AC75 per event",
+    res_extra_anim: "Face painting / entertainer / treasure hunt",
+    res_extra_anim_price: "From \u20AC60 per hour or session",
+    res_extra_decor: "Decoration / themed table",
+    res_extra_decor_price: "From \u20AC60 per event",
+    res_section_notes: "4. Notes & Special Requests",
+    res_ph_obs: "Pony ride, ceremony or catering details...",
+    res_ph_obs_wed: "Tell us your vision: estimated guests, garden ceremony plans, preferred schedule or catering...",
+    res_ph_obs_default: "Pony ride, extra details or special requests...",
+    res_submit: 'Send Availability Request <i class="fa-solid fa-paper-plane text-sm"></i>',
+    res_submit_note: "You may bring your own food and cake. We will contact you to confirm the date.",
+    res_sending: 'Sending request... <i class="fa-solid fa-spinner fa-spin ml-2"></i>',
+    res_success_title: "Request Sent Successfully!",
+    res_success_body: "Thank you for getting in touch. We received your availability request and will reply shortly.",
+    res_success_home: "Back to Home",
+    res_err_send: "Something went wrong. Please check your access key or try again.",
+    res_err_network: "A connection error occurred. Please try again or call us."
   };
 
   // i18n/runtime.ts
@@ -156,7 +340,16 @@
     console.warn(`[i18n] Missing key: ${key}`);
     return null;
   }
+  var currentLang = "pt";
+  function getLang() {
+    return currentLang;
+  }
+  function translate(key) {
+    const dict = dictionaries[currentLang] ?? dictionaries.pt;
+    return t(dict, key) ?? key;
+  }
   function setLanguage(lang) {
+    currentLang = lang;
     const dict = dictionaries[lang] ?? dictionaries.pt;
     document.documentElement.lang = lang === "en" ? "en" : "pt-PT";
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -179,6 +372,7 @@
       btn.classList.toggle("text-gray-500", !active);
     });
     localStorage.setItem(STORAGE_KEY, lang);
+    document.dispatchEvent(new CustomEvent("pds:langchange", { detail: { lang } }));
   }
   function initI18n() {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -190,6 +384,7 @@
       });
     });
     setLanguage(lang);
+    window.pdsI18n = { t: translate, getLang, setLanguage };
   }
 
   // i18n/main.ts

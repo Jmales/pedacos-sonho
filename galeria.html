@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria | Eventos Anteriores • Pedaços de Sonho</title>
-    <meta name="description" content="Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.">
+    <title data-i18n="gal_doc_title">Galeria | Eventos Anteriores • Pedaços de Sonho</title>
+    <meta name="description" data-i18n="gal_meta_description" data-i18n-attr="content" content="Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍃</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -44,6 +44,10 @@
         #lightbox.active {
             display: flex;
         }
+        .lang-btn.active {
+            color: #5B6F55;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
@@ -59,31 +63,43 @@
                     </div>
                 </a>
                 <div class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html#espaco" class="text-gray-700 hover:text-primary transition font-medium text-sm">O Espaço</a>
-                    <a href="index.html#servicos" class="text-gray-700 hover:text-primary transition font-medium text-sm">Eventos</a>
-                    <a href="galeria.html" class="text-primary font-semibold text-sm">Galeria</a>
-                    <a href="index.html#contactos" class="text-gray-700 hover:text-primary transition font-medium text-sm">Contactos</a>
-                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm">Reservas</a>
+                    <a href="index.html#espaco" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_espaco">O Espaço</a>
+                    <a href="index.html#servicos" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_eventos">Eventos</a>
+                    <a href="galeria.html" class="text-primary font-semibold text-sm" data-i18n="nav_galeria">Galeria</a>
+                    <div class="flex items-center text-xs font-semibold tracking-wide border border-gray-200 rounded-full px-1 py-0.5">
+                        <button type="button" class="lang-btn active px-1.5" data-lang="pt" aria-label="Português">PT</button>
+                        <span class="text-gray-300">|</span>
+                        <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en" aria-label="English">EN</button>
+                    </div>
+                    <a href="index.html#contactos" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_contactos">Contactos</a>
+                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm" data-i18n="nav_reservas_btn">Reservas</a>
                 </div>
-                <a href="index.html" class="md:hidden text-primary text-sm font-medium"><i class="fa-solid fa-arrow-left mr-1"></i> Início</a>
+                <div class="md:hidden flex items-center gap-3">
+                    <div class="flex items-center text-xs font-semibold tracking-wide border border-gray-200 rounded-full px-1 py-0.5">
+                        <button type="button" class="lang-btn active px-1.5" data-lang="pt">PT</button>
+                        <span class="text-gray-300">|</span>
+                        <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en">EN</button>
+                    </div>
+                    <a href="index.html" class="text-primary text-sm font-medium"><i class="fa-solid fa-arrow-left mr-1"></i> <span data-i18n="nav_inicio">Início</span></a>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="header-bg py-16 text-center text-white">
         <div class="max-w-3xl mx-auto px-4">
-            <span class="text-secondary font-semibold tracking-wider uppercase text-xs mb-3 block">Portfólio</span>
-            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-4">Eventos Anteriores</h2>
-            <p class="text-sm md:text-base text-gray-100 font-light max-w-xl mx-auto">Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.</p>
+            <span class="text-secondary font-semibold tracking-wider uppercase text-xs mb-3 block" data-i18n="gal_eyebrow">Portfólio</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-4" data-i18n="gal_title">Eventos Anteriores</h2>
+            <p class="text-sm md:text-base text-gray-100 font-light max-w-xl mx-auto" data-i18n="gal_sub">Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.</p>
         </div>
     </div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full">
         <!-- Filters -->
         <div class="flex flex-wrap justify-center gap-2 mb-10">
-            <button type="button" data-filter="all" class="filter-btn active bg-primary text-white px-5 py-2 rounded-full text-sm font-medium transition">Todos</button>
-            <button type="button" data-filter="casamentos" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200">Casamentos</button>
-            <button type="button" data-filter="espaco" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200">O Espaço</button>
+            <button type="button" data-filter="all" class="filter-btn active bg-primary text-white px-5 py-2 rounded-full text-sm font-medium transition" data-i18n="gal_filter_all">Todos</button>
+            <button type="button" data-filter="casamentos" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200" data-i18n="gal_filter_weddings">Casamentos</button>
+            <button type="button" data-filter="espaco" class="filter-btn bg-white text-gray-700 hover:bg-primary/10 px-5 py-2 rounded-full text-sm font-medium transition border border-gray-200" data-i18n="gal_filter_space">O Espaço</button>
         </div>
 
         <div id="gallery-grid" class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
@@ -216,8 +232,8 @@
         </div>
 
         <div class="mt-16 text-center bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-            <h3 class="font-serif text-2xl font-bold text-primary mb-3">Quer ver mais momentos?</h3>
-            <p class="text-gray-600 text-sm mb-6 max-w-md mx-auto">Siga-nos no Instagram para novidades, bastidores e inspirações de eventos.</p>
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3" data-i18n="gal_more_title">Quer ver mais momentos?</h3>
+            <p class="text-gray-600 text-sm mb-6 max-w-md mx-auto" data-i18n="gal_more_sub">Siga-nos no Instagram para novidades, bastidores e inspirações de eventos.</p>
             <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition shadow-md">
                 <i class="fa-brands fa-instagram text-lg"></i> @pedacosdesonho.azambuja
             </a>
@@ -226,24 +242,25 @@
 
     <footer class="bg-dark text-gray-400 py-8 mt-auto">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-            <p>&copy; 2026 Pedaços de Sonho - Sereno Gatherings.</p>
+            <p data-i18n="footer_copy_short">&copy; 2026 Pedaços de Sonho - Sereno Gatherings.</p>
             <div class="flex gap-4 items-center">
-                <a href="index.html" class="hover:text-secondary transition">Início</a>
-                <a href="index.html#contactos" class="hover:text-secondary transition">Contactos</a>
+                <a href="index.html" class="hover:text-secondary transition" data-i18n="nav_inicio">Início</a>
+                <a href="index.html#contactos" class="hover:text-secondary transition" data-i18n="nav_contactos">Contactos</a>
                 <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="hover:text-secondary transition text-lg" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="reservas.html" class="hover:text-secondary transition">Reservas</a>
+                <a href="reservas.html" class="hover:text-secondary transition" data-i18n="nav_reservas_btn">Reservas</a>
             </div>
         </div>
     </footer>
 
     <!-- Lightbox -->
     <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 items-center justify-center p-4" role="dialog" aria-modal="true">
-        <button type="button" id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl hover:text-secondary transition" aria-label="Fechar">&times;</button>
-        <button type="button" id="lightbox-prev" class="absolute left-2 md:left-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl hover:text-secondary transition" aria-label="Fechar" data-i18n="gal_aria_close" data-i18n-attr="aria-label">&times;</button>
+        <button type="button" id="lightbox-prev" class="absolute left-2 md:left-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Anterior" data-i18n="gal_aria_prev" data-i18n-attr="aria-label"><i class="fa-solid fa-chevron-left"></i></button>
         <img id="lightbox-img" src="" alt="" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
-        <button type="button" id="lightbox-next" class="absolute right-2 md:right-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+        <button type="button" id="lightbox-next" class="absolute right-2 md:right-6 text-white text-3xl hover:text-secondary transition px-2" aria-label="Seguinte" data-i18n="gal_aria_next" data-i18n-attr="aria-label"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
+    <script src="js/i18n.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const items = [...document.querySelectorAll('.gallery-item')];

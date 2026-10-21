@@ -14,7 +14,19 @@ function t(dict: Messages, key: string | null): string | null {
   return null;
 }
 
+let currentLang: Lang = 'pt';
+
+export function getLang(): Lang {
+  return currentLang;
+}
+
+export function translate(key: string): string {
+  const dict = dictionaries[currentLang] ?? dictionaries.pt;
+  return t(dict, key) ?? key;
+}
+
 export function setLanguage(lang: Lang): void {
+  currentLang = lang;
   const dict = dictionaries[lang] ?? dictionaries.pt;
   document.documentElement.lang = lang === 'en' ? 'en' : 'pt-PT';
 
@@ -42,6 +54,7 @@ export function setLanguage(lang: Lang): void {
   });
 
   localStorage.setItem(STORAGE_KEY, lang);
+  document.dispatchEvent(new CustomEvent('pds:langchange', { detail: { lang } }));
 }
 
 export function initI18n(): void {
@@ -56,4 +69,16 @@ export function initI18n(): void {
   });
 
   setLanguage(lang);
+
+  window.pdsI18n = { t: translate, getLang, setLanguage };
+}
+
+declare global {
+  interface Window {
+    pdsI18n: {
+      t: (key: string) => string;
+      getLang: () => Lang;
+      setLanguage: (lang: Lang) => void;
+    };
+  }
 }

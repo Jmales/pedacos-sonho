@@ -17,6 +17,7 @@ export const pt = {
   nav_reservar: 'Reservar',
   nav_inicio: 'Início',
   nav_reservas_short: 'Reservas & Preços',
+  nav_reservas_btn: 'Reservas',
 
   // Hero
   hero_eyebrow: 'Sereno Gatherings • Grande Lisboa & Ribatejo',
@@ -95,7 +96,114 @@ export const pt = {
   footer_nav: 'Navegação',
   footer_contactos: 'Contactos',
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. Todos os direitos reservados.',
+  footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
   footer_address: 'Sereno Gatherings, Casais de Baixo, Azambuja',
+  nav_back: 'Voltar',
+  nav_brand_back: 'Sereno Gatherings • Voltar',
+
+  // Gallery
+  gal_doc_title: 'Galeria | Eventos Anteriores • Pedaços de Sonho',
+  gal_meta_description:
+    'Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.',
+  gal_eyebrow: 'Portfólio',
+  gal_title: 'Eventos Anteriores',
+  gal_sub:
+    'Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.',
+  gal_filter_all: 'Todos',
+  gal_filter_weddings: 'Casamentos',
+  gal_filter_space: 'O Espaço',
+  gal_more_title: 'Quer ver mais momentos?',
+  gal_more_sub: 'Siga-nos no Instagram para novidades, bastidores e inspirações de eventos.',
+  gal_aria_close: 'Fechar',
+  gal_aria_prev: 'Anterior',
+  gal_aria_next: 'Seguinte',
+
+  // Reservas
+  res_doc_title: 'Preços e Reservas | Quinta para Eventos em Lisboa e Azambuja',
+  res_meta_description:
+    'Simulador de orçamento e pedidos de reserva na Sereno Gatherings (Pedaços de Sonho). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.',
+  res_header_title: 'Simule e Reserve o seu Evento',
+  res_header_sub: 'Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa / Azambuja)',
+  res_turnos_title: 'Aluguer por Turnos (3 Horas)',
+  res_turnos_sub: 'Festas Infantis, Encontros e Eventos Corporate.',
+  res_morning: 'Manhã (09:30 - 12:30)',
+  res_extra_hour: 'Hora extra: 35€ (Semana) / 45€ (Fim-de-semana)',
+  res_weekday: '2ª a 6ª',
+  res_weekend: 'Fim-de-semana',
+  res_afternoon: 'Tarde (14:30 - 17:30)',
+  res_evening: 'Fim de Tarde (18:30 - 21:30)',
+  res_deposit: 'Caução reembolsável: 150 €. Confirmação de data mediante sinal de 50%.',
+  res_fullday_title: 'Aluguer 6h (Dia Completo)',
+  res_fullday_sub: 'Exclusividade do espaço para o dia.',
+  res_low_season: 'Época baixa',
+  res_high_season: 'Época alta',
+  res_night_note:
+    '<strong>Valor noturno:</strong> sob consulta e disponibilidade, consoante o tipo de evento.',
+  res_wed_box_title: 'Casamentos & Batizados',
+  res_wed_box_body:
+    'Pela natureza personalizada destas datas (duração alargada, cerimónia no jardim e apoio à montagem), os orçamentos são preparados caso a caso com exclusividade total do espaço.',
+  res_packs_title: 'Packs Sugeridos',
+  res_pack_quinta_title: 'Pack Quinta',
+  res_pack_quinta_desc: 'Espaço 3h + Experiência com Animais (até 10 crianças)',
+  res_pack_quinta_price:
+    'Desde 155 € <span class="text-xs font-normal opacity-70">(Semana)</span> / 215 € <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span>',
+  res_pack_celeb_title: 'Pack Celebração',
+  res_pack_celeb_desc: 'Espaço 3h + Animais + 1 Animação à escolha',
+  res_pack_celeb_price:
+    'Desde 195 € <span class="text-xs font-normal opacity-70">(Semana)</span> / 255 € <span class="text-xs font-normal opacity-70">(Fim-de-semana)</span>',
+  res_form_title: 'Configure o seu Pedido',
+  res_form_sub: 'Selecione o tipo de evento e os detalhes. Não requer pagamento imediato.',
+  res_section_contacts: '1. Os Seus Contactos',
+  res_ph_name: 'Nome Completo *',
+  res_ph_email: 'Email *',
+  res_ph_phone: 'Contacto Telefónico *',
+  res_section_event: '2. Detalhes do Evento',
+  res_label_date: 'Data Pretendida *',
+  res_label_type: 'Tipo de Evento *',
+  res_opt_select: 'Selecione uma opção...',
+  res_opt_kids: 'Festas Infantis',
+  res_opt_corp: 'Empresas & Corporate',
+  res_opt_wed: 'Casamentos e Batizados (Sob Consulta)',
+  res_opt_other: 'Outros',
+  res_label_slot: 'Turno Pretendido',
+  res_opt_morning: 'Manhã (09:30 - 12:30)',
+  res_opt_afternoon: 'Tarde (14:30 - 17:30)',
+  res_opt_evening: 'Fim de Tarde/Noite (18:30 - 21:30) — sob consulta',
+  res_opt_fullday: 'Dia Completo 6h (350€ baixa / 425€ alta)',
+  res_opt_custom: 'Horário Personalizado (Sob Consulta)',
+  res_label_adults: 'Nº Adultos',
+  res_label_kids: 'Nº Crianças',
+  res_ph_adults: 'Ex: 25',
+  res_ph_kids: 'Ex: 12',
+  res_wed_msg_title: 'Celebração Exclusiva & Personalizada',
+  res_wed_msg_body:
+    'Para casamentos e batizados não aplicamos extras pré-definidos. Criamos uma proposta exclusiva e adaptada à dimensão do vosso evento. Por favor, partilhe no campo de <strong>Observações</strong> o que tem em mente (número estimado de convidados, se prevê cerimónia no jardim, catering pretendido ou necessidades especiais).',
+  res_section_extras: '3. Extras Disponíveis (Opcional)',
+  res_extra_farm: 'Experiência Quinta Pedagógica',
+  res_extra_farm_price: '+45 € (até 10 crianças) · +20 € a cada criança adicional',
+  res_extra_inflatable: 'Insuflável',
+  res_extra_inflatable_price: 'Desde 75 € por evento',
+  res_extra_anim: 'Pinturas Faciais / Animador / Caça ao Tesouro',
+  res_extra_anim_price: 'Desde 60 € por hora ou sessão',
+  res_extra_decor: 'Decoração / Mesa Temática',
+  res_extra_decor_price: 'Desde 60 € por evento',
+  res_section_notes: '4. Observações & Pedidos Especiais',
+  res_ph_obs: 'Passeio de pónei, detalhes sobre cerimónia ou catering...',
+  res_ph_obs_wed:
+    'Conte-nos sobre a vossa visão: número previsto de convidados, intenção de realizar cerimónia no jardim, preferências de horário ou catering...',
+  res_ph_obs_default: 'Passeio de pónei, detalhes adicionais ou pedidos especiais...',
+  res_submit: 'Enviar Pedido de Disponibilidade <i class="fa-solid fa-paper-plane text-sm"></i>',
+  res_submit_note:
+    'Pode trazer a sua própria comida e bolo. Entraremos em contacto para validação final da data.',
+  res_sending: 'A enviar pedido... <i class="fa-solid fa-spinner fa-spin ml-2"></i>',
+  res_success_title: 'Pedido Enviado com Sucesso!',
+  res_success_body:
+    'Obrigado pelo seu contacto. Recebemos o seu pedido de disponibilidade e entraremos em contacto muito brevemente.',
+  res_success_home: 'Voltar à Página Inicial',
+  res_err_send:
+    'Ocorreu um erro ao enviar. Por favor, confirme se inseriu a sua chave de acesso ou tente novamente.',
+  res_err_network:
+    'Ocorreu um erro de ligação. Por favor, tente novamente ou contacte-nos por telefone.',
 } as const;
 
 export type MessageKey = keyof typeof pt;

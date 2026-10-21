@@ -4,51 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="gal_doc_title">Galeria | Eventos Anteriores • Pedaços de Sonho</title>
+    <link rel="canonical" href="https://serenolisbon.com/galeria">
     <meta name="description" data-i18n="gal_meta_description" data-i18n-attr="content" content="Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍃</text></svg>">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/espaco-fachada-saloes.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:url" content="https://serenolisbon.com/galeria">
+    <meta property="og:title" content="Galeria | Eventos Anteriores • Sereno Gatherings">
+    <meta property="og:description" content="Portfólio de eventos anteriores na Sereno Gatherings: casamentos, celebrações e o espaço em Azambuja.">
+    <meta property="og:image" content="https://serenolisbon.com/images/evento-aliancas-casamento.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#5B6F55',
-                        secondary: '#DDA75F',
-                        dark: '#3A3A3A',
-                        light: '#FAF7F2',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Galeria de eventos anteriores",
+      "url": "https://serenolisbon.com/galeria",
+      "isPartOf": { "@id": "https://serenolisbon.com/#venue" }
+    }
     </script>
-    <style>
-        .header-bg {
-            background-color: #5B6F55;
-            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-        }
-        .gallery-item img {
-            transition: transform 0.5s ease;
-        }
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-        #lightbox {
-            display: none;
-        }
-        #lightbox.active {
-            display: flex;
-        }
-        .lang-btn.active {
-            color: #5B6F55;
-            font-weight: 600;
-        }
-    </style>
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
 
@@ -58,29 +38,29 @@
                 <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
                     <i class="fa-solid fa-leaf text-primary text-2xl"></i>
                     <div>
-                        <h1 class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</h1>
+                        <div class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</div>
                         <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold">Sereno Gatherings</p>
                     </div>
                 </a>
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html#espaco" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_espaco">O Espaço</a>
-                    <a href="index.html#servicos" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_eventos">Eventos</a>
-                    <a href="galeria.html" class="text-primary font-semibold text-sm" data-i18n="nav_galeria">Galeria</a>
+                <div class="hidden lg:flex items-center gap-3 xl:gap-5 text-sm whitespace-nowrap">
+                    <a href="index.html#espaco" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_espaco">O Espaço</a>
+                    <a href="index.html#servicos" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_eventos">Eventos</a>
+                    <a href="galeria.html" class="text-primary font-semibold" data-i18n="nav_galeria">Galeria</a>
                     <div class="flex items-center text-xs font-semibold tracking-wide border border-gray-200 rounded-full px-1 py-0.5">
                         <button type="button" class="lang-btn active px-1.5" data-lang="pt" aria-label="Português">PT</button>
                         <span class="text-gray-300">|</span>
                         <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en" aria-label="English">EN</button>
                     </div>
-                    <a href="index.html#contactos" class="text-gray-700 hover:text-primary transition font-medium text-sm" data-i18n="nav_contactos">Contactos</a>
-                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm" data-i18n="nav_reservas_btn">Reservas</a>
+                    <a href="index.html#contactos" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_contactos">Contactos</a>
+                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-full font-medium transition shadow-md" data-i18n="nav_reservas_btn">Reservas</a>
                 </div>
-                <div class="md:hidden flex items-center gap-3">
+                <div class="lg:hidden flex items-center gap-2 sm:gap-3 flex-shrink-0">
                     <div class="flex items-center text-xs font-semibold tracking-wide border border-gray-200 rounded-full px-1 py-0.5">
                         <button type="button" class="lang-btn active px-1.5" data-lang="pt">PT</button>
                         <span class="text-gray-300">|</span>
                         <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en">EN</button>
                     </div>
-                    <a href="index.html" class="text-primary text-sm font-medium"><i class="fa-solid fa-arrow-left mr-1"></i> <span data-i18n="nav_inicio">Início</span></a>
+                    <a href="index.html" class="text-primary text-sm font-medium whitespace-nowrap"><i class="fa-solid fa-arrow-left mr-1"></i> <span data-i18n="nav_inicio">Início</span></a>
                 </div>
             </div>
         </div>
@@ -89,7 +69,7 @@
     <div class="header-bg py-16 text-center text-white">
         <div class="max-w-3xl mx-auto px-4">
             <span class="text-secondary font-semibold tracking-wider uppercase text-xs mb-3 block" data-i18n="gal_eyebrow">Portfólio</span>
-            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-4" data-i18n="gal_title">Eventos Anteriores</h2>
+            <h1 class="font-serif text-3xl md:text-5xl font-bold mb-4" data-i18n="gal_title">Galeria de eventos anteriores</h1>
             <p class="text-sm md:text-base text-gray-100 font-light max-w-xl mx-auto" data-i18n="gal_sub">Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.</p>
         </div>
     </div>
@@ -169,20 +149,20 @@
             <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-terraco-buffet.webp" data-alt="Preparação do buffet no terraço">
                 <img src="images/thumbs/galeria/evento-terraco-buffet.webp" alt="Preparação do buffet no terraço" class="w-full object-cover" loading="lazy">
             </figure>
-            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-01.webp" data-alt="Preparação do salão">
-                <img src="images/thumbs/galeria/evento-salao-preparacao-01.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-01.webp" data-alt="Preparação do salão — mesas e cadeiras">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-01.webp" alt="Preparação do salão — mesas e cadeiras" class="w-full object-cover" loading="lazy" width="600" height="800">
             </figure>
-            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-02.webp" data-alt="Preparação do salão">
-                <img src="images/thumbs/galeria/evento-salao-preparacao-02.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-02.webp" data-alt="Preparação do salão — vista lateral">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-02.webp" alt="Preparação do salão — vista lateral" class="w-full object-cover" loading="lazy" width="600" height="800">
             </figure>
-            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-03.webp" data-alt="Preparação do salão">
-                <img src="images/thumbs/galeria/evento-salao-preparacao-03.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-03.webp" data-alt="Preparação do salão — detalhe das mesas">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-03.webp" alt="Preparação do salão — detalhe das mesas" class="w-full object-cover" loading="lazy" width="600" height="800">
             </figure>
-            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-04.webp" data-alt="Preparação do salão">
-                <img src="images/thumbs/galeria/evento-salao-preparacao-04.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-04.webp" data-alt="Preparação do salão — ambientação">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-04.webp" alt="Preparação do salão — ambientação" class="w-full object-cover" loading="lazy" width="600" height="800">
             </figure>
-            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-05.webp" data-alt="Preparação do salão">
-                <img src="images/thumbs/galeria/evento-salao-preparacao-05.webp" alt="Preparação do salão" class="w-full object-cover" loading="lazy">
+            <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-preparacao-05.webp" data-alt="Preparação do salão — composição final">
+                <img src="images/thumbs/galeria/evento-salao-preparacao-05.webp" alt="Preparação do salão — composição final" class="w-full object-cover" loading="lazy" width="600" height="800">
             </figure>
             <figure class="gallery-item break-inside-avoid rounded-2xl overflow-hidden shadow-sm cursor-pointer" data-category="espaco" data-src="images/galeria/evento-salao-mesas-portas.webp" data-alt="Salão aberto para o terraço">
                 <img src="images/thumbs/galeria/evento-salao-mesas-portas.webp" alt="Salão aberto para o terraço" class="w-full object-cover" loading="lazy">

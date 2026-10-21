@@ -5,8 +5,10 @@ node_modules
 package.json
 package-lock.json
 tsconfig.json
+tailwind.config.js
 wrangler.toml
 i18n
+src
 scripts
 *.md
 .gitignore

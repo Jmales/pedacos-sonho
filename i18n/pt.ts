@@ -22,6 +22,8 @@ export const pt = {
   // Hero
   hero_eyebrow: 'Sereno Gatherings • Grande Lisboa & Ribatejo',
   hero_title: 'Natureza, espaço e <br/>muita imaginação',
+  hero_h1:
+    'Espaço para festas infantis, casamentos e eventos perto de Lisboa (Azambuja)',
   hero_sub:
     'Apenas a 40 minutos de Lisboa, descubra o cenário perfeito para celebrar casamentos com alma, aniversários infantis e encontros corporativos memoráveis.',
   hero_cta1: 'Explorar Eventos',
@@ -84,6 +86,15 @@ export const pt = {
   faq_q3: 'Podemos levar o nosso próprio catering e decoração?',
   faq_a3:
     'Sim. Dispomos de packs próprios, mas damos total flexibilidade para trazerem o vosso catering de eleição, bolo, animação ou decoração exterior.',
+  faq_q4: 'Quais são os turnos de aluguer e a partir de que preço?',
+  faq_a4:
+    'O aluguer por turnos de 3 horas começa nos 120 € (manhã, dias de semana). Existem turnos de manhã, tarde e fim de tarde, com valores de fim-de-semana distintos, e aluguer de dia completo (6h) em época baixa e alta. Consulte a <a href="reservas.html" class="text-primary underline">página de reservas</a> para a tabela atualizada.',
+  faq_q5: 'Como funciona a caução e a confirmação da data?',
+  faq_a5:
+    'A caução reembolsável é de 150 €. A confirmação da data é feita mediante sinal de 50%.',
+  faq_q6: 'Há experiências com animais ou animações para crianças?',
+  faq_a6:
+    'Sim, conforme disponibilidade: experiência de quinta pedagógica com animais, passeios de pónei, e extras como insuflável, pinturas faciais, animador ou caça ao tesouro. Os detalhes e preços estão na página de reservas.',
 
   // CTA
   cta_title: 'Pronto para planear a sua celebração?',
@@ -97,7 +108,8 @@ export const pt = {
   footer_contactos: 'Contactos',
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. Todos os direitos reservados.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
-  footer_address: 'Sereno Gatherings, Casais de Baixo, Azambuja',
+  footer_address:
+    'Rua Várzea da Cabeleira, Casais de Baixo, Quinta «O Refúgio», 2050-360 Azambuja',
   footer_privacy: 'Política de Privacidade',
   nav_back: 'Voltar',
   nav_brand_back: 'Sereno Gatherings • Voltar',
@@ -107,7 +119,7 @@ export const pt = {
   gal_meta_description:
     'Portfólio de eventos anteriores na Sereno Gatherings (Pedaços de Sonho): casamentos no pinhal, celebrações, team buildings e noites especiais em Azambuja.',
   gal_eyebrow: 'Portfólio',
-  gal_title: 'Eventos Anteriores',
+  gal_title: 'Galeria de eventos anteriores',
   gal_sub:
     'Casamentos, celebrações, team buildings e momentos especiais vividos na Sereno Gatherings.',
   gal_filter_all: 'Todos',
@@ -123,6 +135,7 @@ export const pt = {
   res_doc_title: 'Preços e Reservas | Quinta para Eventos em Lisboa e Azambuja',
   res_meta_description:
     'Simulador de orçamento e pedidos de reserva na Sereno Gatherings (Pedaços de Sonho). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.',
+  res_page_h1: 'Preços e reservas: quinta para eventos em Azambuja',
   res_header_title: 'Simule e Reserve o seu Evento',
   res_header_sub: 'Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa / Azambuja)',
   res_turnos_title: 'Aluguer por Turnos (3 Horas)',

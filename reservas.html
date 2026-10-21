@@ -4,87 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="res_doc_title">Preços e Reservas | Quinta para Eventos em Lisboa e Azambuja</title>
+    <link rel="canonical" href="https://serenolisbon.com/reservas">
     <meta name="description" data-i18n="res_meta_description" data-i18n-attr="content" content="Simulador de orçamento e pedidos de reserva na Sereno Gatherings (Pedaços de Sonho). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍃</text></svg>">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/espaco-fachada-saloes.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:url" content="https://serenolisbon.com/reservas">
+    <meta property="og:title" content="Preços e Reservas | Sereno Gatherings">
+    <meta property="og:description" content="Turnos, preços e pedido de reserva na Sereno Gatherings. Packs a partir de 120 €, a 40 min de Lisboa.">
+    <meta property="og:image" content="https://serenolisbon.com/images/espaco-fachada-saloes.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "EventVenue",
-      "name": "Pedaços de Sonho - Sereno Gatherings",
-      "url": "https://serenolisbon.com/reservas.html",
-      "description": "Preços e pacotes de aluguer de espaço para casamentos, festas infantis e eventos corporativos na região de Lisboa e Azambuja.",
-      "telephone": "+351910086330",
-      "email": "reservas@serenolisbon.com",
-      "priceRange": "120€ - Sob Consulta"
+      "@type": "WebPage",
+      "name": "Preços e reservas",
+      "url": "https://serenolisbon.com/reservas",
+      "isPartOf": { "@id": "https://serenolisbon.com/#venue" },
+      "about": { "@id": "https://serenolisbon.com/#venue" }
     }
     </script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#5B6F55', 
-                        secondary: '#DDA75F', 
-                        dark: '#3A3A3A',
-                        light: '#FAF7F2', 
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .header-bg {
-            background-color: #5B6F55;
-            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-        }
-        
-        input[type="checkbox"] {
-            appearance: none;
-            background-color: #fff;
-            margin: 0;
-            width: 1.25em;
-            height: 1.25em;
-            border: 2px solid #cbd5e1;
-            border-radius: 0.25em;
-            display: grid;
-            place-content: center;
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-        }
-
-        input[type="checkbox"]::before {
-            content: "";
-            width: 0.65em;
-            height: 0.65em;
-            transform: scale(0);
-            transition: 120ms transform ease-in-out;
-            background-color: white;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-        }
-
-        input[type="checkbox"]:checked {
-            background-color: #DDA75F;
-            border-color: #DDA75F;
-        }
-
-        input[type="checkbox"]:checked::before {
-            transform: scale(1);
-        }
-        .lang-btn.active {
-            color: #5B6F55;
-            font-weight: 600;
-        }
-    </style>
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
 
@@ -95,7 +40,7 @@
                 <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
                     <i class="fa-solid fa-arrow-left text-primary text-xl"></i>
                     <div>
-                        <h1 class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</h1>
+                        <div class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</div>
                         <p class="text-[10px] tracking-widest text-secondary uppercase font-semibold" data-i18n="nav_brand_back">Sereno Gatherings • Voltar</p>
                     </div>
                 </a>
@@ -115,7 +60,8 @@
     <!-- Page Header -->
     <div class="header-bg py-14 text-center text-white relative overflow-hidden">
         <div class="relative z-10 max-w-3xl mx-auto px-4">
-            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-3 drop-shadow-md" data-i18n="res_header_title">Simule e Reserve o seu Evento</h2>
+            <h1 class="font-serif text-2xl md:text-4xl font-bold mb-2 drop-shadow-md" data-i18n="res_page_h1">Preços e reservas: quinta para eventos em Azambuja</h1>
+            <p class="font-serif text-lg md:text-2xl font-semibold mb-3 text-secondary" data-i18n="res_header_title">Simule e Reserve o seu Evento</p>
             <p class="text-sm md:text-base text-gray-100 font-light" data-i18n="res_header_sub">Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa / Azambuja)</p>
         </div>
     </div>
@@ -129,7 +75,7 @@
             <!-- Standard Rental Pricing -->
             <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="bg-primary/5 px-6 py-5 border-b border-gray-100">
-                    <h3 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-clock text-secondary mr-2"></i> <span data-i18n="res_turnos_title">Aluguer por Turnos (3 Horas)</span></h3>
+                    <h2 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-clock text-secondary mr-2"></i> <span data-i18n="res_turnos_title">Aluguer por Turnos (3 Horas)</span></h2>
                     <p class="text-xs text-gray-500 mt-1" data-i18n="res_turnos_sub">Festas Infantis, Encontros e Eventos Corporate.</p>
                 </div>
                 <div class="p-6 space-y-4">
@@ -167,7 +113,7 @@
             <!-- Full day 6h rental -->
             <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="bg-secondary/10 px-6 py-5 border-b border-gray-100">
-                    <h3 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-sun text-secondary mr-2"></i> <span data-i18n="res_fullday_title">Aluguer 6h (Dia Completo)</span></h3>
+                    <h2 class="font-serif text-xl text-primary font-bold"><i class="fa-solid fa-sun text-secondary mr-2"></i> <span data-i18n="res_fullday_title">Aluguer 6h (Dia Completo)</span></h2>
                     <p class="text-xs text-gray-500 mt-1" data-i18n="res_fullday_sub">Exclusividade do espaço para o dia.</p>
                 </div>
                 <div class="p-6 space-y-3">
@@ -204,7 +150,7 @@
 
             <!-- Packs Sugeridos -->
             <div class="bg-primary rounded-3xl shadow-sm text-white p-6 relative overflow-hidden">
-                <h3 class="font-serif text-xl font-bold mb-4" data-i18n="res_packs_title">Packs Sugeridos</h3>
+                <h2 class="font-serif text-xl font-bold mb-4" data-i18n="res_packs_title">Packs Sugeridos</h2>
                 <div class="space-y-4">
                     <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                         <h4 class="font-bold text-secondary text-sm mb-1" data-i18n="res_pack_quinta_title">Pack Quinta</h4>
@@ -224,7 +170,7 @@
         <!-- Right Column: Interactive Booking Form -->
         <div class="lg:col-span-7">
             <div id="card_formulario" class="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 md:p-8">
-                <h3 class="font-serif text-2xl font-bold text-primary mb-1" data-i18n="res_form_title">Configure o seu Pedido</h3>
+                <h2 class="font-serif text-2xl font-bold text-primary mb-1" data-i18n="res_form_title">Configure o seu Pedido</h2>
                 <p class="text-gray-500 text-xs md:text-sm mb-6" data-i18n="res_form_sub">Selecione o tipo de evento e os detalhes. Não requer pagamento imediato.</p>
 
                 <!-- Web3Forms Integration com submissão em segundo plano -->
@@ -306,7 +252,7 @@
                         
                         <div class="space-y-2.5">
                             <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
-                                <input type="checkbox" name="Extra_Quinta_Pedagogica" value="Sim" class="shrink-0">
+                                <input type="checkbox" name="Extra_Quinta_Pedagogica" value="Sim" class="shrink-0 extra-check">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800" data-i18n="res_extra_farm">Experiência Quinta Pedagógica</span>
                                     <span class="text-gray-400 text-xs" data-i18n="res_extra_farm_price">+45 € (até 10 crianças) · +20 € a cada criança adicional</span>
@@ -315,7 +261,7 @@
                             </label>
 
                             <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
-                                <input type="checkbox" name="Extra_Insuflavel" value="Sim" class="shrink-0">
+                                <input type="checkbox" name="Extra_Insuflavel" value="Sim" class="shrink-0 extra-check">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800" data-i18n="res_extra_inflatable">Insuflável</span>
                                     <span class="text-gray-400 text-xs" data-i18n="res_extra_inflatable_price">Desde 75 € por evento</span>
@@ -324,7 +270,7 @@
                             </label>
 
                             <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
-                                <input type="checkbox" name="Extra_Animador_Pinturas" value="Sim" class="shrink-0">
+                                <input type="checkbox" name="Extra_Animador_Pinturas" value="Sim" class="shrink-0 extra-check">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800" data-i18n="res_extra_anim">Pinturas Faciais / Animador / Caça ao Tesouro</span>
                                     <span class="text-gray-400 text-xs" data-i18n="res_extra_anim_price">Desde 60 € por hora ou sessão</span>
@@ -333,7 +279,7 @@
                             </label>
 
                             <label class="flex items-center p-3.5 border border-gray-100 rounded-xl hover:bg-gray-50 cursor-pointer transition">
-                                <input type="checkbox" name="Extra_Decoracao" value="Sim" class="shrink-0">
+                                <input type="checkbox" name="Extra_Decoracao" value="Sim" class="shrink-0 extra-check">
                                 <div class="ml-3 flex-grow text-xs md:text-sm">
                                     <span class="block font-medium text-gray-800" data-i18n="res_extra_decor">Decoração / Mesa Temática</span>
                                     <span class="text-gray-400 text-xs" data-i18n="res_extra_decor_price">Desde 60 € por evento</span>
@@ -431,6 +377,7 @@
 
             // 3. Submissão assíncrona substituindo o cartão completo
             const form = document.getElementById('form_reservas');
+            const successTpl = document.getElementById('tpl_reserva_sucesso');
             form.addEventListener('submit', async function(e) {
                 e.preventDefault();
                 const submitBtn = form.querySelector('button[type="submit"]');
@@ -449,22 +396,12 @@
                     const result = await response.json();
 
                     if (result.success) {
-                        form.parentElement.innerHTML = `
-                            <div class="text-center py-12 px-4 space-y-4">
-                                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl shadow-sm">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <h3 class="font-serif text-3xl font-bold text-primary">${t('res_success_title')}</h3>
-                                <p class="text-gray-600 max-w-md mx-auto text-sm leading-relaxed">
-                                    ${t('res_success_body')}
-                                </p>
-                                <div class="pt-4">
-                                    <a href="index.html" class="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-opacity-90 transition shadow">
-                                        ${t('res_success_home')}
-                                    </a>
-                                </div>
-                            </div>
-                        `;
+                        if (window.pdsTrack) window.pdsTrack('generate_lead');
+                        const node = successTpl.content.cloneNode(true);
+                        node.querySelector('[data-success-title]').textContent = t('res_success_title');
+                        node.querySelector('[data-success-body]').textContent = t('res_success_body');
+                        node.querySelector('[data-success-home]').textContent = t('res_success_home');
+                        form.parentElement.replaceChildren(node);
                     } else {
                         alert(t('res_err_send'));
                         submitBtn.disabled = false;
@@ -478,6 +415,18 @@
             });
         });
     </script>
+    <template id="tpl_reserva_sucesso">
+        <div class="text-center py-12 px-4 space-y-4">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl shadow-sm">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h2 class="font-serif text-3xl font-bold text-primary" data-success-title></h2>
+            <p class="text-gray-600 max-w-md mx-auto text-sm leading-relaxed" data-success-body></p>
+            <div class="pt-4">
+                <a href="index.html" class="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-opacity-90 transition shadow" data-success-home></a>
+            </div>
+        </div>
+    </template>
 
 </body>
 </html>

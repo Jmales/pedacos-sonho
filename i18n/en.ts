@@ -24,6 +24,8 @@ export const en = {
 
   hero_eyebrow: 'Sereno Gatherings • Greater Lisbon & Ribatejo',
   hero_title: 'Nature, space and <br/>plenty of imagination',
+  hero_h1:
+    'Venue for kids’ parties, weddings and events near Lisbon (Azambuja)',
   hero_sub:
     'Just 40 minutes from Lisbon, discover the perfect setting for soulful weddings, kids’ birthdays and memorable corporate gatherings.',
   hero_cta1: 'Explore Events',
@@ -81,6 +83,15 @@ export const en = {
   faq_q3: 'Can we bring our own catering and decoration?',
   faq_a3:
     'Yes. We offer our own packs, but you are free to bring your preferred catering, cake, entertainment or outdoor decoration.',
+  faq_q4: 'What rental slots are available and from what price?',
+  faq_a4:
+    '3-hour slot rentals start at €120 (weekday morning). There are morning, afternoon and late-afternoon slots with different weekend rates, plus a full-day (6h) option in low and high season. See the <a href="reservas.html" class="text-primary underline">booking page</a> for the current table.',
+  faq_q5: 'How do the deposit and date confirmation work?',
+  faq_a5:
+    'The refundable deposit is €150. The date is confirmed with a 50% deposit.',
+  faq_q6: 'Are there animal experiences or kids’ activities?',
+  faq_a6:
+    'Yes, subject to availability: farm experience with animals, pony rides, and extras such as an inflatable, face painting, entertainer or treasure hunt. Details and prices are on the booking page.',
 
   cta_title: 'Ready to plan your celebration?',
   cta_sub:
@@ -92,7 +103,8 @@ export const en = {
   footer_contactos: 'Contact',
   footer_copy: '© 2026 Pedaços de Sonho - Sereno Gatherings. All rights reserved.',
   footer_copy_short: '© 2026 Pedaços de Sonho - Sereno Gatherings.',
-  footer_address: 'Sereno Gatherings, Casais de Baixo, Azambuja',
+  footer_address:
+    'Rua Várzea da Cabeleira, Casais de Baixo, Quinta “O Refúgio”, 2050-360 Azambuja',
   footer_privacy: 'Privacy Policy',
   nav_back: 'Back',
   nav_brand_back: 'Sereno Gatherings • Back',
@@ -101,7 +113,7 @@ export const en = {
   gal_meta_description:
     'Portfolio of past events at Sereno Gatherings (Pedaços de Sonho): pine grove weddings, celebrations, team buildings and special evenings in Azambuja.',
   gal_eyebrow: 'Portfolio',
-  gal_title: 'Past Events',
+  gal_title: 'Gallery of past events',
   gal_sub:
     'Weddings, celebrations, team buildings and special moments at Sereno Gatherings.',
   gal_filter_all: 'All',
@@ -116,6 +128,7 @@ export const en = {
   res_doc_title: 'Prices & Bookings | Event Venue in Lisbon and Azambuja',
   res_meta_description:
     'Quote simulator and booking requests at Sereno Gatherings (Pedaços de Sonho). 2026 launch rates for kids’ parties, gatherings, weddings and corporate events.',
+  res_page_h1: 'Prices & bookings: event venue in Azambuja',
   res_header_title: 'Simulate and Book Your Event',
   res_header_sub: '2026 Launch Rates • Sereno Gatherings (Lisbon / Azambuja)',
   res_turnos_title: 'Slot Rental (3 Hours)',

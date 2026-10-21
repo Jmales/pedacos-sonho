@@ -48,6 +48,37 @@
     document.head.appendChild(style);
   }
 
+  function track(eventName, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params || {});
+    }
+  }
+
+  window.pdsTrack = track;
+
+  function bindConversionClicks() {
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        track('click_phone');
+      });
+    });
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        track('click_email');
+      });
+    });
+    document.querySelectorAll('a[href*="wa.me"], a[data-track="whatsapp"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        track('click_whatsapp');
+      });
+    });
+    document.querySelectorAll('a[href="reservas.html"], a[href*="/reservas"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        track('select_content', { content_type: 'reservas_cta', item_id: a.getAttribute('href') });
+      });
+    });
+  }
+
   function loadGtag() {
     if (window.__pdsGtagLoaded) return;
     window.__pdsGtagLoaded = true;
@@ -107,6 +138,7 @@
   }
 
   function init() {
+    bindConversionClicks();
     var consent = localStorage.getItem(CONSENT_KEY);
     if (consent === 'granted') {
       loadGtag();

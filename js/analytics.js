@@ -22,6 +22,32 @@
     return localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'pt';
   }
 
+  function ensureStyles() {
+    if (document.getElementById('pds-cookie-styles')) return;
+    var style = document.createElement('style');
+    style.id = 'pds-cookie-styles';
+    style.textContent =
+      '#pds-cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:200;padding:12px;pointer-events:none;box-sizing:border-box;}' +
+      '#pds-cookie-banner .pds-cookie-card{pointer-events:auto;max-width:42rem;margin:0 auto;background:#3A3A3A;color:#e5e7eb;border-radius:1rem;box-shadow:0 20px 40px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.1);padding:14px 16px;display:flex;flex-direction:column;gap:12px;font-family:Poppins,sans-serif;}' +
+      '#pds-cookie-banner .pds-cookie-card p{margin:0;font-size:12px;line-height:1.5;flex:1;}' +
+      '#pds-cookie-banner .pds-cookie-card a{color:#DDA75F;text-decoration:underline;}' +
+      '#pds-cookie-banner .pds-cookie-card a:hover{color:#fff;}' +
+      '#pds-cookie-banner .pds-cookie-actions{display:flex;gap:8px;width:100%;}' +
+      '#pds-cookie-banner button{flex:1;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;line-height:1.2;}' +
+      '#pds-cookie-banner #pds-cookie-reject{background:transparent;color:#e5e7eb;border:1px solid #6b7280;}' +
+      '#pds-cookie-banner #pds-cookie-reject:hover{border-color:#fff;}' +
+      '#pds-cookie-banner #pds-cookie-accept{background:#DDA75F;color:#fff;border:1px solid #DDA75F;}' +
+      '#pds-cookie-banner #pds-cookie-accept:hover{opacity:.9;}' +
+      '@media (min-width:640px){' +
+      '#pds-cookie-banner{padding:20px;}' +
+      '#pds-cookie-banner .pds-cookie-card{flex-direction:row;align-items:center;padding:16px 20px;}' +
+      '#pds-cookie-banner .pds-cookie-card p{font-size:13px;}' +
+      '#pds-cookie-banner .pds-cookie-actions{width:auto;flex-shrink:0;}' +
+      '#pds-cookie-banner button{flex:none;min-width:6.5rem;}' +
+      '}';
+    document.head.appendChild(style);
+  }
+
   function loadGtag() {
     if (window.__pdsGtagLoaded) return;
     window.__pdsGtagLoaded = true;
@@ -31,7 +57,7 @@
     }
     window.gtag = gtag;
     gtag('js', new Date());
-    gtag('config', GA_ID, { anonymize_ip: true });
+    gtag('config', GA_ID);
 
     var s = document.createElement('script');
     s.async = true;
@@ -46,25 +72,24 @@
 
   function showBanner() {
     if (document.getElementById('pds-cookie-banner')) return;
+    ensureStyles();
     var t = copy[lang()];
     var banner = document.createElement('div');
     banner.id = 'pds-cookie-banner';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-live', 'polite');
-    banner.className =
-      'fixed bottom-0 inset-x-0 z-[200] p-4 md:p-6 pointer-events-none';
     banner.innerHTML =
-      '<div class="pointer-events-auto max-w-3xl mx-auto bg-dark text-gray-200 rounded-2xl shadow-2xl border border-white/10 p-4 md:p-5 flex flex-col sm:flex-row gap-4 items-start sm:items-center">' +
-      '<p class="text-xs md:text-sm leading-relaxed flex-grow m-0">' +
+      '<div class="pds-cookie-card">' +
+      '<p>' +
       t.text +
-      ' <a href="privacidade.html" class="underline text-secondary hover:text-white transition">' +
+      ' <a href="privacidade.html">' +
       t.privacy +
       '</a>.</p>' +
-      '<div class="flex gap-2 shrink-0 w-full sm:w-auto">' +
-      '<button type="button" id="pds-cookie-reject" class="flex-1 sm:flex-none px-4 py-2 rounded-full text-xs font-semibold border border-gray-500 hover:border-white transition">' +
+      '<div class="pds-cookie-actions">' +
+      '<button type="button" id="pds-cookie-reject">' +
       t.reject +
       '</button>' +
-      '<button type="button" id="pds-cookie-accept" class="flex-1 sm:flex-none px-4 py-2 rounded-full text-xs font-semibold bg-secondary text-white hover:opacity-90 transition">' +
+      '<button type="button" id="pds-cookie-accept">' +
       t.accept +
       '</button>' +
       '</div></div>';

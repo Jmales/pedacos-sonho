@@ -88,7 +88,7 @@ export const pt = {
     'Sim. Dispomos de packs próprios, mas damos total flexibilidade para trazerem o vosso catering de eleição, bolo, animação ou decoração exterior.',
   faq_q4: 'Quais são os turnos de aluguer e a partir de que preço?',
   faq_a4:
-    'O aluguer por turnos de 3 horas começa nos 120 € (manhã, dias de semana). Existem turnos de manhã, tarde e fim de tarde, com valores de fim-de-semana distintos, e aluguer de dia completo (6h) em época baixa e alta. Consulte a <a href="reservas.html" class="text-primary underline">página de reservas</a> para a tabela atualizada.',
+    'O aluguer por turnos de 3 horas começa nos 120 € (manhã, dias de semana). Existem turnos de manhã, tarde e fim de tarde, com valores de fim-de-semana distintos, e aluguer de dia completo (6h) em época baixa e alta. Consulte a <a href="/reservas" class="text-primary underline">página de reservas</a> para a tabela atualizada.',
   faq_q5: 'Como funciona a caução e a confirmação da data?',
   faq_a5:
     'A caução reembolsável é de 150 €. A confirmação da data é feita mediante sinal de 50%.',
@@ -219,7 +219,7 @@ export const pt = {
   res_err_network:
     'Ocorreu um erro de ligação. Por favor, tente novamente ou contacte-nos por telefone.',
   res_privacy_note:
-    'Ao enviar este formulário, os seus dados serão tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="privacidade.html" class="underline hover:text-secondary transition">Política de Privacidade</a>.',
+    'Ao enviar este formulário, os seus dados serão tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="/privacidade" class="underline hover:text-secondary transition">Política de Privacidade</a>.',
 
   // Privacy policy
   priv_doc_title: 'Política de Privacidade | Pedaços de Sonho',
@@ -240,7 +240,7 @@ export const pt = {
     'Tratamos estes dados para: (a) responder a pedidos de disponibilidade e orçamento e preparar propostas de reserva (base: diligências pré-contratuais / execução de contrato, art. 6.º, n.º 1, alínea b) do RGPD); (b) contactá-lo sobre o pedido e esclarecimentos relacionados (mesmo fundamento); (c) cumprir obrigações legais, quando aplicável (art. 6.º, n.º 1, alínea c)). Não utilizamos os dados do formulário para marketing sem o seu consentimento prévio.',
   priv_h4: '4. Destinatários e subcontratantes',
   priv_p4:
-    'Os pedidos do formulário são enviados através do serviço Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). Podem ainda carregar recursos de terceiros necessários ao funcionamento do site (fontes, ícones, CDN). O selo Zaask, quando apresentado, carrega conteúdos do domínio zaask.pt. Estes prestadores atuam como subcontratantes ou destinatários na medida do necessário à prestação do serviço.',
+    'Os pedidos do formulário são enviados através do serviço Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). O selo Zaask, quando apresentado, carrega conteúdos do domínio zaask.pt. Estes prestadores atuam como subcontratantes ou destinatários na medida do necessário à prestação do serviço.',
   priv_h5: '5. Conservação',
   priv_p5:
     'Conservamos os dados dos pedidos de contacto/reserva pelo tempo necessário para gerir o pedido e a eventual relação contratual, e pelo prazo adicional exigido por obrigações legais ou para defesa de direitos. Pedidos sem seguimento são normalmente eliminados ou anonimizados num prazo razoável (indicativamente até 24 meses), salvo necessidade legítima de conservação mais longa.',

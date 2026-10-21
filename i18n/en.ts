@@ -85,7 +85,7 @@ export const en = {
     'Yes. We offer our own packs, but you are free to bring your preferred catering, cake, entertainment or outdoor decoration.',
   faq_q4: 'What rental slots are available and from what price?',
   faq_a4:
-    '3-hour slot rentals start at €120 (weekday morning). There are morning, afternoon and late-afternoon slots with different weekend rates, plus a full-day (6h) option in low and high season. See the <a href="reservas.html" class="text-primary underline">booking page</a> for the current table.',
+    '3-hour slot rentals start at €120 (weekday morning). There are morning, afternoon and late-afternoon slots with different weekend rates, plus a full-day (6h) option in low and high season. See the <a href="/reservas" class="text-primary underline">booking page</a> for the current table.',
   faq_q5: 'How do the deposit and date confirmation work?',
   faq_a5:
     'The refundable deposit is €150. The date is confirmed with a 50% deposit.',
@@ -211,7 +211,7 @@ export const en = {
   res_err_network:
     'A connection error occurred. Please try again or call us.',
   res_privacy_note:
-    'By submitting this form, your data will be processed to respond to your availability request. See our <a href="privacidade.html" class="underline hover:text-secondary transition">Privacy Policy</a>.',
+    'By submitting this form, your data will be processed to respond to your availability request. See our <a href="/privacidade" class="underline hover:text-secondary transition">Privacy Policy</a>.',
 
   priv_doc_title: 'Privacy Policy | Pedaços de Sonho',
   priv_meta_description:
@@ -231,7 +231,7 @@ export const en = {
     'We process this data to: (a) respond to availability and quote requests and prepare booking proposals (legal basis: steps prior to a contract / performance of a contract, GDPR Art. 6(1)(b)); (b) contact you about the request and related clarifications (same basis); (c) comply with legal obligations where applicable (Art. 6(1)(c)). We do not use form data for marketing without your prior consent.',
   priv_h4: '4. Recipients and processors',
   priv_p4:
-    'Form submissions are sent via Web3Forms (https://web3forms.com), which processes the message and delivers it to our email. The website may be hosted on third-party infrastructure (e.g. Cloudflare). Third-party resources needed for the site to work (fonts, icons, CDN) may also load. The Zaask badge, when shown, loads content from zaask.pt. These providers act as processors or recipients only as needed to provide the service.',
+    'Form submissions are sent via Web3Forms (https://web3forms.com), which processes the message and delivers it to our email. The website may be hosted on third-party infrastructure (e.g. Cloudflare). The Zaask badge, when shown, loads content from zaask.pt. These providers act as processors or recipients only as needed to provide the service.',
   priv_h5: '5. Retention',
   priv_p5:
     'We keep contact/booking request data for as long as needed to handle the request and any contractual relationship, plus any longer period required by law or to defend legal claims. Requests with no follow-up are normally deleted or anonymised within a reasonable time (indicatively up to 24 months), unless a longer retention is legitimately required.',

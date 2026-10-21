@@ -72,7 +72,7 @@
         track('click_whatsapp');
       });
     });
-    document.querySelectorAll('a[href="reservas.html"], a[href*="/reservas"]').forEach(function (a) {
+    document.querySelectorAll('a[href="/reservas"], a[href*="/reservas"]').forEach(function (a) {
       a.addEventListener('click', function () {
         track('select_content', { content_type: 'reservas_cta', item_id: a.getAttribute('href') });
       });
@@ -113,7 +113,7 @@
       '<div class="pds-cookie-card">' +
       '<p>' +
       t.text +
-      ' <a href="privacidade.html">' +
+      ' <a href="/privacidade">' +
       t.privacy +
       '</a>.</p>' +
       '<div class="pds-cookie-actions">' +

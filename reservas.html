@@ -16,11 +16,10 @@
     <meta property="og:image" content="https://serenolisbon.com/images/espaco-fachada-saloes.webp">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
+    <link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
@@ -37,7 +36,7 @@
     <nav class="w-full z-50 bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
+                <a href="/" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
                     <i class="fa-solid fa-arrow-left text-primary text-xl"></i>
                     <div>
                         <div class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</div>
@@ -45,13 +44,13 @@
                     </div>
                 </a>
                 <div class="flex items-center gap-4">
-                    <a href="galeria.html" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_galeria">Galeria</a>
+                    <a href="/galeria" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_galeria">Galeria</a>
                     <div class="flex items-center text-xs font-semibold tracking-wide border border-gray-200 rounded-full px-1 py-0.5">
                         <button type="button" class="lang-btn active px-1.5" data-lang="pt" aria-label="Português">PT</button>
                         <span class="text-gray-300">|</span>
                         <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en" aria-label="English">EN</button>
                     </div>
-                    <a href="index.html#contactos" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_contactos">Contactos</a>
+                    <a href="/#contactos" class="hidden sm:inline text-sm text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_contactos">Contactos</a>
                 </div>
             </div>
         </div>
@@ -302,7 +301,7 @@
                         Enviar Pedido de Disponibilidade <i class="fa-solid fa-paper-plane text-sm"></i>
                     </button>
                     <p class="text-center text-[11px] text-gray-400" data-i18n="res_submit_note">Pode trazer a sua própria comida e bolo. Entraremos em contacto para validação final da data.</p>
-                    <p class="text-center text-[11px] text-gray-400" data-i18n="res_privacy_note">Ao enviar este formulário, os seus dados serão tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="privacidade.html" class="underline hover:text-secondary transition">Política de Privacidade</a>.</p>
+                    <p class="text-center text-[11px] text-gray-400" data-i18n="res_privacy_note">Ao enviar este formulário, os seus dados serão tratados para responder ao pedido de disponibilidade. Consulte a nossa <a href="/privacidade" class="underline hover:text-secondary transition">Política de Privacidade</a>.</p>
                 </form>
 
             </div>
@@ -321,11 +320,12 @@
             <span class="hidden md:inline">•</span>
             <a href="https://www.instagram.com/pedacosdesonho.azambuja" target="_blank" rel="noopener" class="hover:text-secondary transition" aria-label="Instagram"><i class="fa-brands fa-instagram mr-1"></i> Instagram</a>
             <span class="hidden md:inline">•</span>
-            <a href="privacidade.html" class="hover:text-secondary transition" data-i18n="footer_privacy">Política de Privacidade</a>
+            <a href="/privacidade" class="hover:text-secondary transition" data-i18n="footer_privacy">Política de Privacidade</a>
         </div>
     </footer>
 
     <!-- Scripts de Interatividade -->
+    <script src="js/icons.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/analytics.js"></script>
     <script>
@@ -423,7 +423,7 @@
             <h2 class="font-serif text-3xl font-bold text-primary" data-success-title></h2>
             <p class="text-gray-600 max-w-md mx-auto text-sm leading-relaxed" data-success-body></p>
             <div class="pt-4">
-                <a href="index.html" class="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-opacity-90 transition shadow" data-success-home></a>
+                <a href="/" class="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-opacity-90 transition shadow" data-success-home></a>
             </div>
         </div>
     </template>

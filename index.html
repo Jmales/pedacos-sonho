@@ -19,13 +19,11 @@
     <meta name="twitter:description" data-i18n="og_description" data-i18n-attr="content" content="O cenário idílico a 40 minutos de Lisboa para casamentos, festas infantis e eventos corporate na natureza.">
     <meta name="twitter:image" content="https://serenolisbon.com/images/espaco-fachada-saloes.webp">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/hero-cover.webp" fetchpriority="high">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
+    <link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" as="image" href="images/hero-cover.webp" fetchpriority="high">
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "EventVenue",
@@ -122,7 +120,7 @@
     <nav class="fixed w-full z-50 bg-light/95 backdrop-blur shadow-sm">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center gap-3 h-16 sm:h-20">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 min-w-0">
+                <a href="/" class="flex-shrink-0 flex items-center gap-2 min-w-0">
                     <i class="fa-solid fa-leaf text-primary text-xl sm:text-2xl"></i>
                     <div class="min-w-0">
                         <div class="font-serif font-bold text-lg sm:text-2xl text-primary leading-none truncate">Pedaços de Sonho</div>
@@ -132,7 +130,7 @@
                 <div class="hidden lg:flex items-center gap-3 xl:gap-5 text-sm whitespace-nowrap">
                     <a href="#espaco" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_espaco">O Espaço</a>
                     <a href="#servicos" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_eventos">Eventos</a>
-                    <a href="galeria.html" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_galeria">Galeria</a>
+                    <a href="/galeria" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_galeria">Galeria</a>
                     <a href="#faq" class="hidden xl:inline text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_faq">Perguntas Frequentes</a>
                     <div class="flex items-center gap-1 text-xs border border-gray-200 rounded-full px-2 py-1">
                         <button type="button" class="lang-btn active px-1.5" data-lang="pt" aria-label="Português">PT</button>
@@ -140,7 +138,7 @@
                         <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en" aria-label="English">EN</button>
                     </div>
                     <a href="#contactos" class="text-gray-700 hover:text-primary transition font-medium" data-i18n="nav_contactos">Contactos</a>
-                    <a href="reservas.html" class="bg-primary hover:bg-opacity-90 text-white px-4 xl:px-5 py-2 rounded-full font-medium transition shadow-md" data-i18n="nav_reservar">Reservar</a>
+                    <a href="/reservas" class="bg-primary hover:bg-opacity-90 text-white px-4 xl:px-5 py-2 rounded-full font-medium transition shadow-md" data-i18n="nav_reservar">Reservar</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-2 sm:gap-3 flex-shrink-0">
                     <div class="flex items-center gap-1 text-xs border border-gray-200 rounded-full px-1.5 py-0.5">
@@ -148,7 +146,7 @@
                         <span class="text-gray-300">|</span>
                         <button type="button" class="lang-btn text-gray-500 px-1" data-lang="en">EN</button>
                     </div>
-                    <a href="reservas.html" class="bg-primary text-white text-xs px-3 sm:px-4 py-2 rounded-full font-medium whitespace-nowrap" data-i18n="nav_reservar">Reservar</a>
+                    <a href="/reservas" class="bg-primary text-white text-xs px-3 sm:px-4 py-2 rounded-full font-medium whitespace-nowrap" data-i18n="nav_reservar">Reservar</a>
                 </div>
             </div>
         </div>
@@ -163,7 +161,7 @@
             <p class="text-base md:text-lg text-gray-200 mb-10 max-w-2xl mx-auto font-light" data-i18n="hero_sub">Apenas a 40 minutos de Lisboa, descubra o cenário perfeito para celebrar casamentos com alma, aniversários infantis e encontros corporativos memoráveis.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#servicos" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg text-base" data-i18n="hero_cta1">Explorar Eventos</a>
-                <a href="reservas.html" class="bg-primary border-2 border-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-white transition shadow-lg text-base" data-i18n="hero_cta2">Consultar Valores e Reservar</a>
+                <a href="/reservas" class="bg-primary border-2 border-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-white transition shadow-lg text-base" data-i18n="hero_cta2">Consultar Valores e Reservar</a>
             </div>
         </div>
     </section>
@@ -240,21 +238,21 @@
                 <!-- 1. Festas Infantis -->
                 <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/espaco-campo-futebol.webp" data-i18n-alt="card_kids_alt" alt="Festas infantis e quinta pedagógica" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/espaco-campo-futebol.webp" data-i18n-alt="card_kids_alt" alt="Festas infantis e quinta pedagógica" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="640" height="400" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow justify-between">
                         <div>
                             <h3 class="font-serif text-xl font-bold text-primary mb-2" data-i18n="card_kids_title">Festas Infantis</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card_kids_desc">Aniversários ao ar livre com insufláveis, póneis e contacto direto com a natureza. Packs a partir de 120 €.</p>
                         </div>
-                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_kids_cta">Ver Packs <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                        <a href="/reservas" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_kids_cta">Ver Packs <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
                     </div>
                 </div>
 
                 <!-- 2. Casamentos & Batizados (Sob Consulta) -->
                 <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border-2 border-secondary/30 flex flex-col">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="images/evento-aliancas-casamento.webp" data-i18n-alt="card_wed_alt" alt="Casamentos e batizados" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/evento-aliancas-casamento.webp" data-i18n-alt="card_wed_alt" alt="Casamentos e batizados" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="640" height="400" loading="lazy">
                         <span class="absolute top-3 right-3 bg-secondary text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow" data-i18n="sob_consulta">Sob Consulta</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow justify-between">
@@ -262,42 +260,42 @@
                             <h3 class="font-serif text-xl font-bold text-primary mb-2" data-i18n="card_wed_title">Casamentos & Batizados</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card_wed_desc">Cerimónias e celebrações intimistas com exclusividade do espaço e liberdade de catering.</p>
                         </div>
-                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_wed_cta">Pedir Proposta <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                        <a href="/reservas" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_wed_cta">Pedir Proposta <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
                     </div>
                 </div>
 
                 <!-- 3. Empresas & Corporate -->
                 <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/espaco-sala-refeicoes.webp" data-i18n-alt="card_corp_alt" alt="Eventos corporativos e teambuilding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/espaco-sala-refeicoes.webp" data-i18n-alt="card_corp_alt" alt="Eventos corporativos e teambuilding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="640" height="400" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow justify-between">
                         <div>
                             <h3 class="font-serif text-xl font-bold text-primary mb-2" data-i18n="card_corp_title">Empresas & Corporate</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card_corp_desc">Teambuilding, reuniões com luz natural e almoços de empresa fora da rotina do escritório.</p>
                         </div>
-                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_corp_cta">Simular Aluguer <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                        <a href="/reservas" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_corp_cta">Simular Aluguer <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
                     </div>
                 </div>
 
                 <!-- 4. Outros Eventos -->
                 <div class="group bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/evento-lounge-jardim.webp" data-i18n-alt="card_other_alt" alt="Lounge exterior e coffee bar no jardim" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/evento-lounge-jardim.webp" data-i18n-alt="card_other_alt" alt="Lounge exterior e coffee bar no jardim" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="640" height="400" loading="lazy">
                     </div>
                     <div class="p-6 flex flex-col flex-grow justify-between">
                         <div>
                             <h3 class="font-serif text-xl font-bold text-primary mb-2" data-i18n="card_other_title">Outros Encontros</h3>
                             <p class="text-gray-600 text-sm mb-4" data-i18n="card_other_desc">Bodas de prata, piqueniques familiares, noites de fados, gravações, workshops ou convívios privados ao ar livre.</p>
                         </div>
-                        <a href="reservas.html" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_other_cta">Consultar Opções <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                        <a href="/reservas" class="inline-flex items-center text-secondary font-semibold text-sm hover:text-primary transition" data-i18n="card_other_cta">Consultar Opções <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Portfolio teaser -->
             <div class="mt-14 text-center">
-                <a href="galeria.html" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition">
+                <a href="/galeria" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition">
                     <i class="fa-solid fa-images"></i>
                     <span data-i18n="portfolio_cta">Ver portfólio de eventos anteriores</span>
                     <i class="fa-solid fa-arrow-right text-xs"></i>
@@ -328,7 +326,7 @@
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <h3 class="text-lg font-bold text-gray-800 mb-2" data-i18n="faq_q4">Quais são os turnos de aluguer e a partir de que preço?</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="faq_a4">O aluguer por turnos de 3 horas começa nos 120 € (manhã, dias de semana). Existem turnos de manhã, tarde e fim de tarde, com valores de fim-de-semana distintos, e aluguer de dia completo (6h) em época baixa e alta. Consulte a <a href="reservas.html" class="text-primary underline">página de reservas</a> para a tabela atualizada.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="faq_a4">O aluguer por turnos de 3 horas começa nos 120 € (manhã, dias de semana). Existem turnos de manhã, tarde e fim de tarde, com valores de fim-de-semana distintos, e aluguer de dia completo (6h) em época baixa e alta. Consulte a <a href="/reservas" class="text-primary underline">página de reservas</a> para a tabela atualizada.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <h3 class="text-lg font-bold text-gray-800 mb-2" data-i18n="faq_q5">Como funciona a caução e a confirmação da data?</h3>
@@ -347,7 +345,7 @@
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h2 class="font-serif text-4xl font-bold mb-4" data-i18n="cta_title">Pronto para planear a sua celebração?</h2>
             <p class="text-base md:text-lg text-gray-200 mb-8 max-w-2xl mx-auto" data-i18n="cta_sub">Consulte os turnos de aluguer, selecione os extras pretendidos e receba uma confirmação de disponibilidade rápida.</p>
-            <a href="reservas.html" class="inline-block bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-secondary hover:text-white transition duration-300 shadow-xl text-base" data-i18n="cta_btn">
+            <a href="/reservas" class="inline-block bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-secondary hover:text-white transition duration-300 shadow-xl text-base" data-i18n="cta_btn">
                 Ver Tabela e Fazer Pedido
             </a>
         </div>
@@ -370,11 +368,11 @@
                 <div>
                     <div class="text-white font-semibold mb-4 text-sm uppercase tracking-wider" data-i18n="footer_nav">Navegação</div>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-secondary transition" data-i18n="nav_inicio">Início</a></li>
+                        <li><a href="/" class="hover:text-secondary transition" data-i18n="nav_inicio">Início</a></li>
                         <li><a href="#espaco" class="hover:text-secondary transition" data-i18n="nav_espaco">O Espaço</a></li>
                         <li><a href="#servicos" class="hover:text-secondary transition" data-i18n="nav_eventos">Eventos</a></li>
-                        <li><a href="galeria.html" class="hover:text-secondary transition" data-i18n="nav_galeria">Galeria</a></li>
-                        <li><a href="reservas.html" class="hover:text-secondary transition text-secondary font-medium" data-i18n="nav_reservas_short">Reservas & Preços</a></li>
+                        <li><a href="/galeria" class="hover:text-secondary transition" data-i18n="nav_galeria">Galeria</a></li>
+                        <li><a href="/reservas" class="hover:text-secondary transition text-secondary font-medium" data-i18n="nav_reservas_short">Reservas & Preços</a></li>
                     </ul>
                 </div>
                 <div>
@@ -397,10 +395,11 @@
         <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
             <p data-i18n="footer_copy">&copy; 2026 Pedaços de Sonho - Sereno Gatherings. Todos os direitos reservados.</p>
             <span class="hidden sm:inline text-gray-600">·</span>
-            <a href="privacidade.html" class="hover:text-secondary transition" data-i18n="footer_privacy">Política de Privacidade</a>
+            <a href="/privacidade" class="hover:text-secondary transition" data-i18n="footer_privacy">Política de Privacidade</a>
         </div>
     </footer>
 
+    <script src="js/icons.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/analytics.js"></script>
 

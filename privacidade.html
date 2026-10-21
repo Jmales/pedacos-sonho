@@ -16,17 +16,16 @@
     <meta property="og:image" content="https://serenolisbon.com/images/espaco-fachada-saloes.webp">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
 
     <nav class="w-full z-50 bg-white shadow-sm sticky top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
+                <a href="/" class="flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition">
                     <i class="fa-solid fa-arrow-left text-primary text-xl"></i>
                     <div>
                         <div class="font-serif font-bold text-xl text-primary leading-none">Pedaços de Sonho</div>
@@ -39,7 +38,7 @@
                         <span class="text-gray-300">|</span>
                         <button type="button" class="lang-btn px-1.5 text-gray-500" data-lang="en" aria-label="English">EN</button>
                     </div>
-                    <a href="reservas.html" class="hidden sm:inline bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm" data-i18n="nav_reservas_btn">Reservas</a>
+                    <a href="/reservas" class="hidden sm:inline bg-primary hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm" data-i18n="nav_reservas_btn">Reservas</a>
                 </div>
             </div>
         </div>
@@ -73,7 +72,7 @@
 
             <section class="space-y-2">
                 <h2 class="text-lg font-bold text-primary" data-i18n="priv_h4">4. Destinatários e subcontratantes</h2>
-                <p data-i18n="priv_p4">Os pedidos do formulário são enviados através do serviço Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). Podem ainda carregar recursos de terceiros necessários ao funcionamento do site (fontes, ícones, CDN). O selo Zaask, quando apresentado, carrega conteúdos do domínio zaask.pt. Estes prestadores atuam como subcontratantes ou destinatários na medida do necessário à prestação do serviço.</p>
+                <p data-i18n="priv_p4">Os pedidos do formulário são enviados através do serviço Web3Forms (https://web3forms.com), que processa a mensagem e a entrega ao nosso email. O website pode ser alojado em infraestrutura de terceiros (por exemplo Cloudflare). O selo Zaask, quando apresentado, carrega conteúdos do domínio zaask.pt. Estes prestadores atuam como subcontratantes ou destinatários na medida do necessário à prestação do serviço.</p>
             </section>
 
             <section class="space-y-2">
@@ -107,13 +106,14 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
             <p data-i18n="footer_copy_short">&copy; 2026 Pedaços de Sonho - Sereno Gatherings.</p>
             <div class="flex gap-4 items-center">
-                <a href="index.html" class="hover:text-secondary transition" data-i18n="nav_inicio">Início</a>
-                <a href="index.html#contactos" class="hover:text-secondary transition" data-i18n="nav_contactos">Contactos</a>
-                <a href="privacidade.html" class="hover:text-secondary transition text-secondary" data-i18n="footer_privacy">Política de Privacidade</a>
+                <a href="/" class="hover:text-secondary transition" data-i18n="nav_inicio">Início</a>
+                <a href="/#contactos" class="hover:text-secondary transition" data-i18n="nav_contactos">Contactos</a>
+                <a href="/privacidade" class="hover:text-secondary transition text-secondary" data-i18n="footer_privacy">Política de Privacidade</a>
             </div>
         </div>
     </footer>
 
+    <script src="js/icons.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/analytics.js"></script>
 </body>

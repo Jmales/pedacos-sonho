@@ -1,0 +1,396 @@
+{
+  "currency": "EUR",
+  "minHours": 3,
+  "maxGuestsDefault": 80,
+  "freeUnderAge": 3,
+  "extraHolidayDates": [],
+  "notes": {
+    "pt": "Valores de lançamento — sujeitos a confirmação de disponibilidade. A caução é reembolsável. Confirmação de data mediante sinal de 30%. Crianças com menos de 3 anos não contam para o espaço nem para as refeições. Acima de 80 pessoas (excluindo menores de 3): sob consulta. Feriados nacionais aplicam tarifa de fim-de-semana.",
+    "en": "Launch pricing — subject to availability confirmation. The deposit is refundable. Date confirmation requires a 30% deposit. Children under 3 do not count toward venue capacity or meals. Over 80 people (excluding under-3s): on request. National holidays use weekend rates."
+  },
+  "eventTypes": [
+    {
+      "id": "festas-infantis",
+      "label": {
+        "pt": "Festas infantis",
+        "en": "Kids parties"
+      },
+      "description": {
+        "pt": "Aniversários e festas para crianças no espaço exterior e salões.",
+        "en": "Birthday parties and kids events in the outdoor space and halls."
+      },
+      "splitGuests": true,
+      "maxGuests": 80,
+      "hourlyWeekday": 40,
+      "hourlyWeekend": 45,
+      "deposit": 150,
+      "extraIds": [
+        "catering-1",
+        "catering-2",
+        "decor-1",
+        "decor-2",
+        "pinturas-faciais",
+        "insuflavel-1",
+        "insuflavel-2"
+      ]
+    },
+    {
+      "id": "corporate",
+      "label": {
+        "pt": "Corporate / Team-Building",
+        "en": "Corporate / Team-Building"
+      },
+      "description": {
+        "pt": "Eventos de empresa, reuniões e atividades de equipa.",
+        "en": "Company events, meetings and team activities."
+      },
+      "maxGuests": 80,
+      "hourlyWeekday": 60,
+      "hourlyWeekend": 70,
+      "deposit": 150,
+      "extrasTriggerQuote": true,
+      "extraIds": [
+        "catering-corporate",
+        "decoracao-corporate",
+        "outros-extras-corporate"
+      ],
+      "extrasNote": {
+        "pt": "Só o espaço: valor indicado de imediato. Catering e extras corporate sob consulta — preço a definir.",
+        "en": "Venue only: price shown right away. Corporate catering and extras on request — pricing TBD."
+      }
+    },
+    {
+      "id": "casamentos",
+      "label": {
+        "pt": "Casamentos",
+        "en": "Weddings"
+      },
+      "description": {
+        "pt": "Cerimónia e/ou recepção no jardim, pinhal ou salões. Extras sob consulta.",
+        "en": "Ceremony and/or reception in the garden, pine grove or halls. Extras on request."
+      },
+      "maxGuests": 80,
+      "hourlyWeekday": 170,
+      "hourlyWeekend": 190,
+      "deposit": 250,
+      "extrasTriggerQuote": true,
+      "extraIds": [
+        "catering",
+        "decoracao",
+        "animacao",
+        "animacao-infantil",
+        "fotografia",
+        "video",
+        "bolo"
+      ],
+      "extrasNote": {
+        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
+        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+      }
+    },
+    {
+      "id": "batizados",
+      "label": {
+        "pt": "Batizados",
+        "en": "Christenings"
+      },
+      "description": {
+        "pt": "Celebrações de batizado no espaço. Extras sob consulta.",
+        "en": "Christening celebrations at the venue. Extras on request."
+      },
+      "maxGuests": 80,
+      "hourlyWeekday": 150,
+      "hourlyWeekend": 170,
+      "deposit": 250,
+      "extrasTriggerQuote": true,
+      "extraIds": [
+        "catering",
+        "decoracao",
+        "animacao",
+        "animacao-infantil",
+        "fotografia",
+        "video",
+        "bolo"
+      ],
+      "extrasNote": {
+        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
+        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+      }
+    },
+    {
+      "id": "outros-especiais",
+      "label": {
+        "pt": "Natal / Páscoa / Passagem de ano",
+        "en": "Christmas / Easter / New Year's Eve"
+      },
+      "description": {
+        "pt": "Ocupação do espaço para celebrações especiais.",
+        "en": "Venue hire for special events."
+      },
+      "maxGuests": 80,
+      "hourlyWeekday": 70,
+      "hourlyWeekend": 70,
+      "deposit": 150,
+      "extrasTriggerQuote": true,
+      "extraIds": [
+        "catering",
+        "decoracao",
+        "animacao",
+        "animacao-infantil",
+        "fotografia",
+        "video",
+        "bolo"
+      ],
+      "extrasNote": {
+        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
+        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+      }
+    },
+    {
+      "id": "outros",
+      "label": {
+        "pt": "Outros eventos",
+        "en": "Other events"
+      },
+      "description": {
+        "pt": "Convívios, celebrações e outros eventos até à capacidade do espaço.",
+        "en": "Gatherings, celebrations and other events within venue capacity."
+      },
+      "maxGuests": 80,
+      "hourlyWeekday": 40,
+      "hourlyWeekend": 45,
+      "deposit": 150,
+      "extraIds": [
+        "catering-1",
+        "catering-2",
+        "decor-1",
+        "decor-2",
+        "pinturas-faciais",
+        "insuflavel-1",
+        "insuflavel-2"
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "catering-1",
+      "label": {
+        "pt": "Catering 1",
+        "en": "Catering 1"
+      },
+      "description": {
+        "pt": "[TODO Anita]",
+        "en": "[TODO Anita]"
+      },
+      "unitPrice": 18,
+      "unit": "child",
+      "exclusiveGroup": "catering"
+    },
+    {
+      "id": "catering-2",
+      "label": {
+        "pt": "Catering 2",
+        "en": "Catering 2"
+      },
+      "description": {
+        "pt": "[TODO Anita]",
+        "en": "[TODO Anita]"
+      },
+      "unitPrice": 25,
+      "unit": "child",
+      "exclusiveGroup": "catering"
+    },
+    {
+      "id": "decor-1",
+      "label": {
+        "pt": "Decoração 1",
+        "en": "Décor 1"
+      },
+      "description": {
+        "pt": "Decoração base da festa (por evento).",
+        "en": "Basic party décor (per event)."
+      },
+      "unitPrice": 145,
+      "unit": "event",
+      "exclusiveGroup": "decor"
+    },
+    {
+      "id": "decor-2",
+      "label": {
+        "pt": "Decoração 2",
+        "en": "Décor 2"
+      },
+      "description": {
+        "pt": "Decoração mais elaborada da festa (por evento).",
+        "en": "More elaborate party décor (per event)."
+      },
+      "unitPrice": 225,
+      "unit": "event",
+      "exclusiveGroup": "decor"
+    },
+    {
+      "id": "pinturas-faciais",
+      "label": {
+        "pt": "Pinturas faciais",
+        "en": "Face painting"
+      },
+      "description": {
+        "pt": "Serviço de pinturas faciais, cobrado à hora.",
+        "en": "Face-painting service, charged per hour."
+      },
+      "unitPrice": 40,
+      "unit": "hour"
+    },
+    {
+      "id": "insuflavel-1",
+      "label": {
+        "pt": "Insuflável 1",
+        "en": "Inflatable 1"
+      },
+      "description": {
+        "pt": "Insuflável mais pequeno, por evento.",
+        "en": "Smaller inflatable, per event."
+      },
+      "unitPrice": 65,
+      "unit": "event",
+      "exclusiveGroup": "insuflavel"
+    },
+    {
+      "id": "insuflavel-2",
+      "label": {
+        "pt": "Insuflável 2",
+        "en": "Inflatable 2"
+      },
+      "description": {
+        "pt": "Insuflável / castelo maior, por evento.",
+        "en": "Larger inflatable / bouncy castle, per event."
+      },
+      "unitPrice": 120,
+      "unit": "event",
+      "exclusiveGroup": "insuflavel"
+    },
+    {
+      "id": "catering-corporate",
+      "quoteOnly": true,
+      "pendingPrice": true,
+      "label": {
+        "pt": "Catering corporate",
+        "en": "Corporate catering"
+      },
+      "description": {
+        "pt": "Preço a definir — placeholder até confirmarmos o menu e valores corporate.",
+        "en": "Pricing TBD — placeholder until corporate menus and rates are confirmed."
+      }
+    },
+    {
+      "id": "decoracao-corporate",
+      "quoteOnly": true,
+      "pendingPrice": true,
+      "label": {
+        "pt": "Decoração corporate",
+        "en": "Corporate décor"
+      },
+      "description": {
+        "pt": "Preço a definir — placeholder até confirmarmos os packs de decoração corporate.",
+        "en": "Pricing TBD — placeholder until corporate décor packs are confirmed."
+      }
+    },
+    {
+      "id": "outros-extras-corporate",
+      "quoteOnly": true,
+      "pendingPrice": true,
+      "label": {
+        "pt": "Outros extras corporate",
+        "en": "Other corporate extras"
+      },
+      "description": {
+        "pt": "Preço a definir — descreva nas observações o que precisa (coffee break, AV, etc.).",
+        "en": "Pricing TBD — describe in the notes what you need (coffee break, AV, etc.)."
+      }
+    },
+    {
+      "id": "catering",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Catering",
+        "en": "Catering"
+      },
+      "description": {
+        "pt": "Menu e serviço de mesa adaptados ao número de convidados.",
+        "en": "Menu and table service tailored to the number of guests."
+      }
+    },
+    {
+      "id": "decoracao",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Decoração",
+        "en": "Décor"
+      },
+      "description": {
+        "pt": "Decoração de cerimónia, mesas e espaços, ao estilo pretendido.",
+        "en": "Ceremony, table and venue décor in your chosen style."
+      }
+    },
+    {
+      "id": "animacao",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Animação",
+        "en": "Entertainment"
+      },
+      "description": {
+        "pt": "Música ao vivo, DJ ou outra animação para os convidados.",
+        "en": "Live music, DJ or other entertainment for guests."
+      }
+    },
+    {
+      "id": "animacao-infantil",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Animação infantil",
+        "en": "Kids entertainment"
+      },
+      "description": {
+        "pt": "Atividades e acompanhamento para as crianças durante o evento.",
+        "en": "Activities and supervision for children during the event."
+      }
+    },
+    {
+      "id": "fotografia",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Fotografia",
+        "en": "Photography"
+      },
+      "description": {
+        "pt": "Cobertura fotográfica do evento.",
+        "en": "Photographic coverage of the event."
+      }
+    },
+    {
+      "id": "video",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Vídeo",
+        "en": "Video"
+      },
+      "description": {
+        "pt": "Cobertura em vídeo do evento.",
+        "en": "Video coverage of the event."
+      }
+    },
+    {
+      "id": "bolo",
+      "quoteOnly": true,
+      "label": {
+        "pt": "Bolo",
+        "en": "Cake"
+      },
+      "description": {
+        "pt": "Bolo do evento, com sabor e dimensão à escolha.",
+        "en": "Event cake, with your choice of flavour and size."
+      }
+    }
+  ]
+}

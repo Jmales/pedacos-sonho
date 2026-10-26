@@ -23,7 +23,7 @@ export const pt = {
   hero_eyebrow: 'Sereno Gatherings • Grande Lisboa & Ribatejo',
   hero_title: 'Natureza, espaço e <br/>muita imaginação',
   hero_h1:
-    'Espaço para festas infantis, casamentos e eventos perto de Lisboa (Azambuja)',
+    'Espaço para festas infantis, casamentos e eventos perto de Lisboa',
   hero_sub:
     'Apenas a 40 minutos de Lisboa, descubra o cenário perfeito para celebrar casamentos com alma, aniversários infantis e encontros corporativos memoráveis.',
   hero_cta1: 'Explorar Eventos',
@@ -137,7 +137,7 @@ export const pt = {
     'Simulador de orçamento e pedidos de reserva na Sereno Gatherings (Pedaços de Sonho). Valores de lançamento 2026 para festas infantis, convívios, casamentos e empresas.',
   res_page_h1: 'Preços e reservas: quinta para eventos em Azambuja',
   res_header_title: 'Simule e Reserve o seu Evento',
-  res_header_sub: 'Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa / Azambuja)',
+  res_header_sub: 'Tabela de Lançamento 2026 • Sereno Gatherings (Lisboa)',
   res_turnos_title: 'Aluguer por Turnos (3 Horas)',
   res_turnos_sub: 'Festas Infantis, Encontros e Eventos Corporate.',
   res_morning: 'Manhã (09:30 - 12:30)',

@@ -25,7 +25,7 @@ export const en = {
   hero_eyebrow: 'Sereno Gatherings • Greater Lisbon & Ribatejo',
   hero_title: 'Nature, space and <br/>plenty of imagination',
   hero_h1:
-    'Venue for kids’ parties, weddings and events near Lisbon (Azambuja)',
+    'Venue for kids’ parties, weddings and events near Lisbon',
   hero_sub:
     'Just 40 minutes from Lisbon, discover the perfect setting for soulful weddings, kids’ birthdays and memorable corporate gatherings.',
   hero_cta1: 'Explore Events',
@@ -129,7 +129,7 @@ export const en = {
     'Quote simulator and booking requests at Sereno Gatherings (Pedaços de Sonho). 2026 launch rates for kids’ parties, gatherings, weddings and corporate events.',
   res_page_h1: 'Prices & bookings: event venue in Azambuja',
   res_header_title: 'Simulate and Book Your Event',
-  res_header_sub: '2026 Launch Rates • Sereno Gatherings (Lisbon / Azambuja)',
+  res_header_sub: '2026 Launch Rates • Sereno Gatherings (Lisbon)',
   res_turnos_title: 'Slot Rental (3 Hours)',
   res_turnos_sub: 'Kids’ parties, gatherings and corporate events.',
   res_morning: 'Morning (09:30 - 12:30)',

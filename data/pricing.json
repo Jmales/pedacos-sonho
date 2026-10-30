@@ -5,8 +5,8 @@
   "freeUnderAge": 3,
   "extraHolidayDates": [],
   "notes": {
-    "pt": "Valores de lançamento — sujeitos a confirmação de disponibilidade. A caução é reembolsável. Confirmação de data mediante sinal de 30%. Crianças com menos de 3 anos não contam para o espaço nem para as refeições. Acima de 80 pessoas (excluindo menores de 3): sob consulta. Feriados nacionais aplicam tarifa de fim-de-semana.",
-    "en": "Launch pricing — subject to availability confirmation. The deposit is refundable. Date confirmation requires a 30% deposit. Children under 3 do not count toward venue capacity or meals. Over 80 people (excluding under-3s): on request. National holidays use weekend rates."
+    "pt": "Valores de lançamento — sujeitos a confirmação de disponibilidade. A caução é reembolsável (150 €, até 15 dias após o evento). Confirmação de data mediante sinal de 30%; remanescente até 24 horas antes. Crianças com menos de 3 anos não contam para o espaço nem para as refeições. Acima de 80 pessoas (excluindo menores de 3): sob consulta. Feriados nacionais aplicam tarifa de fim-de-semana. Catering em buffet self-service (valores de referência a partir de 30 pessoas). A todos os valores acresce IVA à taxa legal.",
+    "en": "Launch pricing — subject to availability confirmation. The deposit is refundable (€150, within 15 days after the event). Date confirmation requires a 30% deposit; balance due 24 hours before. Children under 3 do not count toward venue capacity or meals. Over 80 people (excluding under-3s): on request. National holidays use weekend rates. Catering is self-service buffet (reference prices from 30 guests). All prices plus VAT at the legal rate."
   },
   "eventTypes": [
     {
@@ -31,7 +31,10 @@
         "decor-2",
         "pinturas-faciais",
         "insuflavel-1",
-        "insuflavel-2"
+        "insuflavel-2",
+        "pratos-talheres",
+        "mesas-cadeiras",
+        "cozinha-apoio"
       ]
     },
     {
@@ -48,15 +51,20 @@
       "hourlyWeekday": 60,
       "hourlyWeekend": 70,
       "deposit": 150,
-      "extrasTriggerQuote": true,
       "extraIds": [
-        "catering-corporate",
-        "decoracao-corporate",
+        "catering-corporate-1",
+        "catering-corporate-2",
+        "catering-corporate-3",
+        "decor-1",
+        "decor-2",
+        "pratos-talheres",
+        "mesas-cadeiras",
+        "cozinha-apoio",
         "outros-extras-corporate"
       ],
       "extrasNote": {
-        "pt": "Só o espaço: valor indicado de imediato. Catering e extras corporate sob consulta — preço a definir.",
-        "en": "Venue only: price shown right away. Corporate catering and extras on request — pricing TBD."
+        "pt": "Escolha um pack de catering. Outros extras corporate: descreva nas observações.",
+        "en": "Choose a catering pack. Other corporate extras: describe in the notes."
       }
     },
     {
@@ -161,13 +169,16 @@
       "hourlyWeekend": 45,
       "deposit": 150,
       "extraIds": [
-        "catering-1",
-        "catering-2",
+        "catering-familiar-1",
+        "catering-familiar-2",
         "decor-1",
         "decor-2",
         "pinturas-faciais",
         "insuflavel-1",
-        "insuflavel-2"
+        "insuflavel-2",
+        "pratos-talheres",
+        "mesas-cadeiras",
+        "cozinha-apoio"
       ]
     }
   ],
@@ -175,57 +186,84 @@
     {
       "id": "catering-1",
       "label": {
-        "pt": "Catering 1",
-        "en": "Catering 1"
+        "pt": "Kids 1 — Lanche Feliz",
+        "en": "Kids 1 — Happy Snack"
       },
       "description": {
-        "pt": "[TODO Anita]",
-        "en": "[TODO Anita]"
+        "pt": "Lanche leve em buffet: mini pizza ou cachorro, pipocas e batatas fritas, fruta fresca e gelatina. Inclui loiça descartável e guardanapos.",
+        "en": "Light buffet snack: mini pizza or hot dog, popcorn and fries, fresh fruit and jelly. Includes disposable crockery and napkins."
       },
-      "unitPrice": 18,
+      "unitPrice": 12,
       "unit": "child",
       "exclusiveGroup": "catering"
     },
     {
       "id": "catering-2",
       "label": {
-        "pt": "Catering 2",
-        "en": "Catering 2"
+        "pt": "Kids 2 — Festa Completa",
+        "en": "Kids 2 — Full Party"
       },
       "description": {
-        "pt": "[TODO Anita]",
-        "en": "[TODO Anita]"
+        "pt": "Lanche variado: mini hambúrgueres, mini pizzas, batatas fritas e pipocas, espetadas de fruta, gelatina. Bebidas selecionadas: águas, sumos e café.",
+        "en": "Varied snack: mini burgers, mini pizzas, fries and popcorn, fruit skewers, jelly. Selected drinks: water, juices and coffee."
       },
-      "unitPrice": 25,
+      "unitPrice": 19,
       "unit": "child",
+      "exclusiveGroup": "catering"
+    },
+    {
+      "id": "catering-familiar-1",
+      "label": {
+        "pt": "Familiar 1 — Essencial",
+        "en": "Family 1 — Essential"
+      },
+      "description": {
+        "pt": "Buffet volante para aniversários e encontros: mini salgados, mini sanduíches, tábua de queijos e enchidos, bolo caseiro e mousse de chocolate, fruta da época. Bebidas: águas, sumos e café (alcoólicas sob orçamento).",
+        "en": "Flying buffet for birthdays and family gatherings: mini savoury snacks, mini sandwiches, cheese and cured meats board, homemade cake and chocolate mousse, seasonal fruit. Drinks: water, juices and coffee (alcohol on request)."
+      },
+      "unitPrice": 32,
+      "unit": "guest",
+      "exclusiveGroup": "catering"
+    },
+    {
+      "id": "catering-familiar-2",
+      "label": {
+        "pt": "Familiar 2 — Completo",
+        "en": "Family 2 — Complete"
+      },
+      "description": {
+        "pt": "Buffet de refeição: entradas e salgados, bacalhau espiritual e lombo assado, arroz, batatas assadas e saladas, mousse de chocolate e baba de camelo, fruta fresca. Bebidas: águas, sumos e café (alcoólicas sob orçamento).",
+        "en": "Meal buffet: starters and savoury snacks, bacalhau espiritual and roast loin, rice, roast potatoes and salads, chocolate mousse and baba de camelo, fresh fruit. Drinks: water, juices and coffee (alcohol on request)."
+      },
+      "unitPrice": 45,
+      "unit": "guest",
       "exclusiveGroup": "catering"
     },
     {
       "id": "decor-1",
       "label": {
-        "pt": "Decoração 1",
-        "en": "Décor 1"
+        "pt": "Decoração",
+        "en": "Décor"
       },
       "description": {
-        "pt": "Decoração base da festa (por evento).",
-        "en": "Basic party décor (per event)."
+        "pt": "Composição coordenada com as cores do evento: grinalda de balões, mesa principal decorada, painel simples e pequenos detalhes temáticos.",
+        "en": "Composition matched to the event colours: balloon garland, decorated main table, simple backdrop and small thematic details."
       },
-      "unitPrice": 145,
+      "unitPrice": 150,
       "unit": "event",
       "exclusiveGroup": "decor"
     },
     {
       "id": "decor-2",
+      "quoteOnly": true,
       "label": {
-        "pt": "Decoração 2",
-        "en": "Décor 2"
+        "pt": "Decoração personalizada",
+        "en": "Custom décor"
       },
       "description": {
-        "pt": "Decoração mais elaborada da festa (por evento).",
-        "en": "More elaborate party décor (per event)."
+        "pt": "Outras opções de decoração sob consulta.",
+        "en": "Other décor options on request."
       },
-      "unitPrice": 225,
-      "unit": "event",
       "exclusiveGroup": "decor"
     },
     {
@@ -270,42 +308,96 @@
       "exclusiveGroup": "insuflavel"
     },
     {
-      "id": "catering-corporate",
-      "quoteOnly": true,
-      "pendingPrice": true,
+      "id": "pratos-talheres",
       "label": {
-        "pt": "Catering corporate",
-        "en": "Corporate catering"
+        "pt": "Pratos e talheres",
+        "en": "Plates and cutlery"
       },
       "description": {
-        "pt": "Preço a definir — placeholder até confirmarmos o menu e valores corporate.",
-        "en": "Pricing TBD — placeholder until corporate menus and rates are confirmed."
-      }
+        "pt": "Serviço complementar de pratos e talheres.",
+        "en": "Complementary plates and cutlery service."
+      },
+      "unitPrice": 4,
+      "unit": "guest"
     },
     {
-      "id": "decoracao-corporate",
-      "quoteOnly": true,
-      "pendingPrice": true,
+      "id": "mesas-cadeiras",
       "label": {
-        "pt": "Decoração corporate",
-        "en": "Corporate décor"
+        "pt": "Mesas e cadeiras",
+        "en": "Tables and chairs"
       },
       "description": {
-        "pt": "Preço a definir — placeholder até confirmarmos os packs de decoração corporate.",
-        "en": "Pricing TBD — placeholder until corporate décor packs are confirmed."
-      }
+        "pt": "Aluguer de mesas e cadeiras por pessoa.",
+        "en": "Table and chair hire per person."
+      },
+      "unitPrice": 3,
+      "unit": "guest"
+    },
+    {
+      "id": "cozinha-apoio",
+      "label": {
+        "pt": "Cozinha de apoio",
+        "en": "Support kitchen"
+      },
+      "description": {
+        "pt": "Utilização da cozinha de apoio durante o evento.",
+        "en": "Use of the support kitchen during the event."
+      },
+      "unitPrice": 250,
+      "unit": "event"
+    },
+    {
+      "id": "catering-corporate-1",
+      "label": {
+        "pt": "Corporate 1 — Coffee Break",
+        "en": "Corporate 1 — Coffee Break"
+      },
+      "description": {
+        "pt": "Para reuniões, workshops e formações: café, chá e infusões, água e sumos, mini sanduíches, pastelaria variada e fruta da época. Bebidas alcoólicas sob orçamento.",
+        "en": "For meetings, workshops and training: coffee, tea and infusions, water and juices, mini sandwiches, assorted pastries and seasonal fruit. Alcohol on request."
+      },
+      "unitPrice": 18,
+      "unit": "guest",
+      "exclusiveGroup": "catering-corporate"
+    },
+    {
+      "id": "catering-corporate-2",
+      "label": {
+        "pt": "Corporate 2 — Networking",
+        "en": "Corporate 2 — Networking"
+      },
+      "description": {
+        "pt": "Cocktail em buffet: finger food e canapés, mini wraps e pequenas sanduíches, salgados e tábuas, sobremesas individuais. Bebidas: águas, sumos e café (alcoólicas sob orçamento).",
+        "en": "Buffet cocktail: finger food and canapés, mini wraps and small sandwiches, savoury snacks and boards, individual desserts. Drinks: water, juices and coffee (alcohol on request)."
+      },
+      "unitPrice": 35,
+      "unit": "guest",
+      "exclusiveGroup": "catering-corporate"
+    },
+    {
+      "id": "catering-corporate-3",
+      "label": {
+        "pt": "Corporate 3 — Celebration",
+        "en": "Corporate 3 — Celebration"
+      },
+      "description": {
+        "pt": "Refeição completa em buffet: entradas variadas, dois pratos principais, acompanhamentos e saladas, seleção de 2 a 3 sobremesas. Bebidas: águas, sumos e café (alcoólicas sob orçamento).",
+        "en": "Full buffet meal: assorted starters, two main courses, sides and salads, selection of 2–3 desserts. Drinks: water, juices and coffee (alcohol on request)."
+      },
+      "unitPrice": 55,
+      "unit": "guest",
+      "exclusiveGroup": "catering-corporate"
     },
     {
       "id": "outros-extras-corporate",
       "quoteOnly": true,
-      "pendingPrice": true,
       "label": {
         "pt": "Outros extras corporate",
         "en": "Other corporate extras"
       },
       "description": {
-        "pt": "Preço a definir — descreva nas observações o que precisa (coffee break, AV, etc.).",
-        "en": "Pricing TBD — describe in the notes what you need (coffee break, AV, etc.)."
+        "pt": "Descreva nas observações o que precisa (AV, animação, etc.).",
+        "en": "Describe in the notes what you need (AV, entertainment, etc.)."
       }
     },
     {

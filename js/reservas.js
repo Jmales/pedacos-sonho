@@ -518,7 +518,9 @@
     });
 
     var needsQuote =
-      overCapacity || !!(et.extrasTriggerQuote && quoteExtras.length);
+      overCapacity ||
+      !!(et.extrasTriggerQuote && quoteExtras.length) ||
+      (quoteExtras.length > 0 && lines.length === 1 && extrasTotal === 0);
     return {
       ready: true,
       et: et,
@@ -671,7 +673,7 @@
     } else {
       if (quoteEl) quoteEl.classList.add('hidden');
       if (linesEl) {
-        linesEl.innerHTML = est.lines
+        var pricedHtml = est.lines
           .map(function (line) {
             return (
               '<div class="flex justify-between gap-3 text-sm py-1"><span class="text-gray-600">' +
@@ -682,6 +684,18 @@
             );
           })
           .join('');
+        var quoteHtml = (est.quoteExtras || [])
+          .map(function (name) {
+            return (
+              '<div class="flex justify-between gap-3 text-sm py-1"><span class="text-gray-600">' +
+              name +
+              '</span><span class="text-secondary text-xs font-semibold">' +
+              t('res_quote_only') +
+              '</span></div>'
+            );
+          })
+          .join('');
+        linesEl.innerHTML = pricedHtml + quoteHtml;
       }
       if (totalEl) totalEl.textContent = euro(est.total);
       if (depositEl) {

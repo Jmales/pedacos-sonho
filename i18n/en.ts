@@ -205,6 +205,10 @@ export const en = {
     'Something went wrong. Please try again or call us.',
   res_err_network:
     'A connection error occurred. Please try again or call us.',
+  res_err_access_key:
+    'The form is not connected to email yet (missing Web3Forms access key). Please call or WhatsApp us.',
+  res_warn_access_key:
+    'Warning: replace YOUR_ACCESS_KEY_HERE with your real key in reservas.html (Web3Forms). With the placeholder, the site shows success but does not send email.',
   res_privacy_note:
     'By submitting this form, your data will be processed to respond to your request. See our <a href="/privacidade" class="underline hover:text-secondary transition">Privacy Policy</a>.',
   res_load_error: 'Could not load the price table. Please refresh the page.',

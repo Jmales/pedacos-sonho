@@ -213,6 +213,10 @@ export const pt = {
     'Ocorreu um erro ao enviar. Por favor, tente novamente ou contacte-nos por telefone.',
   res_err_network:
     'Ocorreu um erro de ligação. Por favor, tente novamente ou contacte-nos por telefone.',
+  res_err_access_key:
+    'O formulário ainda não está ligado ao email (chave Web3Forms em falta). Contacte-nos por telefone ou WhatsApp.',
+  res_warn_access_key:
+    'Atenção: substitua YOUR_ACCESS_KEY_HERE pela chave real em reservas.html (Web3Forms). Enquanto estiver o placeholder, o site mostra sucesso mas não envia email.',
   res_privacy_note:
     'Ao enviar este formulário, os seus dados serão tratados para responder ao pedido. Consulte a nossa <a href="/privacidade" class="underline hover:text-secondary transition">Política de Privacidade</a>.',
   res_load_error: 'Não foi possível carregar a tabela de preços. Atualize a página.',

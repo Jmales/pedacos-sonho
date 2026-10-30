@@ -17,7 +17,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" as="image" href="images/galeria/casamento-pinhal-ambiente-noite.webp">
 
 <script type="application/ld+json">
@@ -58,6 +57,7 @@
 
     <main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <p id="pricing_error" class="hidden text-sm text-red-600 bg-red-50 border border-red-100 rounded-2xl px-4 py-3 mb-6"></p>
+        <p id="form_config_error" class="hidden text-sm text-amber-900 bg-amber-50 border border-amber-200 rounded-2xl px-4 py-3 mb-6"></p>
 
         <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
 
@@ -90,7 +90,9 @@
                     </div>
 
                     <form id="form_reservas" action="https://api.web3forms.com/submit" method="POST" class="space-y-7">
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <!-- Chave pública Web3Forms: https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="76e2b40f-7388-4c41-a206-9c2e0f1a0ea9">
+                        <input type="hidden" name="from_name" value="Sereno Gatherings — Reservas">
                         <input type="hidden" name="subject" value="Novo Pedido de Reserva - Sereno Gatherings">
                         <input type="hidden" name="Orcamento_Resumo" id="orcamento_resumo" value="">
                         <input type="hidden" name="Modo_Pedido" id="modo_pedido" value="">
@@ -177,7 +179,7 @@
                                     <input type="text" name="Nome_Completo" placeholder="Nome completo *" data-i18n="res_ph_name" data-i18n-attr="placeholder" required class="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-light/80 text-sm">
                                 </div>
                                 <div>
-                                    <input type="email" name="Email" placeholder="Email *" data-i18n="res_ph_email" data-i18n-attr="placeholder" required class="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-light/80 text-sm">
+                                    <input type="email" name="email" placeholder="Email *" data-i18n="res_ph_email" data-i18n-attr="placeholder" required class="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-light/80 text-sm">
                                 </div>
                                 <div class="md:col-span-2">
                                     <input type="tel" name="Telefone" placeholder="Contacto telefónico *" data-i18n="res_ph_phone" data-i18n-attr="placeholder" required class="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition bg-light/80 text-sm">

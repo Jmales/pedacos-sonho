@@ -34,6 +34,49 @@
     );
   }
 
+  function getAccessKey(form) {
+    var input = form.querySelector('input[name="access_key"]');
+    return input && input.value ? input.value.trim() : '';
+  }
+
+  function isAccessKeyConfigured(key) {
+    if (!key || key === 'YOUR_ACCESS_KEY_HERE') return false;
+    return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
+      key
+    );
+  }
+
+  function web3formsMessage(result) {
+    if (!result) return '';
+    if (typeof result.message === 'string') return result.message;
+    if (result.body && typeof result.body.message === 'string') {
+      return result.body.message;
+    }
+    return '';
+  }
+
+  function web3formsAccepted(result, accessKey) {
+    if (!result || !result.success || !isAccessKeyConfigured(accessKey)) {
+      return false;
+    }
+    var msg = web3formsMessage(result).toLowerCase();
+    return (
+      msg.indexOf('insert your actual') === -1 &&
+      msg.indexOf('your_access_key') === -1
+    );
+  }
+
+  function syncFormConfigWarning(form) {
+    var el = document.getElementById('form_config_error');
+    if (!el || !form) return;
+    if (!isAccessKeyConfigured(getAccessKey(form))) {
+      el.textContent = t('res_warn_access_key');
+      el.classList.remove('hidden');
+    } else {
+      el.classList.add('hidden');
+    }
+  }
+
   /** Anonymous Gregorian algorithm → Easter Sunday (local noon). */
   function easterSunday(year) {
     var a = year % 19;
@@ -786,12 +829,14 @@
   }
 
   function refreshLabels() {
+    var form = document.getElementById('form_reservas');
     fillEventTypes();
     fillTimeSelects();
     syncGuestFields();
     renderExtras();
     syncDurationHint();
     recalculate();
+    if (form) syncFormConfigWarning(form);
     if (window.pdsIcons) window.pdsIcons.hydrate();
   }
 
@@ -827,6 +872,7 @@
     syncDurationHint();
     renderExtras();
     recalculate();
+    syncFormConfigWarning(form);
 
     ['tipo_evento'].forEach(function (id) {
       var el = document.getElementById(id);
@@ -857,6 +903,11 @@
       recalculate();
       var submitBtn = document.getElementById('btn_submit');
       var original = submitBtn.innerHTML;
+      var accessKey = getAccessKey(form);
+      if (!isAccessKeyConfigured(accessKey)) {
+        alert(t('res_err_access_key'));
+        return;
+      }
       submitBtn.disabled = true;
       submitBtn.innerHTML = t('res_sending');
       if (window.pdsIcons) window.pdsIcons.hydrate(submitBtn);
@@ -864,10 +915,11 @@
       try {
         var response = await fetch(form.action, {
           method: 'POST',
+          headers: { Accept: 'application/json' },
           body: new FormData(form),
         });
         var result = await response.json();
-        if (result.success) {
+        if (web3formsAccepted(result, accessKey)) {
           if (window.pdsTrack) window.pdsTrack('generate_lead');
           var tpl = document.getElementById('tpl_reserva_sucesso');
           var node = tpl.content.cloneNode(true);
@@ -877,7 +929,7 @@
           form.parentElement.replaceChildren(node);
           if (window.pdsIcons) window.pdsIcons.hydrate();
         } else {
-          alert(t('res_err_send'));
+          alert(web3formsMessage(result) || t('res_err_send'));
           submitBtn.disabled = false;
           submitBtn.innerHTML = original;
           if (window.pdsIcons) window.pdsIcons.hydrate(submitBtn);

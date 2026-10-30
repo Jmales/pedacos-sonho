@@ -174,6 +174,8 @@
     res_success_home: "Voltar \xE0 p\xE1gina inicial",
     res_err_send: "Ocorreu um erro ao enviar. Por favor, tente novamente ou contacte-nos por telefone.",
     res_err_network: "Ocorreu um erro de liga\xE7\xE3o. Por favor, tente novamente ou contacte-nos por telefone.",
+    res_err_access_key: "O formul\xE1rio ainda n\xE3o est\xE1 ligado ao email (chave Web3Forms em falta). Contacte-nos por telefone ou WhatsApp.",
+    res_warn_access_key: "Aten\xE7\xE3o: substitua YOUR_ACCESS_KEY_HERE pela chave real em reservas.html (Web3Forms). Enquanto estiver o placeholder, o site mostra sucesso mas n\xE3o envia email.",
     res_privacy_note: 'Ao enviar este formul\xE1rio, os seus dados ser\xE3o tratados para responder ao pedido. Consulte a nossa <a href="/privacidade" class="underline hover:text-secondary transition">Pol\xEDtica de Privacidade</a>.',
     res_load_error: "N\xE3o foi poss\xEDvel carregar a tabela de pre\xE7os. Atualize a p\xE1gina.",
     // Privacy policy
@@ -365,6 +367,8 @@
     res_success_home: "Back to home",
     res_err_send: "Something went wrong. Please try again or call us.",
     res_err_network: "A connection error occurred. Please try again or call us.",
+    res_err_access_key: "The form is not connected to email yet (missing Web3Forms access key). Please call or WhatsApp us.",
+    res_warn_access_key: "Warning: replace YOUR_ACCESS_KEY_HERE with your real key in reservas.html (Web3Forms). With the placeholder, the site shows success but does not send email.",
     res_privacy_note: 'By submitting this form, your data will be processed to respond to your request. See our <a href="/privacidade" class="underline hover:text-secondary transition">Privacy Policy</a>.',
     res_load_error: "Could not load the price table. Please refresh the page.",
     priv_doc_title: "Privacy Policy | Peda\xE7os de Sonho",

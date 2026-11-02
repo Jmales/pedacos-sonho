@@ -156,6 +156,117 @@
     return isHoliday(dateStr);
   }
 
+  function addDaysToIso(dateStr, days) {
+    var d = new Date(dateStr + 'T12:00:00');
+    d.setDate(d.getDate() + days);
+    return ymd(d);
+  }
+
+  /** High season: 1 Jun – 30 Sep (inclusive). */
+  function isHighSeason(dateStr) {
+    var d = new Date(dateStr + 'T12:00:00');
+    var m = d.getMonth() + 1;
+    return m >= 6 && m <= 9;
+  }
+
+  function venueRateForSlot(dateStr, hour24) {
+    var vr = pricing && pricing.venueRates;
+    if (!vr || !vr.rates) return 45;
+    var seasonKey = isHighSeason(dateStr) ? 'high' : 'low';
+    var dayKey = isWeekendRate(dateStr) ? 'weekend' : 'weekday';
+    var band = vr.rates[seasonKey][dayKey];
+    var eveningFrom = vr.eveningFromHour != null ? vr.eveningFromHour : 21;
+    return hour24 >= eveningFrom ? band.evening : band.day;
+  }
+
+  function computeVenueCharges(et, date, duration) {
+    var hours = duration.hours;
+    if (et.venueQuoteOnly) {
+      var flat = (pricing && pricing.venueInternalQuoteRate) || 65;
+      return {
+        venue: hours * flat,
+        venueQuoteOnly: true,
+        highSeason: isHighSeason(date),
+      };
+    }
+    var startMin = parseTimeToMinutes(duration.start);
+    if (startMin == null) {
+      return { venue: 0, venueQuoteOnly: false, highSeason: isHighSeason(date) };
+    }
+    var total = 0;
+    for (var i = 0; i < hours; i++) {
+      var slotMin = startMin + i * 60;
+      var dayOffset = Math.floor(slotMin / (24 * 60));
+      var minInDay = slotMin % (24 * 60);
+      var hour24 = Math.floor(minInDay / 60);
+      var slotDate = dayOffset ? addDaysToIso(date, dayOffset) : date;
+      total += venueRateForSlot(slotDate, hour24);
+    }
+    return {
+      venue: total,
+      venueQuoteOnly: false,
+      highSeason: isHighSeason(date),
+    };
+  }
+
+  function computeDeposit(countableGuests, proposalTotal) {
+    var cfg = (pricing && pricing.deposit) || {};
+    var upTo = cfg.flatUpToGuests != null ? cfg.flatUpToGuests : 50;
+    var flat = cfg.flatAmount != null ? cfg.flatAmount : 150;
+    var pct = cfg.percentAboveGuests != null ? cfg.percentAboveGuests : 0.2;
+    var guests = countableGuests || 0;
+    if (guests <= upTo) {
+      return { amount: flat, percentBased: false, threshold: upTo };
+    }
+    return {
+      amount: Math.round(proposalTotal * pct),
+      percentBased: true,
+      threshold: upTo,
+    };
+  }
+
+  function formatDepositLine(depositInfo) {
+    if (!depositInfo) return '';
+    if (depositInfo.percentBased) {
+      return (
+        t('res_line_deposit') +
+        ': ' +
+        euro(depositInfo.amount) +
+        ' (' +
+        t('res_deposit_pct_note') +
+        ')'
+      );
+    }
+    return (
+      t('res_line_deposit') +
+      ': ' +
+      euro(depositInfo.amount) +
+      ' (' +
+      t('res_deposit_flat_note') +
+      ')'
+    );
+  }
+
+  function venueLineShowsQuote(est) {
+    return !!(est.venueQuoteOnly || est.overCapacity);
+  }
+
+  function formatLineAmount(line, est) {
+    if (line.id === 'venue' && venueLineShowsQuote(est)) {
+      return t('res_quote_only');
+    }
+    return euro(line.amount);
+  }
+
+  function displayTotalLabel(est) {
+    if (est.overCapacity) return t('res_quote_only');
+    if (est.needsQuote) return t('res_quote_only');
+    if (est.venueQuoteOnly) {
+      return est.extrasTotal > 0 ? euro(est.extrasTotal) : t('res_quote_only');
+    }
+    return euro(est.total);
+  }
+
   function getEventType(id) {
     if (!pricing || !id) return null;
     return pricing.eventTypes.find(function (e) {
@@ -513,12 +624,12 @@
 
     var weekend = isWeekendRate(date);
     var holiday = isHoliday(date);
-    var rate = weekend ? et.hourlyWeekend : et.hourlyWeekday;
-    var venue = hours * rate;
+    var venueCalc = computeVenueCharges(et, date, duration);
+    var venue = venueCalc.venue;
     var lines = [
       {
         id: 'venue',
-        label: t('res_line_venue', { hours: hours, rate: rate }),
+        label: t('res_line_venue', { hours: hours }),
         amount: venue,
       },
     ];
@@ -564,21 +675,25 @@
       overCapacity ||
       !!(et.extrasTriggerQuote && quoteExtras.length) ||
       (quoteExtras.length > 0 && lines.length === 1 && extrasTotal === 0);
+    var proposalTotal = venue + extrasTotal;
+    var depositInfo = computeDeposit(guests.countable, proposalTotal);
     return {
       ready: true,
       et: et,
       weekend: weekend,
       holiday: holiday,
+      highSeason: venueCalc.highSeason,
       hours: hours,
       hoursExact: duration.hoursExact,
       nextDay: duration.nextDay,
       start: duration.start,
       end: duration.end,
-      rate: rate,
       venue: venue,
+      venueQuoteOnly: !!et.venueQuoteOnly,
       extrasTotal: extrasTotal,
-      total: venue + extrasTotal,
-      deposit: et.deposit,
+      total: proposalTotal,
+      deposit: depositInfo.amount,
+      depositInfo: depositInfo,
       lines: lines,
       quoteExtras: quoteExtras,
       needsQuote: needsQuote,
@@ -610,12 +725,13 @@
     if (dayBadge) {
       var date = document.getElementById('data_evento').value;
       if (date) {
+        var season = isHighSeason(date) ? t('res_season_high') : t('res_season_low');
         if (isHoliday(date)) {
-          dayBadge.textContent = t('res_day_holiday');
+          dayBadge.textContent = t('res_day_holiday') + ' · ' + season;
         } else if (isWeekendRate(date)) {
-          dayBadge.textContent = t('res_day_weekend');
+          dayBadge.textContent = t('res_day_weekend') + ' · ' + season;
         } else {
-          dayBadge.textContent = t('res_day_weekday');
+          dayBadge.textContent = t('res_day_weekday') + ' · ' + season;
         }
         dayBadge.classList.remove('hidden');
       } else {
@@ -681,9 +797,9 @@
       if (linesEl) {
         var quoteLines =
           '<div class="flex justify-between gap-3 text-sm py-1"><span class="text-gray-600">' +
-          t('res_line_venue', { hours: est.hours, rate: est.rate }) +
+          t('res_line_venue', { hours: est.hours }) +
           '</span><span class="font-medium">' +
-          (est.overCapacity ? t('res_quote_only') : euro(est.venue)) +
+          (venueLineShowsQuote(est) ? t('res_quote_only') : euro(est.venue)) +
           '</span></div>';
         quoteLines += est.quoteExtras
           .map(function (name) {
@@ -708,10 +824,8 @@
         }
         linesEl.innerHTML = quoteLines;
       }
-      if (totalEl) totalEl.textContent = t('res_quote_only');
-      if (depositEl) {
-        depositEl.textContent = t('res_line_deposit') + ': ' + euro(est.deposit);
-      }
+      if (totalEl) totalEl.textContent = displayTotalLabel(est);
+      if (depositEl) depositEl.textContent = formatDepositLine(est.depositInfo);
       if (submitBtn) submitBtn.innerHTML = t('res_submit_quote');
     } else {
       if (quoteEl) quoteEl.classList.add('hidden');
@@ -722,7 +836,7 @@
               '<div class="flex justify-between gap-3 text-sm py-1"><span class="text-gray-600">' +
               line.label +
               '</span><span class="font-medium">' +
-              euro(line.amount) +
+              formatLineAmount(line, est) +
               '</span></div>'
             );
           })
@@ -740,10 +854,8 @@
           .join('');
         linesEl.innerHTML = pricedHtml + quoteHtml;
       }
-      if (totalEl) totalEl.textContent = euro(est.total);
-      if (depositEl) {
-        depositEl.textContent = t('res_line_deposit') + ': ' + euro(est.deposit);
-      }
+      if (totalEl) totalEl.textContent = displayTotalLabel(est);
+      if (depositEl) depositEl.textContent = formatDepositLine(est.depositInfo);
       if (submitBtn) submitBtn.innerHTML = t('res_submit');
     }
 
@@ -779,11 +891,13 @@
       'Início: ' + est.start,
       'Fim: ' + est.end + (est.nextDay ? ' (+1 dia)' : ''),
       'Duração: ' + formatHours(est.hoursExact) + 'h (faturado ' + est.hours + 'h)',
-      est.holiday
+      (est.holiday
         ? t('res_day_holiday')
         : est.weekend
           ? t('res_day_weekend')
-          : t('res_day_weekday'),
+          : t('res_day_weekday')) +
+        ' · ' +
+        (est.highSeason ? t('res_season_high') : t('res_season_low')),
     ];
     if (g.split) {
       parts.push('Adultos: ' + g.adults);
@@ -796,7 +910,12 @@
     if (est.overCapacity) {
       parts.push('Acima de ' + est.maxGuests + ' pessoas — sob consulta');
     }
-    parts.push('Espaço: ' + (est.overCapacity ? 'sob consulta' : euro(est.venue)));
+    parts.push(
+      'Espaço (ref. interna' +
+        (est.venueQuoteOnly ? ' 65€/h' : '') +
+        '): ' +
+        euro(est.venue)
+    );
     if (est.needsQuote) {
       parts.push('Modo: proposta');
       if (est.quoteExtras.length) {
@@ -804,12 +923,18 @@
       }
     } else {
       parts.push('Modo: reserva');
-      est.lines.slice(1).forEach(function (line) {
-        parts.push(line.label + ': ' + euro(line.amount));
-      });
-      parts.push('Total estimado: ' + euro(est.total));
     }
-    parts.push('Caução: ' + euro(est.deposit));
+    est.lines.slice(1).forEach(function (line) {
+      parts.push(line.label + ': ' + euro(line.amount));
+    });
+    parts.push('Total referência (contas): ' + euro(est.total));
+    parts.push(
+      'Caução: ' +
+        euro(est.deposit) +
+        (est.depositInfo && est.depositInfo.percentBased
+          ? ' (20% proposta)'
+          : ' (≤50 pessoas)')
+    );
     summary.value = parts.join(' | ');
     mode.value = est.needsQuote ? 'proposta' : 'reserva';
   }

@@ -85,10 +85,10 @@ export const en = {
     'Yes. We offer our own packs, but you are free to bring your preferred catering, cake, entertainment or outdoor decoration.',
   faq_q4: 'How does venue pricing work?',
   faq_a4:
-    'Hire is hourly, with different weekday and weekend rates by event type (3-hour minimum). You can simulate the total on the <a href="/reservas" class="text-primary underline">booking page</a>.',
+    'Venue hire is hourly (3-hour minimum), with low/high season, day vs evening (from 9 pm) and weekend/holiday rates. Kids parties and gatherings show an estimate; weddings, christenings and corporate show as on request. Simulate on the <a href="/reservas" class="text-primary underline">booking page</a>.',
   faq_q5: 'How do the deposit and date confirmation work?',
   faq_a5:
-    'The refundable deposit depends on the event type (from €150). The date is confirmed with a 30% deposit.',
+    'Refundable deposit: €150 up to 50 guests (3+); above that, 20% of the proposal value. The date is confirmed with a 30% deposit.',
   faq_q6: 'Are there animal experiences or kids’ activities?',
   faq_a6:
     'Yes, subject to availability: farm experience with animals, pony rides, and extras such as an inflatable, face painting, entertainer or treasure hunt. Details and prices are on the booking page.',
@@ -160,6 +160,10 @@ export const en = {
   res_day_weekday: 'Weekday',
   res_day_weekend: 'Weekend',
   res_day_holiday: 'Holiday (weekend rate)',
+  res_season_low: 'low season',
+  res_season_high: 'high season',
+  res_deposit_flat_note: 'up to 50 guests',
+  res_deposit_pct_note: '20% of proposal value',
   res_section_extras: '2. Extras (optional)',
   res_extras_empty: 'No preset extras for this event type.',
   res_extras_quote_note:

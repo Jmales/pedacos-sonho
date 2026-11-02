@@ -88,10 +88,10 @@ export const pt = {
     'Sim. Dispomos de packs próprios, mas damos total flexibilidade para trazerem o vosso catering de eleição, bolo, animação ou decoração exterior.',
   faq_q4: 'Como funcionam os preços do espaço?',
   faq_a4:
-    'O aluguer é por hora, com valores distintos para dias de semana e fim-de-semana, consoante o tipo de evento (mínimo 3 horas). Pode simular o total na <a href="/reservas" class="text-primary underline">página de reservas</a>.',
+    'O aluguer do espaço é por hora (mínimo 3 h), com época baixa/alta, tarifa diurna ou noturna (a partir das 21h) e fim-de-semana/feriados. Festas infantis e convívios mostram estimativa; casamentos, batizados e corporate aparecem como sob consulta. Simule na <a href="/reservas" class="text-primary underline">página de reservas</a>.',
   faq_q5: 'Como funciona a caução e a confirmação da data?',
   faq_a5:
-    'A caução reembolsável depende do tipo de evento (a partir de 150 €). A confirmação da data é feita mediante sinal de 30%.',
+    'Caução reembolsável: 150 € até 50 pessoas (3+); acima disso, 20% do valor da proposta. A confirmação da data é feita mediante sinal de 30%.',
   faq_q6: 'Há experiências com animais ou animações para crianças?',
   faq_a6:
     'Sim, conforme disponibilidade: experiência de quinta pedagógica com animais, passeios de pónei, e extras como insuflável, pinturas faciais, animador ou caça ao tesouro. Os detalhes e preços estão na página de reservas.',
@@ -168,6 +168,10 @@ export const pt = {
   res_day_weekday: 'Dia de semana',
   res_day_weekend: 'Fim-de-semana',
   res_day_holiday: 'Feriado (tarifa de fim-de-semana)',
+  res_season_low: 'época baixa',
+  res_season_high: 'época alta',
+  res_deposit_flat_note: 'até 50 pessoas',
+  res_deposit_pct_note: '20% do valor da proposta',
   res_section_extras: '2. Extras (opcional)',
   res_extras_empty: 'Sem extras pré-definidos para este tipo de evento.',
   res_extras_quote_note:

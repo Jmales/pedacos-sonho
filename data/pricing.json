@@ -4,9 +4,28 @@
   "maxGuestsDefault": 80,
   "freeUnderAge": 3,
   "extraHolidayDates": [],
+  "deposit": {
+    "flatUpToGuests": 50,
+    "flatAmount": 150,
+    "percentAboveGuests": 0.2
+  },
+  "venueInternalQuoteRate": 65,
+  "venueRates": {
+    "eveningFromHour": 21,
+    "rates": {
+      "low": {
+        "weekday": { "day": 40, "evening": 50 },
+        "weekend": { "day": 45, "evening": 55 }
+      },
+      "high": {
+        "weekday": { "day": 50, "evening": 60 },
+        "weekend": { "day": 55, "evening": 65 }
+      }
+    }
+  },
   "notes": {
-    "pt": "Valores de lançamento — sujeitos a confirmação de disponibilidade. A caução é reembolsável (150 €, até 15 dias após o evento). Confirmação de data mediante sinal de 30%; remanescente até 24 horas antes. Crianças com menos de 3 anos não contam para o espaço nem para as refeições. Acima de 80 pessoas (excluindo menores de 3): sob consulta. Feriados nacionais aplicam tarifa de fim-de-semana. Catering em buffet self-service (valores de referência a partir de 30 pessoas). A todos os valores acresce IVA à taxa legal.",
-    "en": "Launch pricing — subject to availability confirmation. The deposit is refundable (€150, within 15 days after the event). Date confirmation requires a 30% deposit; balance due 24 hours before. Children under 3 do not count toward venue capacity or meals. Over 80 people (excluding under-3s): on request. National holidays use weekend rates. Catering is self-service buffet (reference prices from 30 guests). All prices plus VAT at the legal rate."
+    "pt": "Preçário Salão Terra e Salão Luz: época baixa 1 out–31 mai, época alta 1 jun–30 set; tarifa noturna a partir das 21h. Feriados nacionais contam como fim-de-semana. Caução reembolsável: 150 € até 50 pessoas (3+); acima, 20% do valor da proposta. Confirmação mediante sinal de 30%; remanescente até 24 h antes. Menores de 3 anos não contam para capacidade nem refeições. Acima de 80 pessoas (excl. <3): sob consulta. IVA à taxa legal.",
+    "en": "Salão Terra & Salão Luz rates: low season 1 Oct–31 May, high season 1 Jun–30 Sep; evening rate from 9 pm. National holidays use weekend rates. Refundable deposit: €150 up to 50 guests (3+); above that, 20% of the proposal. Booking confirmed with 30% deposit; balance due 24 h before. Under-3s excluded from capacity and meals. Over 80 (excl. under-3s): on request. VAT at the legal rate."
   },
   "eventTypes": [
     {
@@ -21,9 +40,6 @@
       },
       "splitGuests": true,
       "maxGuests": 80,
-      "hourlyWeekday": 40,
-      "hourlyWeekend": 45,
-      "deposit": 150,
       "extraIds": [
         "catering-1",
         "catering-2",
@@ -48,9 +64,7 @@
         "en": "Company events, meetings and team activities."
       },
       "maxGuests": 80,
-      "hourlyWeekday": 60,
-      "hourlyWeekend": 70,
-      "deposit": 150,
+      "venueQuoteOnly": true,
       "extraIds": [
         "catering-corporate-1",
         "catering-corporate-2",
@@ -63,8 +77,8 @@
         "outros-extras-corporate"
       ],
       "extrasNote": {
-        "pt": "Escolha um pack de catering. Outros extras corporate: descreva nas observações.",
-        "en": "Choose a catering pack. Other corporate extras: describe in the notes."
+        "pt": "Espaço sob consulta. Escolha um pack de catering; outros extras: descreva nas observações.",
+        "en": "Venue on request. Choose a catering pack; other extras: describe in the notes."
       }
     },
     {
@@ -78,9 +92,7 @@
         "en": "Ceremony and/or reception in the garden, pine grove or halls. Extras on request."
       },
       "maxGuests": 80,
-      "hourlyWeekday": 170,
-      "hourlyWeekend": 190,
-      "deposit": 250,
+      "venueQuoteOnly": true,
       "extrasTriggerQuote": true,
       "extraIds": [
         "catering",
@@ -92,8 +104,8 @@
         "bolo"
       ],
       "extrasNote": {
-        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
-        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+        "pt": "Espaço sob consulta. Com extras selecionados enviamos proposta personalizada.",
+        "en": "Venue on request. With selected extras we send a tailored proposal."
       }
     },
     {
@@ -107,9 +119,7 @@
         "en": "Christening celebrations at the venue. Extras on request."
       },
       "maxGuests": 80,
-      "hourlyWeekday": 150,
-      "hourlyWeekend": 170,
-      "deposit": 250,
+      "venueQuoteOnly": true,
       "extrasTriggerQuote": true,
       "extraIds": [
         "catering",
@@ -121,8 +131,8 @@
         "bolo"
       ],
       "extrasNote": {
-        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
-        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+        "pt": "Espaço sob consulta. Com extras selecionados enviamos proposta personalizada.",
+        "en": "Venue on request. With selected extras we send a tailored proposal."
       }
     },
     {
@@ -136,9 +146,7 @@
         "en": "Venue hire for special events."
       },
       "maxGuests": 80,
-      "hourlyWeekday": 70,
-      "hourlyWeekend": 70,
-      "deposit": 150,
+      "venueQuoteOnly": true,
       "extrasTriggerQuote": true,
       "extraIds": [
         "catering",
@@ -150,8 +158,8 @@
         "bolo"
       ],
       "extrasNote": {
-        "pt": "Só o espaço: valor indicado de imediato. Com extras: enviamos uma proposta personalizada.",
-        "en": "Venue only: price shown right away. With extras: we send a tailored proposal."
+        "pt": "Época especial — espaço e extras sob consulta.",
+        "en": "Special season — venue and extras on request."
       }
     },
     {
@@ -165,9 +173,6 @@
         "en": "Gatherings, celebrations and other events within venue capacity."
       },
       "maxGuests": 80,
-      "hourlyWeekday": 40,
-      "hourlyWeekend": 45,
-      "deposit": 150,
       "extraIds": [
         "catering-familiar-1",
         "catering-familiar-2",
